@@ -1,0 +1,56 @@
+@mixin container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: auto;
+  max-width: 100%;
+
+  @media (min-width: 480px) {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  @media (min-width: 640px) {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $tablets) {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
+
+  @media (min-width: $notebooks) {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  @media (min-width: $widebooks-hd) {
+    width: auto;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@mixin animation {
+  @-moz-keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1 }
+  }
+  @-webkit-keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1 }
+  }
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1 }
+  }
+}
