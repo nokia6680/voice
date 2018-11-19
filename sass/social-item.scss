@@ -1,0 +1,81 @@
+.social-item {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border: none;
+
+  background-color: #ffffff;
+
+  position: relative;
+
+  z-index: 2;
+
+  &:not(:last-of-type) {
+    margin-right: 12px;
+  }
+
+  &:hover {
+    background-color: $social-hover;
+  }
+
+  .fa-youtube::before {
+    position: absolute;
+    content: '\f167';
+    font-size: 1.25em;
+    color: $text-gray;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .fa-facebook-f::before {
+    position: absolute;
+    content: '\f39e';
+    font-size: 1.25em;
+    color: $text-gray;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .fa-vk::before {
+    position: absolute;
+    content: '\f189';
+    font-size: 1.25em;
+    color: $text-gray;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .fa-twitter::before {
+    position: absolute;
+    content: '\f099';
+    font-size: 1.25em;
+    color: $text-gray;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .fa-instagram::before {
+    position: absolute;
+    content: '\f16d';
+    font-size: 1.25em;
+    color: $text-gray;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .fa-odnoklassniki::before {
+    position: absolute;
+    content: '\f263';
+    font-size: 1.25em;
+    color: $text-gray;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

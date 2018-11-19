@@ -1,0 +1,22 @@
+.header-opener {
+  width: 28px;
+  padding: 0;
+
+  padding-top: 4px;
+
+  &__btn {
+    padding: 0;
+
+    width: 27px;
+    height: 20px;
+
+    background-image: url('../img/opener.svg');
+    background-repeat: no-repeat;
+    background-size: 27px 20px;
+
+    background-color: transparent;
+    border: none;
+
+    position: relative;
+  }
+}

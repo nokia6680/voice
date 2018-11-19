@@ -1,0 +1,46 @@
+.nav-item {
+  width: 100%;
+  padding-left: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  border-bottom: 2px solid $bg-border;
+
+  &__link {
+    text-decoration: none;
+    text-align: left;
+
+    font: {
+      family: $bold-font;
+      size: 1.125em;
+    }
+
+    color: $text-black;
+    line-height: normal;
+
+    cursor: pointer;
+    outline: none;
+  }
+
+  &--vote {
+    position: relative;
+    padding-right: 50px;
+
+    &::after {
+      position: absolute;
+      content:'';
+
+      background-image: url('../img/menu-star.png');
+      background-repeat: no-repeat;
+      background-size: 39px 39px;
+
+      width: 39px;
+      height: 39px;
+
+      top: 50%;
+      right: 14px;
+
+      transform: translateY(-50%);
+    }
+  }
+}

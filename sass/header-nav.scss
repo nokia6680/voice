@@ -1,0 +1,25 @@
+.header-nav {
+  @include container;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    width: 111px;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__img {
+    width: 111px;
+    height: auto;
+  }
+}

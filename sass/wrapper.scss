@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  min-height: 100vh;
+
+  overflow-y: hidden;
+  z-index: -1;
+}

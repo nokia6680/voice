@@ -1,0 +1,21 @@
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 100%;
+
+  background-color: $bg-menu;
+
+  position: absolute;
+
+  left: 0;
+  top: -335px;
+
+  z-index: -1;
+}

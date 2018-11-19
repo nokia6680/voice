@@ -1,0 +1,44 @@
+.footer {
+  width: 100%;
+  background-color: $bg-footer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-bottom: 0;
+  margin-top: auto;
+
+  position: relative;
+
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+  border-top: 2px solid $bg-border;
+
+  &__wrapper {
+    @include container;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 4px;
+  }
+
+  &__description {
+    font: {
+      family: $footer-font;
+      size: 0.375em;
+    }
+
+    color: $text-white;
+    opacity: 0.5;
+    line-height: 1;
+
+    margin: 0;
+  }
+}
