@@ -5,3 +5,16 @@
     @include btn;
   }
 }
+
+@media screen and (min-width: $laptop) {
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &__vote {
+      display: none;
+    }
+  }
+}

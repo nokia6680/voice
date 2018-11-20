@@ -42,3 +42,16 @@
     margin: 0;
   }
 }
+
+@media screen and (min-width: $laptop) {
+  .footer {
+    padding-top: 10px;
+
+    &__wrapper {
+      width: 100%;
+      margin-bottom: 7px;
+
+      justify-content: space-between;
+    }
+  }
+}

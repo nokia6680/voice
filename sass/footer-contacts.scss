@@ -12,3 +12,30 @@
     @include btn;
   }
 }
+
+@media screen and (min-width: $laptop) {
+  .footer-contacts {
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__logo {
+      display: block;
+
+      width: 84px;
+      height: auto;
+
+      margin-right: 20px;
+    }
+
+    &__link {
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+
+    &__img {
+      width: 84px;
+      height: auto;
+    }
+  }
+}

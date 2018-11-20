@@ -1,0 +1,22 @@
+.private-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &:not(:last-of-type) {
+    margin-right: 15px;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    font: {
+      family: $alternate-font;
+      size: 0.438em;
+    }
+
+    color: $text-white;
+    line-height: 1;
+  }
+}

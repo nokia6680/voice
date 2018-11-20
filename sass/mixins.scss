@@ -25,11 +25,11 @@
     padding: 0 80px;
   }
 
-  @media (min-width: $notebooks) {
+  @media (min-width: $laptop) {
     width: auto;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 34px;
   }
 
   @media (min-width: $widebooks-hd) {

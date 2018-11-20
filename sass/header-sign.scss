@@ -3,3 +3,56 @@
 
   top: -3000px;
 }
+
+@media screen and (min-width: $laptop) {
+  .header-sign {
+    position: absolute;
+
+    top: 30px;
+    left: 34px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: nowrap;
+
+    width: 956px;
+    /*Левое лого*/
+    &__logo {
+      width: 100%;
+      height: auto;
+
+      z-index: -2;
+    }
+
+    &__img {
+      width: 84px;
+      height: 100%;
+    }
+
+    /*Кнопка голосовать*/
+    &__vote {
+      width: 99px;
+      height: auto;
+    }
+
+    &__btn {
+      background-image: url('../img/vote.svg');
+      background-repeat: no-repeat;
+      background-size: 99px 99px;
+
+      width: 99px;
+      height: 99px;
+
+      background-color: transparent;
+
+      border-radius: 50%;
+      border: none;
+
+      cursor: pointer;
+      outline: none;
+    }
+  }
+}

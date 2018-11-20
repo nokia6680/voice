@@ -1,3 +1,18 @@
 .footer-list {
   display: none;
 }
+
+@media screen and (min-width: $laptop) {
+  .footer-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    margin-right: 33px;
+  }
+}

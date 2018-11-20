@@ -1,0 +1,47 @@
+.main-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+
+  background-image: url('../img/main-intro-bg-mb.svg');
+  background-size: 309px 224px;
+  background-repeat: no-repeat;
+
+  width: 309px;
+  height: auto;
+
+  margin-top: -35px;
+  padding-bottom: 45px;
+
+  &__title {
+    font: {
+      size: 1.25em;
+      family: $bold-font;
+    }
+
+    color: $text-red;
+    line-height: normal;
+
+    margin-top: 45px;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font: {
+      family: $bold-font;
+      size: 0.75em;
+    }
+
+    color: $text-black;
+    line-height: normal;
+
+    text-align: center;
+    width: 235px;
+
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
