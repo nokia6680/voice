@@ -21,6 +21,138 @@
 
 <body>
 	<div class="wrapper">
+		<!--HEader, the same for all pages-->
+		<header class="header">
+			<nav class="header__nav header-nav">
+				<div class="header-nav__logo">
+					<a class="header-nav__link" href="index.html">
+						<img class="header-nav__img" src="img/logo.svg" alt="Nickelodeon"/>
+					</a>
+				</div>
+				<!--Меню выдвигающееся-->
+				<ul class="header-nav__list nav-list nav-list--mobile">
+					<li class="nav-list__item nav-item">
+						<a class="nav-item__link nav-item__link--event" href="#" target="_self">Конкурс</a>
+					</li>
+					<li class="nav-list__item nav-item">
+						<a class="nav-item__link nav-item__link--prizes" href="#" target="_self">Призы</a>
+					</li>
+					<li class="nav-list__item nav-item">
+						<a class="nav-item__link nav-item__link--faq" href="#" target="_self">Правила</a>
+					</li>
+					<li class="nav-list__item nav-item nav-item--vote">
+						<a class="nav-item__link nav-item__link--vote" href="event.html" target="_self">Голосовать за&nbsp;Nickelodeon</a>
+					</li>
+					<li class="nav-list__item nav-item nav-item--policy">
+						<a class="nav-item__link nav-item__link--city" href="#" target="_blank">Политика конфиденциальности</a>
+					</li>
+				</ul>
+				<!--Кнопка открытия меню-->
+				<div class="header-nav__opener header-opener">
+					<button class="header-opener__btn" type="button"></button>
+				</div>
+			</nav>
+			<!--Видно на десктопе-->
+			<div class="header__sign header-sign">
+				<div class="header-sign__logo">
+					<img class="header-sign__img" src="img/voice-logo.svg" alt="Нам нужен твой голос!"/>
+				</div>
+				<div class="header-sign__vote">
+					<button class="header-sign__btn" type="button"></button>
+				</div>
+			</div>
+		</header>
+		<!--Start page main content block-->
+		<main class="main">
+			<!--Menu with highlighted back-->
+			<section class="main__menu main-menu main-menu--desktop">
+				<nav class="main-menu__nav main-nav">
+					<ul class="main-nav__list main-list">
+						<li class="main-list__item main-item main-item--checked">
+							<a class="main-list__link" href="#" target="_self">
+								<span class="main-list__text">Выбрать шоу</span>
+							</a>
+						</li>
+						<li class="main-list__item main-item">
+							<a class="main-list__link" href="#" target="_self">
+								<span class="main-list__text">Озвучить</span>
+							</a>
+						</li>
+						<li class="main-list__item main-item">
+							<a class="main-list__link" href="#" target="_self">
+								<span class="main-list__text">Отправить</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+			<!--Main content-->
+			<section class="main__choose main-choose">
+				<h1 class="main-choose__title">Выбери шоу, которое&nbsp;хочешь&nbsp;озвучить</h1>
+				<div class="main-choose__carousel choose-carousel">
+					<!--Первый слайдер-->
+					<div class="choose-carousel__slider choose-slider">
+						<div class="choose-slider__item choose-item choose-slider__item--first" id="first-show">
+							<a class="choose-item__link" href="#" target="_self">
+								<img class="choose-item__preview" src="img/preview-1.png" alt="show-1" />
+							</a>
+						</div>
+						<div class="choose-slider__item choose-item choose-slider__item--second" id="first-show">
+							<a class="choose-item__link" href="#" target="_self">
+								<img class="choose-item__preview" src="img/preview-1.png" alt="show-2" />
+							</a>
+						</div>
+						<div class="choose-slider__item choose-item choose-slider__item--third" id="first-show">
+							<a class="choose-item__link" href="#" target="_self">
+								<img class="choose-item__preview" src="img/preview-1.png" alt="show-3" />
+							</a>
+						</div>
+						<div class="choose-slider__item choose-item choose-slider__item--fourth" id="first-show">
+							<a class="choose-item__link" href="#" target="_self">
+								<img class="choose-item__preview" src="img/preview-1.png" alt="show-4" />
+							</a>
+						</div>
+						<div class="choose-slider__item choose-item choose-slider__item--fifth" id="first-show">
+							<a class="choose-item__link" href="#" target="_self">
+								<img class="choose-item__preview" src="img/preview-1.png" alt="show-5" />
+							</a>
+						</div>
+					</div>
+					<!--Второй слайдер-->
+					<div class="choose-carousel__slider title-slider">
+						<div class="title-slider__item title-item title-slider__item--first" id="first-title">
+							<a class="title-item__link" href="#" target="_self">
+								<h3 class="title-item__title title-item__title--first">Мой шумный дом</h3>
+							</a>
+						</div>
+						<div class="title-slider__item title-item title-slider__item--second" id="second-title">
+							<a class="title-item__link" href="#" target="_self">
+								<h3 class="title-item__title title-item__title--second">Мой тихий дом</h3>
+							</a>
+						</div>
+						<div class="title-slider__item title-item title-slider__item--third" id="third-title">
+							<a class="title-item__link" href="#" target="_self">
+								<h3 class="title-item__title title-item__title--third">Мой синий дом</h3>
+							</a>
+						</div>
+						<div class="title-slider__item title-item title-slider__item--fourth" id="fourth-title">
+							<a class="title-item__link" href="#" target="_self">
+								<h3 class="title-item__title title-item__title--fourth">Мой зеленый дом</h3>
+							</a>
+						</div>
+						<div class="title-slider__item title-item title-slider__item--fifth" id="fifth-title">
+							<a class="title-item__link" href="#" target="_self">
+								<h3 class="title-item__title title-item__title--fifth">Вообще какой-то дом</h3>
+							</a>
+						</div>
+					</div>
+					<div class="slider-buttons">
+						<div class="prev-1"></div>
+						<div class="next-1"></div>
+					</div>
+				</div>
+			</section>
+		</main>
     <!--Footer-->
 		<footer class="footer">
 			<div class="footer__wrapper">

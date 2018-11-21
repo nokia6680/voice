@@ -17,59 +17,37 @@ function Selected(a) {
   }
 }
 
+$('.next-1').on('click', function() {
+  $('.choose-slider').slick('slickNext');
+});
+
+$('.prev-1').on('click', function() {
+  $('.choose-slider').slick('slickPrev');
+});
+
 $(document).ready(function(){
-  $('.content-slider').slick({
+  $('.choose-slider').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    dots: true,
-    arrows: false
+    dots: false,
+    fade: true,
+    arrows: false,
+    asNavFor: '.title-slider',
   });
 });
 
 /*Измененный скрипт перелистывания слайдов*/
 
 $(document).ready(function() {
-  $(".carousel-slider").slick({
+  $(".title-slider").slick({
     infinite: true,
-    slidesToShow: 11,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
-  });
-
-  var timer;
-    $(".slick-arrow").mouseleave(function() {
-      window.clearTimeout(timer)
-    }).mouseenter(function() {
-
-      var self = $(this).mouseleave();
-      timer = window.setTimeout(function() {
-        self.click().mouseenter()
-      }, 2)
-})});
-
-$(document).ready(function(){
-  $('.sidebar-slider--first').slick({
-    infinite: true,
-    dots: false,
-    arrows: true,
-    vertical: true,
-    verticalSwiping: true,
-    slidesToShow: 5,
-    prevArrow: '<div class="prev-2"></div>',
-    nextArrow: '<div class="next-2"></div>',
-  });
-});
-
-$(document).ready(function(){
-  $('.sidebar-slider--second').slick({
-    infinite: true,
-    dots: false,
-    arrows: true,
-    vertical: true,
-    verticalSwiping: true,
-    slidesToShow: 5,
-    prevArrow: '<div class="prev-3"></div>',
-    nextArrow: '<div class="next-3"></div>',
+    draggable: false,
+    touchMove: false,
+    swipe: false,
+    fade: true,
+    arrows: false,
   });
 });

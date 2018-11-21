@@ -1,0 +1,26 @@
+.choose-slider {
+  width: 305px;
+  height: 335px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+
+    width: 305px;
+    height: 335px;
+
+    top: 0;
+    left: 0;
+
+    background-image: url('../img/frame.png');
+    background-size: 305px 335px;
+    background-repeat: no-repeat;
+  }
+}

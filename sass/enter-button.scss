@@ -1,0 +1,61 @@
+.enter-button {
+  background-image: url('../img/btn-bg.svg');
+  background-size: 265px 260px;
+  background-repeat: no-repeat;
+
+  width: 265px;
+  height: 258px;
+
+  position: relative;
+
+  margin-top: -2px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    position: absolute;
+    content: '';
+
+    background-image: url('../img/btn-round.svg');
+    background-size: 231px 231px;
+    background-repeat: no-repeat;
+
+    width: 231px;
+    height: 231px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+
+  &__link {
+    display: block;
+
+    background-image: url('../img/btn-red.svg');
+    background-size: 167px 167px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    border-radius: 50%;
+    border: 2px solid $bg-border;
+    width: 167px;
+    height: 167px;
+
+    z-index: 10;
+
+    position: relative;
+
+    &:hover {
+      background-image: url('../img/btn-red-hover.svg');
+      box-shadow:0px 0px 22px 2px rgba(0,0,0,0.5)inset;
+      -webkit-box-shadow:0px 0px 22px 2px rgba(0,0,0,0.5)inset;
+      -moz-box-shadow:0px 0px 22px 2px rgba(0,0,0,0.5)inset;
+
+      transition: 0.1s ease-in;
+    }
+  }
+}

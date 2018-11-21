@@ -1,0 +1,26 @@
+.title-slider {
+  width: 262px;
+  height: 61px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+
+    width: 262px;
+    height: 61px;
+
+    top: 0;
+    left: 0;
+
+    background-image: url('../img/frame-small.png');
+    background-size: 262px 61px;
+    background-repeat: no-repeat;
+  }
+}
