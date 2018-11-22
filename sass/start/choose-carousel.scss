@@ -12,29 +12,117 @@
     justify-content: space-between;
     align-items: center;
 
-    width: 300px;
-    height: 100px;
+    width: 214px;
 
-    border: 1px solid white;
+    border: 2px solid $bg-border;
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    background-color: #ffc400;
+
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     position: relative;
+
+    &__agree {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &__controls {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__title {
+      font: {
+        family: $bold-font;
+        size: 0.5em;
+      }
+
+      color: $text-black;
+      line-height: normal;
+
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    &__link {
+      display: block;
+
+      width: 40px;
+      height: 40px;
+
+      position: relative;
+
+      border-radius: 20px;
+
+      cursor: pointer;
+      outline: none;
+
+      background-image: url('../img/btn-agree.svg');
+      background-size: 40px 40px;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
 
     .prev-1 {
       width: 40px;
       height: 40px;
 
-      background-image: url('../img/arrow-left.svg');
+      position: relative;
+
+      border-radius: 20px;
+
+      cursor: pointer;
+      outline: none;
+
+      margin-right: 10px;
+
+      background-image: url('../img/arrow-left-inactive.svg');
       background-size: 40px 40px;
       background-repeat: no-repeat;
+      background-position: center center;
+
+      &:hover {
+        background-image: url('../img/arrow-left-active.svg');
+      }
     }
 
     .next-1 {
       width: 40px;
       height: 40px;
 
-      background-image: url('../img/arrow-right.svg');
+      position: relative;
+
+      border-radius: 20px;
+
+      cursor: pointer;
+      outline: none;
+
+      background-image: url('../img/arrow-right-inactive.svg');
       background-size: 40px 40px;
       background-repeat: no-repeat;
+      background-position: center center;
+
+      &:hover {
+        background-image: url('../img/arrow-right-active.svg');
+      }
     }
   }
 }
