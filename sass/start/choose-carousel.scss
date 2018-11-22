@@ -6,6 +6,27 @@
   justify-content: flex-start;
   align-items: center;
 
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+
+    width: 301px;
+    height: 129px;
+
+    background-image: url('../img/wires-second.svg');
+    background-repeat: no-repeat;
+    background-size: 301px 129px;
+
+    bottom: -13px;
+    left: 51%;
+
+    transform: translateX(-51%);
+
+    z-index: -2;
+  }
+
   .slider-buttons {
     display: flex;
     flex-direction: row;
@@ -21,12 +42,14 @@
 
     background-color: #ffc400;
 
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     padding-left: 10px;
     padding-right: 10px;
 
     position: relative;
+
+    margin-top: 14px;
 
     &__agree {
       display: flex;
