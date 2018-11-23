@@ -1,0 +1,36 @@
+.record-controls {
+  background-color: $bg-controls;
+  border: 2px solid $bg-border;
+
+  width: 294px;
+
+  margin-bottom: 0;
+
+  margin-top: 145px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+
+    width: 311px;
+    height: 150px;
+
+    background-image: url('../img/tubes-wires.svg');
+    background-repeat: no-repeat;
+    background-size: 311px 150px;
+
+    top: -150px;
+    left: -10px;
+  }
+}

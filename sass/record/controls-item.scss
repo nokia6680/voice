@@ -1,0 +1,210 @@
+.controls-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  &--process {
+    margin-right: 18px;
+  }
+
+  &__btn {
+    background-color: transparent;
+
+    width: 40px;
+    height: 40px;
+
+    border: 2px solid $bg-border;
+    border-radius: 50%;
+
+    position: relative;
+
+    /*Стилизация центров кнопок ( иконки )*/
+    .controls-item__pic {
+      position: absolute;
+
+      top: 50%;
+      left: 50%;
+
+      width: 30px;
+      height: 30px;
+
+      border-radius: 50%;
+
+      transform: translate(-50%, -50%) rotate(-45deg);
+
+      &--play {
+        background-image: url('../img/play.svg');
+        background-size: 18px 18px;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      &--rec {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 1.3px solid $bg-border;
+      }
+
+      &--pause {
+        background-image: url('../img/pause.svg');
+        background-size: 18px 18px;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      &--stop {
+        width: 16px;
+        height: 16px;
+        border-radius: 0;
+        border: 1.3px solid $bg-border;
+      }
+
+      &--help {
+        background-image: url('../img/faq.svg');
+        background-size: 18px 18px;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+
+    &--play {
+      background-color: $bg-play;
+      transform: rotate(45deg);
+      /*Добавляю блик*/
+      &::after {
+        position: absolute;
+        content: '';
+        width: 34px;
+        height: 34px;
+        border-radius: 17px;
+
+        border-top: 4px solid #93e75d;
+        border-left: 4px solid $bg-play;
+        border-right: 4px solid $bg-play;
+        border-bottom: 4px solid $bg-play;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--rec {
+      background-color: $bg-rec;
+      transform: rotate(45deg);
+      /*Добавляю блик*/
+      &::after {
+        position: absolute;
+        content: '';
+        width: 34px;
+        height: 34px;
+        border-radius: 17px;
+
+        border-top: 4px solid #ff8686;
+        border-left: 4px solid $bg-rec;
+        border-right: 4px solid $bg-rec;
+        border-bottom: 4px solid $bg-rec;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--pause {
+      background-color: $bg-pause;
+      transform: rotate(45deg);
+      /*Добавляю блик*/
+      &::after {
+        position: absolute;
+        content: '';
+        width: 34px;
+        height: 34px;
+        border-radius: 17px;
+
+        border-top: 4px solid #a7e1fc;
+        border-left: 4px solid $bg-pause;
+        border-right: 4px solid $bg-pause;
+        border-bottom: 4px solid $bg-pause;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--stop {
+      background-color: $bg-stop;
+      transform: rotate(45deg);
+      /*Добавляю блик*/
+      &::after {
+        position: absolute;
+        content: '';
+        width: 34px;
+        height: 34px;
+        border-radius: 17px;
+
+        border-top: 4px solid #6accf9;
+        border-left: 4px solid $bg-stop;
+        border-right: 4px solid $bg-stop;
+        border-bottom: 4px solid $bg-stop;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--help {
+      background-color: $bg-help;
+      transform: rotate(45deg);
+      /*Добавляю блик*/
+      &::after {
+        position: absolute;
+        content: '';
+        width: 34px;
+        height: 34px;
+        border-radius: 17px;
+
+        border-top: 4px solid #badb94;
+        border-left: 4px solid $bg-help;
+        border-right: 4px solid $bg-help;
+        border-bottom: 4px solid $bg-help;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  /*Тексты кнопок для десктопа*/
+  &__text {
+    display: none;
+    font: {
+      family: $bold-font;
+      size: 0.563em;
+    }
+
+    color: $text-black;
+    line-height: 1;
+  }
+  /*Подписи кнопок для мобильной версии*/
+  &__title {
+    font: {
+      family: $bold-font;
+      size: 0.563em;
+    }
+
+    color: $text-black;
+    line-height: 1;
+
+    margin-top: 7px;
+  }
+}

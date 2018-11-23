@@ -104,14 +104,9 @@
 							</div>
 						</div>
 						<!--Video frame-->
-						<video class="player-middle__video" controls width="267" height="151">
-						  <source class="player-middle__content" src="video.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
-						  <source class="player-middle__content" src="video.webm" type="video/webm"><!-- WebM/VP8 для Firefox4, Opera, и Chrome -->
-						  <source class="player-middle__content" src="video.ogv" type="video/ogg"><!-- Ogg/Vorbis для старых версий браузеров Firefox и Opera -->
-						  <object class="player-middle__content" data="video.swf" type="application/x-shockwave-flash"><!-- добавляем видеоконтент для устаревших браузеров, в которых нет поддержки элемента video -->
-						    <param name="movie" value="video.swf">
-						  </object>
-						</video>
+						<div class="player-middle__content">
+							<iframe class="player-middle__video" src="https://www.youtube.com/watch?v=kB7GeJpv3iw"></iframe>
+						</div>
 						<!--Right column with speakers-->
 						<div class="player-middle__column player-middle__column--right">
 							<div class="player-middle__speaker player-middle__speaker--right">
@@ -130,29 +125,44 @@
 				<div class="main-record__controls record-controls">
 					<!--Subblock for process control buttons-->
 					<ul class="record-controls__list controls-list controls-list--process">
-						<li class="controls-list__item controls-item">
+						<li class="controls-list__item controls-item controls-item--process">
 							<button class="controls-item__btn controls-item__btn--play" type="button">
+								<span class="controls-item__pic controls-item__pic--play"></span>
 								<span class="controls-item__text">Плэй</span>
 							</button>
+							<span class="controls-item__title">Плэй</span>
 						</li>
-						<li class="controls-list__item controls-item">
+						<li class="controls-list__item controls-item controls-item--process">
 							<button class="controls-item__btn controls-item__btn--rec" type="button">
+								<span class="controls-item__pic controls-item__pic--rec"></span>
 								<span class="controls-item__text">Запись</span>
 							</button>
+							<span class="controls-item__title">Запись</span>
 						</li>
-						<li class="controls-list__item controls-item">
+						<li class="controls-list__item controls-item controls-item--process">
 							<button class="controls-item__btn controls-item__btn--pause" type="button">
+								<span class="controls-item__pic controls-item__pic--pause"></span>
 								<span class="controls-item__text">Пауза</span>
 							</button>
+							<span class="controls-item__title">Пауза</span>
 						</li>
-						<li class="controls-list__item controls-item">
+						<li class="controls-list__item controls-item controls-item--process">
 							<button class="controls-item__btn controls-item__btn--stop" type="button">
+								<span class="controls-item__pic controls-item__pic--stop"></span>
 								<span class="controls-item__text">Стоп</span>
 							</button>
+							<span class="controls-item__title">Стоп</span>
+						</li>
+						<li class="controls-list__item controls-item controls-item--process">
+							<button class="controls-item__btn controls-item__btn--help" type="button">
+								<span class="controls-item__pic controls-item__pic--help"></span>
+								<span class="controls-item__text">Помощь</span>
+							</button>
+							<span class="controls-item__title">Помощь</span>
 						</li>
 					</ul>
 					<!--Subblock for final control buttons-->
-					<ul class="record-controls__list controls-list controls-list--final">
+					<ul class="record-controls__list controls-list controls-list--final" style="display: none;">
 						<li class="controls-list__item controls-item">
 							<button class="controls-item__btn controls-item__btn--send" type="button">
 								<span class="controls-item__text"></span>
@@ -169,11 +179,6 @@
 							</button>
 						</li>
 					</ul>
-					<!--All time visible help btn-->
-					<div class="record-controls__help controls-help">
-						<a class="controls-help__btn" href="#" target="_self"></a>
-						<span class="controls-help__text">Помощь</span>
-					</div>
 				</div>
 			</section>
     </main>

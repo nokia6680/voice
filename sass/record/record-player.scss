@@ -1,0 +1,14 @@
+.record-player {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 294px;
+  height: 221px;
+
+  border: 2px solid $bg-border;
+  border-radius: 10px;
+
+  position: relative;
+}
