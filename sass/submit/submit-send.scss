@@ -1,0 +1,30 @@
+.submit-send {
+  width: 266px;
+  height: 244px;
+
+  background-color: $bg-player;
+  border: 2px solid $bg-border;
+  border-radius: 10px;
+
+  position: relative;
+
+  &::before {
+    width: 320px;
+    height: 240px;
+
+    background-image: url('../img/audio.svg');
+    background-size: 320px 240px;
+    background-repeat: no-repeat;
+
+    margin-top: -15px;
+    z-index: -1;
+
+    position: absolute;
+    content: '';
+
+    left: 50%;
+    bottom: -226px;
+
+    transform: translateX(-50%);
+  }
+}
