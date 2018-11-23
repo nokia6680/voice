@@ -8,7 +8,9 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  &--process {
+  &--final {
+    justify-content: space-between;
 
+    width: 100%;
   }
 }

@@ -124,7 +124,7 @@
 				<!--Videoplayer controls-->
 				<div class="main-record__controls record-controls">
 					<!--Subblock for process control buttons-->
-					<ul class="record-controls__list controls-list controls-list--process">
+					<ul class="record-controls__list controls-list controls-list--process" style="display: none;">
 						<li class="controls-list__item controls-item controls-item--process">
 							<button class="controls-item__btn controls-item__btn--play" type="button">
 								<span class="controls-item__pic controls-item__pic--play"></span>
@@ -162,21 +162,34 @@
 						</li>
 					</ul>
 					<!--Subblock for final control buttons-->
-					<ul class="record-controls__list controls-list controls-list--final" style="display: none;">
-						<li class="controls-list__item controls-item">
+					<ul class="record-controls__list controls-list controls-list--final">
+						<li class="controls-list__item controls-item controls-item--final">
 							<button class="controls-item__btn controls-item__btn--send" type="button">
-								<span class="controls-item__text"></span>
+								<span class="controls-item__pic controls-item__pic--send"></span>
+								<span class="controls-item__text">Отправить</span>
 							</button>
+							<span class="controls-item__title">Отправить</span>
 						</li>
-						<li class="controls-list__item controls-item">
+						<li class="controls-list__item controls-item controls-item--final">
 							<button class="controls-item__btn controls-item__btn--listen" type="button">
-								<span class="controls-item__text"></span>
+								<span class="controls-item__pic controls-item__pic--listen"></span>
+								<span class="controls-item__text">Прослушать</span>
 							</button>
+							<span class="controls-item__title">Прослушать</span>
 						</li>
-						<li class="controls-list__item controls-item">
+						<li class="controls-list__item controls-item controls-item--final">
 							<button class="controls-item__btn controls-item__btn--repeat" type="button">
-								<span class="controls-item__text"></span>
+								<span class="controls-item__pic controls-item__pic--repeat"></span>
+								<span class="controls-item__text">Перезаписать</span>
 							</button>
+							<span class="controls-item__title">Перезаписать</span>
+						</li>
+						<li class="controls-list__item controls-item controls-item--final controls-item--help">
+							<button class="controls-item__btn controls-item__btn--help" type="button">
+								<span class="controls-item__pic controls-item__pic--help"></span>
+								<span class="controls-item__text">Помощь</span>
+							</button>
+							<span class="controls-item__title">Помощь</span>
 						</li>
 					</ul>
 				</div>

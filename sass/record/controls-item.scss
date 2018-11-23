@@ -8,6 +8,14 @@
     margin-right: 18px;
   }
 
+  &--final:not(:last-of-type) {
+    margin-right: 40px;
+  }
+
+  &--help {
+    display: none;
+  }
+
   &__btn {
     background-color: transparent;
 
@@ -63,6 +71,27 @@
 
       &--help {
         background-image: url('../img/faq.svg');
+        background-size: 18px 18px;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      &--send {
+        background-image: url('../img/email.svg');
+        background-size: 18px 18px;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      &--listen {
+        background-image: url('../img/headphones.svg');
+        background-size: 18px 18px;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      &--repeat {
+        background-image: url('../img/refresh.svg');
         background-size: 18px 18px;
         background-repeat: no-repeat;
         background-position: center center;
@@ -176,6 +205,75 @@
         border-left: 4px solid $bg-help;
         border-right: 4px solid $bg-help;
         border-bottom: 4px solid $bg-help;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--send {
+      background-color: $bg-send;
+      transform: rotate(45deg);
+      /*Добавляю блик*/
+      &::after {
+        position: absolute;
+        content: '';
+        width: 34px;
+        height: 34px;
+        border-radius: 17px;
+
+        border-top: 4px solid #8ce653;
+        border-left: 4px solid $bg-send;
+        border-right: 4px solid $bg-send;
+        border-bottom: 4px solid $bg-send;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--listen {
+      background-color: $bg-listen;
+      transform: rotate(45deg);
+      /*Добавляю блик*/
+      &::after {
+        position: absolute;
+        content: '';
+        width: 34px;
+        height: 34px;
+        border-radius: 17px;
+
+        border-top: 4px solid #7bc0f8;
+        border-left: 4px solid $bg-listen;
+        border-right: 4px solid $bg-listen;
+        border-bottom: 4px solid $bg-listen;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--repeat {
+      background-color: $bg-repeat;
+      transform: rotate(45deg);
+      /*Добавляю блик*/
+      &::after {
+        position: absolute;
+        content: '';
+        width: 34px;
+        height: 34px;
+        border-radius: 17px;
+
+        border-top: 4px solid #ff8686;
+        border-left: 4px solid $bg-repeat;
+        border-right: 4px solid $bg-repeat;
+        border-bottom: 4px solid $bg-repeat;
 
         top: 50%;
         left: 50%;
