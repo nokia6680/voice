@@ -94,14 +94,48 @@
       position: relative;
 
       border-radius: 20px;
+      border: 2px solid $bg-border;
 
       cursor: pointer;
       outline: none;
 
-      background-image: url('../img/btn-agree.svg');
-      background-size: 40px 40px;
-      background-repeat: no-repeat;
-      background-position: center center;
+      background-color: #ff6d00;
+      transform: rotate(45deg);
+
+      /*Стилизация блика*/
+      &::after {
+        position: absolute;
+        content: '';
+        width: 34px;
+        height: 34px;
+        border-radius: 17px;
+
+        border-top: 4px solid #ff994d;
+        border-left: 4px solid #ff6d00;
+        border-right: 4px solid #ff6d00;
+        border-bottom: 4px solid #ff6d00;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+
+      .slider-buttons__text {
+        position: absolute;
+
+        width: 26px;
+        height: 26px;
+
+        top: 50%;
+        left: 50%;
+
+        background-image: url('../img/tick.svg');
+        background-repeat: no-repeat;
+        background-size: 26px 26px;
+
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
     }
 
     .prev-1 {
@@ -111,19 +145,61 @@
       position: relative;
 
       border-radius: 20px;
+      border: 2px solid $bg-border;
 
       cursor: pointer;
       outline: none;
 
       margin-right: 10px;
+      transform: rotate(45deg);
 
-      background-image: url('../img/arrow-left-inactive.svg');
-      background-size: 40px 40px;
-      background-repeat: no-repeat;
-      background-position: center center;
+      background-color: #558b2f;
+      /*Стилизация для иконки*/
+      &__text {
+        display: block;
 
+        position: absolute;
+
+        width: 22px;
+        height: 22px;
+
+        top: 50%;
+        left: 50%;
+
+        background-image: url('../img/begin.png');
+        background-repeat: no-repeat;
+        background-size: 22px 22px;
+
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+      /*Стилизация блика*/
+      &::after {
+        position: absolute;
+        content: '';
+        width: 34px;
+        height: 34px;
+        border-radius: 17px;
+
+        border-top: 4px solid #88ae6e;
+        border-left: 4px solid #558b2f;
+        border-right: 4px solid #558b2f;
+        border-bottom: 4px solid #558b2f;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+      /*Ховер кнопки и блика*/
       &:hover {
-        background-image: url('../img/arrow-left-active.svg');
+        background-color: #aeea00;
+
+        &::after {
+          border-top: 4px solid #c6f04d;
+          border-left: 4px solid #aeea00;
+          border-right: 4px solid #aeea00;
+          border-bottom: 4px solid #aeea00;
+        }
       }
     }
 
@@ -134,17 +210,60 @@
       position: relative;
 
       border-radius: 20px;
+      border: 2px solid $bg-border;
 
       cursor: pointer;
       outline: none;
 
-      background-image: url('../img/arrow-right-inactive.svg');
-      background-size: 40px 40px;
-      background-repeat: no-repeat;
-      background-position: center center;
+      transform: rotate(45deg);
 
+      background-color: #558b2f;
+
+      &__text {
+        display: block;
+
+        position: absolute;
+
+        width: 22px;
+        height: 22px;
+
+        top: 50%;
+        left: 50%;
+
+        background-image: url('../img/final.png');
+        background-repeat: no-repeat;
+        background-size: 22px 22px;
+
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+      /*Стилизация блика*/
+      &::after {
+        position: absolute;
+        content: '';
+        width: 34px;
+        height: 34px;
+        border-radius: 17px;
+
+        border-top: 4px solid #88ae6e;
+        border-left: 4px solid #558b2f;
+        border-right: 4px solid #558b2f;
+        border-bottom: 4px solid #558b2f;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+      /*Ховер кнопки и блика*/
       &:hover {
-        background-image: url('../img/arrow-right-active.svg');
+        background-color: #aeea00;
+
+        &::after {
+          border-top: 4px solid #c6f04d;
+          border-left: 4px solid #aeea00;
+          border-right: 4px solid #aeea00;
+          border-bottom: 4px solid #aeea00;
+        }
       }
     }
   }
