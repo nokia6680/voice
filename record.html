@@ -61,11 +61,122 @@
 				</div>
 			</div>
 		</header>
-
+		<!--Start page main content block-->
     <main class="main">
+			<!--Menu with highlighted back-->
+			<section class="main__menu main-menu main-menu--desktop">
+				<nav class="main-menu__nav main-nav">
+					<ul class="main-nav__list main-list">
+						<li class="main-list__item main-item main-item--checked">
+							<a class="main-list__link" href="#" target="_self">
+								<span class="main-list__text">Выбрать шоу</span>
+							</a>
+						</li>
+						<li class="main-list__item main-item">
+							<a class="main-list__link" href="#" target="_self">
+								<span class="main-list__text">Озвучить</span>
+							</a>
+						</li>
+						<li class="main-list__item main-item">
+							<a class="main-list__link" href="#" target="_self">
+								<span class="main-list__text">Отправить</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+			<!--Main content of recording page-->
+			<section class="main__record main-record">
+				<h1 class="main-record__title">Посмотри видео несколько раз и прочитай вслух реплики своего героя.</h1>
+				<h2 class="main-record__subtitle">Когда будешь готов, жми "Запись" и говори в микрофон</h2>
+				<!--Videoplayer itself-->
+				<div class="main-record__player record-player">
+					<!--Player-heading-->
+					<div class="record-player__head player-head">
+						<h2 class="player-head__title"></h2>
+					</div>
+					<!--Player middle part with video frame-->
+					<div class="record-player__middle player-middle">
+						<!--Left column with speakers-->
+						<div class="player-middle__column player-middle__column--left">
+							<div class="player-middle__speaker player-middle__speaker--left">
 
+							</div>
+						</div>
+						<!--Video frame-->
+						<video class="player-middle__video" controls width="267" height="151">
+						  <source class="player-middle__content" src="video.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
+						  <source class="player-middle__content" src="video.webm" type="video/webm"><!-- WebM/VP8 для Firefox4, Opera, и Chrome -->
+						  <source class="player-middle__content" src="video.ogv" type="video/ogg"><!-- Ogg/Vorbis для старых версий браузеров Firefox и Opera -->
+						  <object class="player-middle__content" data="video.swf" type="application/x-shockwave-flash"><!-- добавляем видеоконтент для устаревших браузеров, в которых нет поддержки элемента video -->
+						    <param name="movie" value="video.swf">
+						  </object>
+						</video>
+						<!--Right column with speakers-->
+						<div class="player-middle__column player-middle__column--right">
+							<div class="player-middle__speaker player-middle__speaker--right">
+
+							</div>
+						</div>
+					</div>
+					<!--Player bottom part with recording status-->
+					<div class="record-player__bottom player-bottom">
+						<div class="player-bottom__status player-status">
+							<span class="player-status__title">Идёт запись</span>
+						</div>
+					</div>
+				</div>
+				<!--Videoplayer controls-->
+				<div class="main-record__controls record-controls">
+					<!--Subblock for process control buttons-->
+					<ul class="record-controls__list controls-list controls-list--process">
+						<li class="controls-list__item controls-item">
+							<button class="controls-item__btn controls-item__btn--play" type="button">
+								<span class="controls-item__text">Плэй</span>
+							</button>
+						</li>
+						<li class="controls-list__item controls-item">
+							<button class="controls-item__btn controls-item__btn--rec" type="button">
+								<span class="controls-item__text">Запись</span>
+							</button>
+						</li>
+						<li class="controls-list__item controls-item">
+							<button class="controls-item__btn controls-item__btn--pause" type="button">
+								<span class="controls-item__text">Пауза</span>
+							</button>
+						</li>
+						<li class="controls-list__item controls-item">
+							<button class="controls-item__btn controls-item__btn--stop" type="button">
+								<span class="controls-item__text">Стоп</span>
+							</button>
+						</li>
+					</ul>
+					<!--Subblock for final control buttons-->
+					<ul class="record-controls__list controls-list controls-list--final">
+						<li class="controls-list__item controls-item">
+							<button class="controls-item__btn controls-item__btn--send" type="button">
+								<span class="controls-item__text"></span>
+							</button>
+						</li>
+						<li class="controls-list__item controls-item">
+							<button class="controls-item__btn controls-item__btn--listen" type="button">
+								<span class="controls-item__text"></span>
+							</button>
+						</li>
+						<li class="controls-list__item controls-item">
+							<button class="controls-item__btn controls-item__btn--repeat" type="button">
+								<span class="controls-item__text"></span>
+							</button>
+						</li>
+					</ul>
+					<!--All time visible help btn-->
+					<div class="record-controls__help controls-help">
+						<a class="controls-help__btn" href="#" target="_self"></a>
+						<span class="controls-help__text">Помощь</span>
+					</div>
+				</div>
+			</section>
     </main>
-
     <!--Footer-->
     <footer class="footer">
       <div class="footer__wrapper">
