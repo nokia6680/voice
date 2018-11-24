@@ -1,0 +1,18 @@
+.submit-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-image: url('../img/cassete-bg.svg');
+  background-size: 243px 192px;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 38px;
+  padding-bottom: 15px;
+
+  position: relative;
+}

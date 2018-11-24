@@ -57,3 +57,43 @@
 
   background-color: transparent;
 }
+
+@mixin checkbox-default {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+
+  position: relative;
+  padding-left: 30px;
+}
+
+@mixin custom-checkbox {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  top: 0;
+  left: 0;
+  border: 2px solid $bg-border;
+}
+
+@mixin checkbox-checked {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url('../img/check.svg');
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+}
+
+@mixin soft-animation {
+  transition-property: initial;
+  transition-duration: 0.2s;
+  transition-timing-function: initial;
+  transition-delay: initial;
+}

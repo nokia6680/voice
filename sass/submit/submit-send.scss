@@ -8,23 +8,59 @@
 
   position: relative;
 
-  &::before {
-    width: 320px;
-    height: 240px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 16px;
 
-    background-image: url('../img/audio.svg');
-    background-size: 320px 240px;
-    background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
-    margin-top: -15px;
-    z-index: -1;
-
+  &__thing {
     position: absolute;
-    content: '';
 
-    left: 50%;
-    bottom: -226px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $bg-border;
 
-    transform: translateX(-50%);
+    background-color: #78909c;
+
+    border-radius: 8px;
+
+    transform: rotate(45deg);
+
+    .fa-plus::before {
+      position: absolute;
+      content: '\f067';
+
+      font-size: 10px;
+      color: $text-black;
+
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+    }
+
+    &--first {
+      top: 2px;
+      left: 2px;
+    }
+
+    &--second {
+      top: 2px;
+      right: 2px;
+    }
+
+    &--third {
+      bottom: 2px;
+      left: 2px;
+    }
+
+    &--fourth {
+      bottom: 2px;
+      right: 2px;
+    }
   }
 }

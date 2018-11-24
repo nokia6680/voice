@@ -1,0 +1,137 @@
+.submit-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+
+  position: relative;
+
+  margin-top: 145px;
+
+  width: 194px;
+
+  border: 2px solid $bg-border;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #78909c;
+
+  border-bottom: none;
+
+  padding-top: 17px;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-bottom: 9px;
+
+  /*Кнопка отправки формы*/
+  &__btn {
+    background-color: $bg-submit;
+
+    width: 168px;
+    height: 42px;
+
+    border: 2px solid $bg-border;
+    border-radius: 21px;
+
+    cursor: pointer;
+    outline: none;
+
+    position: relative;
+  }
+  /*Вспомогательный элемент для блика..*/
+  &__tech {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 34px;
+    height: 34px;
+
+    top: 2px;
+    right: 2px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 34px;
+      height: 34px;
+      border-radius: 17px;
+
+      border-top: 4px solid #93e75d;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__text {
+    font: {
+      family: $bold-font;
+      size: 1.375em;
+    }
+
+    color: $text-black;
+    line-height: 1;
+  }
+
+  &::before {
+    width: 320px;
+    height: 240px;
+
+    background-image: url('../img/audio.svg');
+    background-size: 320px 240px;
+    background-repeat: no-repeat;
+
+    z-index: -1;
+
+    position: absolute;
+    content: '';
+
+    left: 50%;
+    top: -164px;
+
+    transform: translateX(-50%);
+  }
+
+  /*Болты*/
+
+  &__thing {
+    position: absolute;
+
+    width: 12px;
+    height: 12px;
+    border: 1px solid $bg-border;
+
+    background-color: #90a4ae;
+
+    border-radius: 8px;
+
+    transform: rotate(45deg);
+
+    .fa-plus::before {
+      position: absolute;
+      content: '\f067';
+
+      font-size: 6px;
+      color: $text-black;
+
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+    }
+
+    &--first {
+      top: 2px;
+      left: 2px;
+    }
+
+    &--second {
+      top: 2px;
+      right: 2px;
+    }
+  }
+}

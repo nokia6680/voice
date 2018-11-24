@@ -33,4 +33,42 @@
     top: -150px;
     left: -10px;
   }
+
+  /*Болты*/
+  &__thing {
+    position: absolute;
+
+    width: 12px;
+    height: 12px;
+    border: 1px solid $bg-border;
+
+    background-color: #90a4ae;
+
+    border-radius: 8px;
+
+    transform: rotate(45deg);
+
+    .fa-plus::before {
+      position: absolute;
+      content: '\f067';
+
+      font-size: 6px;
+      color: $text-black;
+
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+    }
+
+    &--first {
+      top: 2px;
+      left: 2px;
+    }
+
+    &--second {
+      top: 2px;
+      right: 2px;
+    }
+  }
 }
