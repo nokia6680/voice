@@ -67,7 +67,7 @@
   }
 
   &__error {
-    visibility: visible;
+    visibility: hidden;
     font: {
       family: $bold-font;
       size: 0.5em;

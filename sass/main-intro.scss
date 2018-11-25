@@ -14,8 +14,20 @@
   height: auto;
 
   margin-top: -35px;
-  padding-bottom: 45px;
+  padding-bottom: 20px;
   margin-bottom: 8px;
+
+  &--checkout {
+    background-image: url('../img/checkout-bg.svg');
+    background-size: 309px 144px;
+    background-repeat: no-repeat;
+
+    width: 309px;
+    height: 144px;
+
+    margin-top: -20px;
+    margin-bottom: 8px;
+  }
 
   &__title {
     font: {
@@ -28,6 +40,11 @@
 
     margin-top: 45px;
     margin-bottom: 10px;
+
+    &--checkout {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
   }
 
   &__description {
@@ -44,5 +61,10 @@
 
     margin: 0;
     margin-bottom: 10px;
+
+    &--checkout {
+      margin-top: 35px;
+      margin-bottom: 5px;
+    }
   }
 }

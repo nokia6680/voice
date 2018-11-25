@@ -1,0 +1,13 @@
+.main-checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  background-image: url('../img/robot-bg.svg');
+  background-size: 246px 416px;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+}

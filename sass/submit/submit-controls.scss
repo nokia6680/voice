@@ -26,6 +26,7 @@
   &__btn {
     background-color: $bg-submit;
 
+    display: block;
     width: 168px;
     height: 42px;
 
@@ -34,6 +35,9 @@
 
     cursor: pointer;
     outline: none;
+
+    text-decoration: none;
+    text-align: center;
 
     position: relative;
   }
@@ -68,6 +72,8 @@
   }
 
   &__text {
+    display: block;
+    margin-top: 7px;
     font: {
       family: $bold-font;
       size: 1.375em;
