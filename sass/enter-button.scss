@@ -1,7 +1,8 @@
 .enter-button {
-  background-image: url('../img/btn-bg.svg');
-  background-size: 265px 260px;
+  background-image: url('../img/cube-bg.svg');
+  background-size: 261px 260px;
   background-repeat: no-repeat;
+  background-position: top center;
 
   width: 265px;
   height: 258px;
@@ -35,10 +36,7 @@
   &__link {
     display: block;
 
-    background-image: url('../img/btn-red.svg');
-    background-size: 167px 167px;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-color: #f50057;
 
     border-radius: 50%;
     border: 2px solid $bg-border;
@@ -49,13 +47,44 @@
 
     position: relative;
 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
     &:hover {
-      background-image: url('../img/btn-red-hover.svg');
       box-shadow:0px 0px 22px 2px rgba(0,0,0,0.5)inset;
       -webkit-box-shadow:0px 0px 22px 2px rgba(0,0,0,0.5)inset;
       -moz-box-shadow:0px 0px 22px 2px rgba(0,0,0,0.5)inset;
 
-      transition: 0.1s ease-in;
+      .enter-button__tech {
+        display: none;
+      }
+    }
+  }
+
+  &__tech {
+    position: relative;
+
+    top: 75px;
+
+    display: block;
+    transform: rotate(45deg);
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      width: 140px;
+      height: 140px;
+      border-radius: 70px;
+
+      border-top: 6px solid #f85790;
+      border-left: 6px solid #f50057;
+      border-right: 6px solid #f50057;
+      border-bottom: 6px solid #f50057;
+
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
     }
   }
 }

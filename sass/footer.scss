@@ -17,6 +17,8 @@
 
   border-top: 2px solid $bg-border;
 
+  z-index: 3;
+
   &__wrapper {
     @include container;
 

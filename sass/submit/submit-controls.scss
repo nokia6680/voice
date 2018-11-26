@@ -40,6 +40,8 @@
     text-align: center;
 
     position: relative;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   /*Вспомогательный элемент для блика..*/
   &__tech {

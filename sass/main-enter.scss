@@ -8,6 +8,8 @@
 
   width: 265px;
 
+  position: relative;
+
   &__title {
     width: 100%;
 
@@ -26,5 +28,41 @@
 
     padding-top: 10px;
     padding-bottom: 10px;
+
+    border-bottom: 2px solid $bg-border;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+
+    width: 67px;
+    height: 140px;
+
+    background-image: url('../img/left-pipe.svg');
+    background-size: 67px 140px;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    bottom: -88px;
+    left: -24px;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+
+    width: 67px;
+    height: 140px;
+
+    background-image: url('../img/right-pipe.svg');
+    background-size: 67px 140px;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    bottom: -88px;
+    right: -24px;
+
+    z-index: 3;
   }
 }

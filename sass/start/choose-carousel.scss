@@ -102,6 +102,8 @@
       background-color: #ff6d00;
       transform: rotate(45deg);
 
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
       /*Стилизация блика*/
       &::after {
         position: absolute;
@@ -119,6 +121,8 @@
         left: 50%;
 
         transform: translate(-50%, -50%);
+
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       }
 
       .slider-buttons__text {
@@ -135,6 +139,8 @@
         background-size: 26px 26px;
 
         transform: translate(-50%, -50%) rotate(-45deg);
+
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       }
     }
 
@@ -189,16 +195,22 @@
         left: 50%;
 
         transform: translate(-50%, -50%);
+
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       }
       /*Ховер кнопки и блика*/
       &:hover {
         background-color: #aeea00;
+
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
         &::after {
           border-top: 4px solid #c6f04d;
           border-left: 4px solid #aeea00;
           border-right: 4px solid #aeea00;
           border-bottom: 4px solid #aeea00;
+
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
       }
     }
@@ -253,16 +265,22 @@
         left: 50%;
 
         transform: translate(-50%, -50%);
+
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       }
       /*Ховер кнопки и блика*/
       &:hover {
         background-color: #aeea00;
+
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
         &::after {
           border-top: 4px solid #c6f04d;
           border-left: 4px solid #aeea00;
           border-right: 4px solid #aeea00;
           border-bottom: 4px solid #aeea00;
+
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
       }
     }
