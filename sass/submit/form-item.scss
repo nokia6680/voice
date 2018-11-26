@@ -104,28 +104,29 @@
     @include checkbox-checked;
   }
 }
-/*
-.form-list__input--checkbox + label {
-  @include checkbox-default;
+
+@media only screen and (min-width: $mobile) {
+  .form-item {
+    &__label {
+      font: {
+        size: 0.725em;
+      }
+    }
+
+    &__input {
+      font: {
+        size: 1em;
+      }
+    }
+
+    &__error {
+      visibility: hidden;
+      font: {
+        size: 0.5em;
+      }
+
+      margin-bottom: 2px;
+      margin-top: 2px;
+    }
+  }
 }
-
-.form-list__input--checkbox + label::before {
-  @include custom-checkbox;
-}
-
-.form-list__input--checkbox + label:hover::before {
-  border-color: $hover;
-
-  @include soft-animation;
-}
-
-.form-list__input--checkbox + label:active::before {
-  border-color: $active;
-
-  @include soft-animation;
-}
-
-.form-list__input--checkbox:checked + label::after {
-  @include checkbox-checked;
-}
-*/

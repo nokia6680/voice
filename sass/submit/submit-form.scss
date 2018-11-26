@@ -16,3 +16,11 @@
 
   position: relative;
 }
+
+@media only screen and (min-width: $mobile) {
+  .submit-form {
+    background-image: url('../img/cassete-bg.svg');
+    background-size: 275px 218px;
+    background-repeat: no-repeat;
+  }
+}

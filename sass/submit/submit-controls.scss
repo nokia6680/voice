@@ -42,6 +42,22 @@
     position: relative;
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    box-shadow:1px 1px 20px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow:1px 1px 20px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow:1px 1px 20px 0px rgba(0,0,0,0.3);
+
+    &:hover {
+      box-shadow: none;
+
+      box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3)inset;
+      -webkit-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3)inset;
+      -moz-box-shadow: 1px 1px 20px 0px rgba(0,0,0,0.3)inset;
+
+      .submit-controls__tech {
+        display: none;
+      }
+    }
   }
   /*Вспомогательный элемент для блика..*/
   &__tech {
@@ -140,6 +156,28 @@
     &--second {
       top: 2px;
       right: 2px;
+    }
+
+    &--third,
+    &--fourth {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile) {
+  .submit-controls {
+    margin-top: 149px;
+
+    width: 200px;
+
+    transition: 0.2s ease-in;
+
+    &__text {
+      margin-top: 8px;
+      font: {
+        size: 1.375em;
+      }
     }
   }
 }

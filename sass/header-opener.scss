@@ -21,7 +21,7 @@
   }
 }
 
-@media screen and (min-width: $laptop) {
+@media only screen and (min-width: $laptop) {
   .header-opener {
     visibility: hidden;
   }
