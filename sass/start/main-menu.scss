@@ -1,3 +1,154 @@
 .main-menu {
   display: none;
 }
+
+@media only screen and (min-width: $laptop) {
+  .main-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    z-index: auto;
+    /*Логотип голоса*/
+    &__logo {
+      width: 84px;
+      height: auto;
+
+      margin-left: 34px;
+
+      z-index: 10;
+    }
+
+    &__img {
+      width: 84px;
+      height: 100%;
+    }
+
+    /*Кнопка голосования*/
+    /*Фон*/
+    &__vote {
+      width: 106px;
+      height: 106px;
+
+      background-image: url('../img/vote-object.svg');
+      background-size: 106px 106px;
+      background-repeat: no-repeat;
+
+      position: relative;
+
+      margin-right: 34px;
+
+      z-index: auto;
+
+      &::before {
+        position: absolute;
+        content: '';
+
+        width: 42px;
+        height: 100px;
+
+        background-color: #ffca28;
+
+        border-left: 2px solid $bg-border;
+        border-right: 2px solid $bg-border;
+
+        z-index: -1000;
+
+        left: 50%;
+        top: -20px;
+        transform: translateX(-50%);
+      }
+    }
+    /*Сама кнопка*/
+    &__btn {
+      background-color: #f9550d;
+      width: 68px;
+      height: 68px;
+
+      border: none;
+      border-radius: 50%;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+      cursor: pointer;
+      outline: none;
+
+      &::before {
+        position: absolute;
+        content: '';
+
+        width: 42px;
+        height: 40px;
+
+        background-image: url('../img/star.svg');
+        background-size: 42px 40px;
+        background-repeat: no-repeat;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+
+      &:hover {
+        box-shadow:0px 0px 15px 0px rgba(0,0,0,0.25)inset;
+        -webkit-box-shadow:0px 0px 15px 0px rgba(0,0,0,0.25)inset;
+        -moz-box-shadow:0px 0px 15px 0px rgba(0,0,0,0.25)inset;
+
+        transition: 0.1s ease-in;
+      }
+
+      &:active {
+        &::before {
+          background-image: url('../img/star-active.svg');
+          background-size: 42px 40px;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    /*Вспомогательная кнопка для блика*/
+    &__tech {
+      display: block;
+
+      width: 60px;
+      height: 60px;
+
+      border-radius: 30px;
+
+      transform: rotate(45deg);
+
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 54px;
+        height: 54px;
+        border-radius: 27px;
+
+        border-top: 4px solid #fb8856;
+        border-left: 4px solid #f9550d;
+        border-right: 4px solid #f9550d;
+        border-bottom: 4px solid #f9550d;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+    }
+  }
+}

@@ -52,39 +52,41 @@
 					<button class="header-opener__btn" type="button"></button>
 				</div>
 			</nav>
-			<!--Видно на десктопе-->
-			<div class="header__sign header-sign">
-				<div class="header-sign__logo">
-					<img class="header-sign__img" src="img/voice-logo.svg" alt="Нам нужен твой голос!"/>
-				</div>
-				<div class="header-sign__vote">
-					<button class="header-sign__btn" type="button"></button>
-				</div>
-			</div>
 		</header>
 		<!--Start page main content block-->
 		<main class="main">
 			<!--Menu with highlighted back-->
 			<section class="main__menu main-menu main-menu--desktop">
+				<!--Логотип-->
+				<div class="main-menu__logo">
+					<img class="main-menu__img" src="img/voice-logo.svg" alt="Нам нужен твой голос!"/>
+				</div>
+				<!--Навигация для десктопа-->
 				<nav class="main-menu__nav main-nav">
 					<ul class="main-nav__list main-list">
 						<li class="main-list__item main-item main-item--checked">
-							<a class="main-list__link" href="#" target="_self">
-								<span class="main-list__text">Выбрать шоу</span>
+							<a class="main-item__link" href="#" target="_self">
+								<span class="main-item__text">Выбрать шоу</span>
 							</a>
 						</li>
 						<li class="main-list__item main-item">
-							<a class="main-list__link" href="#" target="_self">
-								<span class="main-list__text">Озвучить</span>
+							<a class="main-item__link" href="#" target="_self">
+								<span class="main-item__text">Озвучить</span>
 							</a>
 						</li>
 						<li class="main-list__item main-item">
-							<a class="main-list__link" href="#" target="_self">
-								<span class="main-list__text">Отправить</span>
+							<a class="main-item__link" href="#" target="_self">
+								<span class="main-item__text">Отправить</span>
 							</a>
 						</li>
 					</ul>
 				</nav>
+				<!--Кнопка голосования-->
+				<div class="main-menu__vote">
+					<button class="main-menu__btn" type="button">
+						<span class="main-menu__tech"></span>
+					</button>
+				</div>
 			</section>
 			<!--Main content-->
 			<section class="main__choose main-choose">

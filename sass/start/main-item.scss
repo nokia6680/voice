@@ -1,0 +1,62 @@
+@media only screen and (min-width: $laptop) {
+  .main-item {
+    border: 2px solid $bg-border;
+
+    width: 205px;
+
+    z-index: 10;
+
+    &:not(:last-of-type) {
+      margin-right: 39px;
+    }
+
+    &__link {
+      text-decoration: none;
+
+      display: block;
+      width: 160px;
+      height: 100%;
+
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      background-color: #ffa000;
+
+      text-align: center;
+
+      position: relative;
+
+      cursor: pointer;
+      outline: none;
+
+      z-index: 10;
+
+      &::after {
+        position: absolute;
+        content: '';
+
+        background-image: url('../img/hole.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+        width: 42px;
+        height: 38px;
+
+        top: 0;
+        right: -42px;
+
+        border-left: 2px solid $bg-border;
+      }
+    }
+
+    &__text {
+      font: {
+        size: 1.125em;
+        family: $bold-font;
+      }
+
+      color: $text-black;
+      line-height: 1;
+    }
+  }
+}
