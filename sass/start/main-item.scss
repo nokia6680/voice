@@ -1,6 +1,7 @@
 @media only screen and (min-width: $laptop) {
   .main-item {
     border: 2px solid $bg-border;
+    border-left: none;
 
     width: 205px;
 
@@ -22,6 +23,9 @@
 
       background-color: #ffa000;
 
+      border-right: 2px solid $bg-border;
+      border-left: 2px solid $bg-border;
+
       text-align: center;
 
       position: relative;
@@ -39,13 +43,11 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
 
-        width: 42px;
-        height: 38px;
+        width: 43px;
+        height: 39px;
 
         top: 0;
-        right: -42px;
-
-        border-left: 2px solid $bg-border;
+        right: -45px;
       }
     }
 
@@ -57,6 +59,63 @@
 
       color: $text-black;
       line-height: 1;
+    }
+  }
+
+  .checked-1 {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      width: 1000%;
+      height: 16px;
+
+      background-color: #8bf54e;
+
+      top: 50%;
+      right: 0;
+
+      transform: translateY(-50%);
+    }
+  }
+
+  .checked-2 {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      width: 119%;
+      height: 16px;
+
+      background-color: #8bf54e;
+
+      top: 50%;
+      right: 0;
+
+      transform: translateY(-50%);
+    }
+  }
+
+  .checked-3 {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      width: 119%;
+      height: 16px;
+
+      background-color: #8bf54e;
+
+      top: 50%;
+      right: 0;
+
+      transform: translateY(-50%);
     }
   }
 }
