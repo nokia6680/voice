@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media only screen and (min-width: $laptop) {
+@media only screen and (min-width: $tablets) {
   .main-menu {
     display: flex;
     flex-direction: row;
@@ -12,14 +12,30 @@
     width: 100%;
 
     z-index: auto;
+
+    &--index {
+      position: absolute;
+      z-index: auto;
+
+      .main-menu__logo {
+        z-index: -2;
+        margin-top: -12px;
+      }
+
+      .main-menu__vote {
+        margin-top: 20px;
+      }
+    }
     /*Логотип голоса*/
     &__logo {
       width: 84px;
       height: auto;
 
-      margin-left: 34px;
+      margin-left: 40px;
 
-      z-index: 10;
+      z-index: 8;
+
+      margin-top: -12px;
     }
 
     &__img {
@@ -39,7 +55,8 @@
 
       position: relative;
 
-      margin-right: 34px;
+      margin-right: 40px;
+      margin-top: 20px;
 
       z-index: auto;
 
@@ -149,6 +166,19 @@
 
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       }
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .main-menu {
+    /*Логотип голоса*/
+    &__logo {
+      margin-left: 34px;
+    }
+
+    &__vote {
+      margin-right: 34px;
     }
   }
 }

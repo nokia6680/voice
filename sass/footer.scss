@@ -45,7 +45,44 @@
   }
 }
 
-@media screen and (min-width: $laptop) {
+@media only screen and (min-width: $mobile) {
+  .footer {
+    z-index: 3;
+
+    &__wrapper {
+      width: 100%;
+      margin-bottom: 4px;
+    }
+
+    &__description {
+      font: {
+        family: $footer-font;
+        size: 0.375em;
+      }
+
+      color: $text-white;
+      opacity: 0.5;
+      line-height: 1;
+
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablets) {
+  .footer {
+    padding-top: 10px;
+
+    &__wrapper {
+      width: 100%;
+      margin-bottom: 7px;
+
+      justify-content: space-evenly;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
   .footer {
     padding-top: 10px;
 

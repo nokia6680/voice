@@ -2,7 +2,6 @@
   position: absolute;
 
   bottom: -240px;
-  left: 28px;
 
   display: flex;
   flex-direction: row;
@@ -24,5 +23,22 @@
   padding-left: 10px;
   padding-right: 10px;
 
-  z-index: -1;
+  z-index: -10;
+
+  &--active {
+    bottom: 40px;
+
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: $tablets) {
+  .social-list {
+    &--active {
+      bottom: 50px;
+
+      z-index: 0;
+    }
+  }
 }

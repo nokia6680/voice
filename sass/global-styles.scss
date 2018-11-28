@@ -32,6 +32,10 @@ body {
   background: radial-gradient(circle at bottom, #5c1894, #a43fb8);
   background-repeat: no-repeat;
   color: $text-white;
+
+  @media only screen and (min-width: $tablets) {
+    background: linear-gradient(to bottom, #8321a6, #6f1c9c);
+  }
 }
 
 img {

@@ -66,3 +66,54 @@
     z-index: 3;
   }
 }
+
+@media only screen and (min-width: $tablets) {
+  .main-enter {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border: none;
+    width: 100%;
+    height: auto;
+
+    margin-bottom: 0;
+    margin-top: auto;
+
+    position: absolute;
+
+    background-image: none;
+
+    bottom: 40px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    &__title {
+      display: none;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      background-image: url('../img/city-bg.svg');
+      background-size: 688px 368px;
+      background-repeat: no-repeat;
+      background-position: top center;
+
+      width: 688px;
+      height: 360px;
+
+      bottom: 0;
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+}
