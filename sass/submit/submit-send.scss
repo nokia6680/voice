@@ -71,3 +71,18 @@
     height: 260px;
   }
 }
+
+@media only screen and (min-width: $mobile-hd) {
+  .submit-send {
+    width: 345px;
+    height: 317px;
+
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (min-width: $tablets) {
+
+}

@@ -335,3 +335,32 @@
     margin-top: 7px;
   }
 }
+
+@media only screen and (min-width: $mobile-hd) {
+  .controls-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &--process {
+      margin-right: 18px;
+    }
+
+    &--process:first-of-type {
+      margin-left: 10px;
+    }
+
+    &--final:first-of-type {
+      margin-right: 45px;
+    }
+
+    &--final:nth-of-type(2n) {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablets) {
+
+}

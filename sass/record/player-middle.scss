@@ -42,3 +42,27 @@
     border-radius: 10px;
   }
 }
+
+@media only screen and (min-width: $mobile-hd) {
+  .player-middle {
+    &__column {
+      background-color: $bg-player;
+      width: 32px;
+      height: 196px;
+    }
+
+    &__content {
+      width: 348px;
+      height: 196px;
+    }
+
+    &__video {
+      width: 351px;
+      height: 199px;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablets) {
+
+}

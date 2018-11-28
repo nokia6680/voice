@@ -14,3 +14,24 @@
     width: 100%;
   }
 }
+
+@media only screen and (min-width: $mobile-hd) {
+  .controls-list {
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &--final {
+      justify-content: space-between;
+
+      width: 100%;
+    }
+
+    &--process {
+      justify-content: space-between;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablets) {
+
+}

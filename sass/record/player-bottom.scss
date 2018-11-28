@@ -12,3 +12,13 @@
 
   background-color: $bg-player;
 }
+
+@media only screen and (min-width: $mobile-hd) {
+  .player-bottom {
+    height: 68px;
+  }
+}
+
+@media only screen and (min-width: $tablets) {
+
+}

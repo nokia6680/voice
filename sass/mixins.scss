@@ -65,6 +65,10 @@
 
   position: relative;
   padding-left: 30px;
+
+  @media only screen and (min-width: $mobile-hd) {
+    padding-left: 30px;
+  }
 }
 
 @mixin custom-checkbox {
@@ -76,6 +80,13 @@
   top: 0;
   left: 0;
   border: 2px solid $bg-border;
+
+  @media only screen and (min-width: $mobile-hd) {
+    top: 50%;
+    left: 0;
+
+    transform: translateY(-50%);
+  }
 }
 
 @mixin checkbox-checked {
@@ -89,6 +100,13 @@
   background-image: url('../img/check.svg');
   background-size: 18px 18px;
   background-repeat: no-repeat;
+
+  @media only screen and (min-width: $mobile-hd) {
+    top: 50%;
+    left: 2px;
+
+    transform: translateY(-50%);
+  }
 }
 
 @mixin soft-animation {

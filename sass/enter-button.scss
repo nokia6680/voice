@@ -89,6 +89,18 @@
   }
 }
 
+@media only screen and (min-width: $mobile-hd) {
+  .enter-button {
+    background-image: url('../img/cube-bg.svg');
+    background-size: 316px 320px;
+
+    width: 320px;
+    height: 316px;
+
+    margin-top: -5px;
+  }
+}
+
 @media only screen and (min-width: $tablets) {
   .enter-button {
     background-image: none;

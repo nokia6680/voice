@@ -12,3 +12,14 @@
 
   position: relative;
 }
+
+@media only screen and (min-width: $mobile-hd) {
+  .record-player {
+    width: 382px;
+    height: 286px;
+  }
+}
+
+@media only screen and (min-width: $tablets) {
+
+}

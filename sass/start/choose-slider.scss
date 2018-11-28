@@ -24,3 +24,21 @@
     background-repeat: no-repeat;
   }
 }
+
+@media only screen and (min-width: $mobile-hd) {
+  .choose-slider {
+    width: 400px;
+    height: 440px;
+
+    &::after {
+      width: 400px;
+      height: 440px;
+
+      background-size: 400px 440px;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablets) {
+
+}

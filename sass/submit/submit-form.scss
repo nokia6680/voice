@@ -19,8 +19,18 @@
 
 @media only screen and (min-width: $mobile) {
   .submit-form {
-    background-image: url('../img/cassete-bg.svg');
     background-size: 275px 218px;
-    background-repeat: no-repeat;
+
+    padding-bottom: 12px;
   }
+}
+
+@media only screen and (min-width: $mobile-hd) {
+  .submit-form {
+    background-size: 315px 249px;
+  }
+}
+
+@media only screen and (min-width: $tablets) {
+
 }

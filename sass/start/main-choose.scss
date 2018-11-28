@@ -23,3 +23,39 @@
     margin-bottom: 10px;
   }
 }
+
+@media only screen and (min-width: $mobile-hd) {
+  .main-choose {
+    &__title {
+      width: 260px;
+
+      font: {
+        size: 1em;
+      }
+
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablets) {
+  .main-choose {
+    &__title {
+      width: 220px;
+      margin: 0;
+
+      font: {
+        family: $bold-font;
+        size: 0.75em;
+      }
+
+      color: $text-white;
+      line-height: normal;
+      text-align: center;
+
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}

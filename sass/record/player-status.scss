@@ -54,3 +54,25 @@
     }
   }
 }
+
+@media only screen and (min-width: $mobile-hd) {
+  .player-status {
+    &__title {
+      font: {
+        size: 1em;
+      }
+
+      padding-left: 40px;
+
+      &::after {
+        width: 24px;
+        height: 24px;
+
+        border-radius: 12px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablets) {
+}

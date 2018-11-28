@@ -130,3 +130,42 @@
     }
   }
 }
+
+@media only screen and (min-width: $mobile-hd) {
+  .form-item {
+    &__label {
+      font: {
+        size: 0.875em;
+      }
+    }
+
+    &--text {
+      &::before {
+        left: 0;
+        bottom: 16px;
+      }
+
+      &::after {
+        right: 0;
+        bottom: 16px;
+      }
+    }
+
+    &__input {
+      font: {
+        size: 1.125em;
+      }
+    }
+
+    &__error {
+      visibility: hidden;
+      font: {
+        size: 0.625em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablets) {
+
+}

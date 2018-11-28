@@ -181,3 +181,22 @@
     }
   }
 }
+
+@media only screen and (min-width: $mobile-hd) {
+  .submit-controls {
+    margin-top: 149px;
+
+    width: 240px;
+
+    &__text {
+      margin-top: 8px;
+      font: {
+        size: 1.375em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablets) {
+
+}

@@ -72,3 +72,22 @@
     }
   }
 }
+
+@media only screen and (min-width: $mobile-hd) {
+  .record-controls {
+    width: 320px;
+
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &::before {
+      left: 3px;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablets) {
+
+}
