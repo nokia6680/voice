@@ -33,5 +33,20 @@
 }
 
 @media only screen and (min-width: $tablets) {
+  .controls-list {
+    justify-content: space-between;
+    align-items: flex-start;
 
+    &--final {
+      justify-content: flex-start;
+
+      width: 100%;
+    }
+
+    &--process {
+      justify-content: flex-start;
+
+      width: 100%;
+    }
+  }
 }

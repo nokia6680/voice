@@ -167,5 +167,34 @@
 }
 
 @media only screen and (min-width: $tablets) {
+  .form-item {
+    &__label {
+      font: {
+        size: 0.625em;
+      }
+    }
 
+    &--text {
+      &::before {
+        bottom: 14px;
+      }
+
+      &::after {
+        bottom: 14px;
+      }
+    }
+
+    &__input {
+      font: {
+        size: 0.875em;
+      }
+    }
+
+    &__error {
+      visibility: hidden;
+      font: {
+        size: 0.5em;
+      }
+    }
+  }
 }

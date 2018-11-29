@@ -86,5 +86,32 @@
 }
 
 @media only screen and (min-width: $tablets) {
+  .main-submit {
+    &__title {
+      width: 280px;
 
+      font: {
+        size: 1em;
+      }
+
+      margin-top: 20px;
+    }
+
+    &__subtitle {
+      width: 320px;
+
+      font: {
+        size: 1em;
+      }
+    }
+
+    &__logo {
+      display: none;
+      margin-top: 10px;
+    }
+
+    &__img {
+      width: 115px;
+    }
+  }
 }

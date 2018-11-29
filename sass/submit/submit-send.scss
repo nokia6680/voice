@@ -84,5 +84,12 @@
 }
 
 @media only screen and (min-width: $tablets) {
+  .submit-send {
+    width: 624px;
+    height: 419px;
 
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-top: 16px;
+  }
 }

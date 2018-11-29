@@ -1,0 +1,107 @@
+.submit-center {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+
+  margin-top: -29px;
+
+  z-index: 0;
+
+  &::after {
+    position: absolute;
+    content: '';
+
+    background-image: url('../img/cassete-front.svg');
+    background-size: 622px 194px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    width: 622px;
+    height: 194px;
+
+    bottom: -3px;
+    left: -44px;
+  }
+
+  &__wheel {
+    background-image: url('../img/cassete-round.svg');
+    background-size: 215px 215px;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    width: 215px;
+    height: 215px;
+
+    border-radius: 50%;
+
+    position: relative;
+
+    z-index: -1;
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      background-image: url('../img/cassete-round-small.svg');
+      background-size: 81px 81px;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      width: 81px;
+      height: 81px;
+
+      border-radius: 50%;
+
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+    }
+
+    &--left {
+      animation: rotate 3s linear infinite 800ms;
+      margin-left: -4px;
+    }
+
+    &--right {
+      animation: rotate 3s linear infinite 800ms;
+    }
+  }
+
+  &__glass {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+
+      background-image: url('../img/glass.svg');
+      background-size: 204px 146px;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      width: 204px;
+      height: 146px;
+
+      top: -70px;
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      z-index: 0;
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

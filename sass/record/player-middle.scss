@@ -64,5 +64,21 @@
 }
 
 @media only screen and (min-width: $tablets) {
+  .player-middle {
+    &__column {
+      background-color: $bg-player;
+      width: 50px;
+      height: 302px;
+    }
 
+    &__content {
+      width: 536px;
+      height: 302px;
+    }
+
+    &__video {
+      width: 540px;
+      height: 306px;
+    }
+  }
 }

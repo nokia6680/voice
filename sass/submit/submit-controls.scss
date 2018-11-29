@@ -198,5 +198,50 @@
 }
 
 @media only screen and (min-width: $tablets) {
+  .submit-controls {
+    margin-top: 43px;
 
+    width: 194px;
+
+    border: 2px solid $bg-border;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #78909c;
+
+    border-bottom: none;
+
+    padding-top: 17px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-bottom: 9px;
+
+    z-index: auto;
+
+    position: relative;
+
+    &__text {
+      margin-top: 8px;
+      font: {
+        size: 1.375em;
+      }
+    }
+
+    &::before {
+      width: 806px;
+      height: 263px;
+
+      background-image: url('../img/submit-bg.svg');
+      background-size: 806px 263px;
+      background-repeat: no-repeat;
+
+      z-index: 0;
+
+      position: absolute;
+      content: '';
+
+      left: 92px;
+      top: auto;
+      bottom: -3px;
+    }
+  }
 }

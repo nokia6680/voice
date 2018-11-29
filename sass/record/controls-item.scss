@@ -362,5 +362,341 @@
 }
 
 @media only screen and (min-width: $tablets) {
+  .controls-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
+    &__title {
+      display: none;
+
+      &--help {
+        display: block;
+      }
+    }
+    /*Кнопки под десктоп*/
+    &__btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      width: 100px;
+      height: 40px;
+
+      border: 2px solid $bg-border;
+      border-radius: 20px;
+
+      position: relative;
+      /*Блики*/
+      &--play {
+        background-color: $bg-play;
+        transform: rotate(0deg);
+        /*Добавляю блик*/
+        &::after {
+          position: absolute;
+          content: '';
+          width: 34px;
+          height: 34px;
+          border-radius: 17px;
+
+          border-top: 4px solid #93e75d;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          border-bottom: 4px solid transparent;
+
+          top: 13px;
+          right: -5px;
+
+          transform: rotate(45deg) translateY(-50%);
+        }
+      }
+
+      &--rec {
+        background-color: $bg-rec;
+        transform: rotate(0deg);
+        /*Добавляю блик*/
+        &::after {
+          position: absolute;
+          content: '';
+          width: 34px;
+          height: 34px;
+          border-radius: 17px;
+
+          border-top: 4px solid #ff8686;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          border-bottom: 4px solid transparent;
+
+          top: 13px;
+          right: -5px;
+
+          transform: rotate(45deg) translateY(-50%);
+        }
+      }
+
+      &--pause {
+        background-color: $bg-pause;
+        transform: rotate(0deg);
+        /*Добавляю блик*/
+        &::after {
+          position: absolute;
+          content: '';
+          width: 34px;
+          height: 34px;
+          border-radius: 17px;
+
+          border-top: 4px solid #a7e1fc;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          border-bottom: 4px solid transparent;
+
+          top: 13px;
+          right: -5px;
+
+          transform: rotate(45deg) translateY(-50%);
+        }
+      }
+
+      &--stop {
+        background-color: $bg-stop;
+        transform: rotate(0deg);
+        /*Добавляю блик*/
+        &::after {
+          position: absolute;
+          content: '';
+          width: 34px;
+          height: 34px;
+          border-radius: 17px;
+
+          border-top: 4px solid #6accf9;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          border-bottom: 4px solid transparent;
+
+          top: 13px;
+          right: -5px;
+
+          transform: rotate(45deg) translateY(-50%);
+        }
+      }
+
+      &--help {
+        width: 40px;
+
+        background-color: $bg-help;
+        transform: rotate(0deg);
+        /*Добавляю блик*/
+        &::after {
+          position: absolute;
+          content: '';
+          width: 34px;
+          height: 34px;
+          border-radius: 17px;
+
+          border-top: 4px solid #badb94;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          border-bottom: 4px solid transparent;
+
+          top: 13px;
+          right: 13px;
+          left: auto;
+
+          transform: rotate(45deg) translateY(-50%);
+        }
+      }
+
+      &--send {
+        width: 150px;
+
+        background-color: $bg-send;
+        transform: rotate(0deg);
+        /*Добавляю блик*/
+        &::after {
+          position: absolute;
+          content: '';
+          width: 34px;
+          height: 34px;
+          border-radius: 17px;
+
+          border-top: 4px solid #8ce653;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          border-bottom: 4px solid transparent;
+
+          top: 13px;
+          right: 13px;
+          left: auto;
+
+          transform: rotate(45deg) translateY(-50%);
+        }
+      }
+
+      &--listen {
+        width: 150px;
+        background-color: $bg-listen;
+        transform: rotate(0deg);
+        /*Добавляю блик*/
+        &::after {
+          position: absolute;
+          content: '';
+          width: 34px;
+          height: 34px;
+          border-radius: 17px;
+
+          border-top: 4px solid #7bc0f8;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          border-bottom: 4px solid transparent;
+
+          top: 13px;
+          right: 13px;
+          left: auto;
+
+          transform: rotate(45deg) translateY(-50%);
+        }
+      }
+
+      &--repeat {
+        width: 150px;
+        background-color: $bg-repeat;
+        transform: rotate(0deg);
+        /*Добавляю блик*/
+        &::after {
+          position: absolute;
+          content: '';
+          width: 34px;
+          height: 34px;
+          border-radius: 17px;
+
+          border-top: 4px solid #ff8686;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          border-bottom: 4px solid transparent;
+
+          top: 13px;
+          right: 13px;
+          left: auto;
+
+          transform: rotate(45deg) translateY(-50%);
+        }
+      }
+
+      /*Стилизация центров кнопок ( иконки )*/
+      .controls-item__pic {
+        position: absolute;
+        left: 10px;
+
+        width: 20px;
+        height: 20px;
+
+        border-radius: 50%;
+
+        transform: translateY(-50%) rotate(0deg);
+
+        &--play {
+          background-image: url('../img/play.svg');
+          background-size: 18px 18px;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+
+        &--rec {
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          border: 1.3px solid $bg-border;
+        }
+
+        &--pause {
+          background-image: url('../img/pause.svg');
+          background-size: 18px 18px;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+
+        &--stop {
+          width: 16px;
+          height: 16px;
+          border-radius: 0;
+          border: 1.3px solid $bg-border;
+        }
+
+        &--help {
+          background-image: url('../img/faq.svg');
+          background-size: 18px 18px;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+
+        &--send {
+          background-image: url('../img/email.svg');
+          background-size: 18px 18px;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+
+        &--listen {
+          background-image: url('../img/headphones.svg');
+          background-size: 18px 18px;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+
+        &--repeat {
+          background-image: url('../img/refresh.svg');
+          background-size: 18px 18px;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+      }
+    }
+    /*Тексты кнопок для десктопа*/
+    &__text {
+      display: block;
+      padding-left: 20px;
+
+      font: {
+        family: $bold-font;
+        size: 0.75em;
+      }
+
+      color: $text-black;
+      line-height: 1;
+
+      transform: rotate(0deg);
+
+      &--help {
+        display: none;
+      }
+    }
+
+    &--process {
+      margin-right: 20px;
+    }
+
+    &--process:first-of-type {
+      margin-left: 0;
+    }
+
+    &--process:last-of-type {
+      margin-right: 0;
+      margin-left: auto;
+    }
+
+    &--final:first-of-type {
+      margin-right: 20px;
+    }
+
+    &--final:nth-of-type(2) {
+      margin-right: 20px;
+    }
+
+    &--final:last-of-type {
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
 }

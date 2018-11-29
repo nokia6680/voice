@@ -20,5 +20,7 @@
 }
 
 @media only screen and (min-width: $tablets) {
-
+  .player-bottom {
+    height: 104px;
+  }
 }

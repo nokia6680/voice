@@ -32,5 +32,19 @@
 }
 
 @media only screen and (min-width: $tablets) {
+  .submit-form {
+    background-image: url('../img/form-bg-big.svg');
+    background-size: 533px 156px;
+    background-repeat: no-repeat;
+    width: 100%;
 
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-top: 18px;
+    padding-bottom: 12px;
+
+    position: relative;
+
+    z-index: 2;
+  }
 }
