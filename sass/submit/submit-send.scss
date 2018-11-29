@@ -91,5 +91,109 @@
     padding-left: 43px;
     padding-right: 43px;
     padding-top: 16px;
+
+    position: relative;
+    /*Сами руки*/
+    &::before {
+      position: absolute;
+      content: '';
+
+      background-image: url('../img/hands.svg');
+      background-size: 922px 348px;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      width: 922px;
+      height: 348px;
+
+      bottom: -25px;
+      left: -150px;
+
+      z-index: -2;
+    }
+    /*Основание кассеты*/
+    &::after {
+      position: absolute;
+      content: '';
+
+      background-image: url('../img/cassete-bottom.svg');
+      background-size: 348px 46px;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      width: 348px;
+      height: 46px;
+
+      bottom: -2px;
+      left: 50%;
+
+      transform: translateX(-50%);
+
+    }
+    /*Клешни*/
+    &__hand {
+      position: absolute;
+
+      width: 160px;
+      height: 83px;
+
+      &--left {
+        background-image: url('../img/hand-left.svg');
+        background-size: 160px 83px;
+        background-repeat: no-repeat;
+        background-position: top center;
+
+        top: 54%;
+        left: -90px;
+
+        transform: translateY(-54%);
+
+        z-index: 10;
+      }
+
+      &--right {
+        background-image: url('../img/hand-right.svg');
+        background-size: 160px 83px;
+        background-repeat: no-repeat;
+        background-position: top center;
+
+        top: 54%;
+        right: -90px;
+
+        transform: translateY(-54%);
+
+        z-index: 10;
+      }
+    }
+
+    &__backhand {
+      position: absolute;
+
+      width: 57px;
+      height: 83px;
+
+      background-color: #ffa726;
+
+      border: 2px solid $bg-border;
+      border-radius: 10px;
+
+      &--left {
+        top: 53%;
+        left: -40px;
+
+        transform: translateY(-53%);
+
+        z-index: -3;
+      }
+
+      &--right {
+        top: 53%;
+        right: -40px;
+
+        transform: translateY(-53%);
+
+        z-index: -3;
+      }
+    }
   }
 }

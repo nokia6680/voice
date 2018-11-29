@@ -227,21 +227,7 @@
     }
 
     &::before {
-      width: 806px;
-      height: 263px;
-
-      background-image: url('../img/submit-bg.svg');
-      background-size: 806px 263px;
-      background-repeat: no-repeat;
-
-      z-index: 0;
-
-      position: absolute;
-      content: '';
-
-      left: 92px;
-      top: auto;
-      bottom: -3px;
+      display: none;
     }
   }
 }
