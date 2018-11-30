@@ -1,10 +1,11 @@
 .header-nav {
-  @include container;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  padding-left: 14px;
+  padding-right: 14px;
 
   &__logo {
     width: 111px;
@@ -26,8 +27,18 @@
   }
 }
 
+@media only screen and (min-width: $mobile-hd) {
+  .header-nav {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 @media only screen and (min-width: $tablets) {
   .header-nav {
+    padding-left: 40px;
+    padding-right: 40px;
+
     &__logo {
       width: 140px;
 
@@ -43,6 +54,9 @@
 
 @media screen and (min-width: $laptop) {
   .header-nav {
+    padding-left: 14px;
+    padding-right: 14px;
+
     &__logo {
       width: 140px;
 
@@ -53,5 +67,12 @@
     &__img {
       width: 140px;
     }
+  }
+}
+
+@media only screen and (min-width: $hd) {
+  .header-nav {
+    padding-left: 90px;
+    padding-right: 90px;
   }
 }

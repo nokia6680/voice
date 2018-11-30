@@ -358,6 +358,10 @@
     &--final:nth-of-type(2n) {
       margin-right: 30px;
     }
+
+    &--help {
+      display: none;
+    }
   }
 }
 
