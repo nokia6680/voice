@@ -150,7 +150,7 @@
   .main-submit {
     position: relative;
 
-    margin-top: -40px;
+    margin-top: -50px;
 
     &::before {
       width: 974px;
@@ -178,6 +178,7 @@
       }
 
       margin-top: 20px;
+      margin-bottom: 0;
     }
 
     &__subtitle {
@@ -186,6 +187,8 @@
       font: {
         size: 1em;
       }
+
+      margin-bottom: 10px;
     }
 
     &__logo {

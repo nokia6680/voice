@@ -10,6 +10,11 @@
 
   &__btn {
     @include btn;
+
+    &:hover {
+      color: $hover-color;
+      border-color: $hover-color;
+    }
   }
 }
 
