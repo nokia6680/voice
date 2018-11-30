@@ -109,3 +109,29 @@
     }
   }
 }
+
+@media only screen and (min-width: $laptop) {
+  .main-intro {
+    background-image: url('../img/main-intro-bg-big.svg');
+    background-size: 683px 174px;
+
+    width: 683px;
+    height: 174px;
+
+    margin-top: -20px;
+
+    &__title {
+      margin-top: 30px;
+    }
+
+    &__description {
+      font: {
+        size: 0.875em;
+      }
+
+      width: 600px;
+
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -287,6 +287,8 @@
   }
 }
 
-@media only screen and (min-width: $tablets) {
-
+@media only screen and (min-width: $laptop) {
+  .choose-carousel {
+    display: none;
+  }
 }

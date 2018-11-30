@@ -1,0 +1,32 @@
+.choose-series {
+  display: none;
+}
+
+@media only screen and (min-width: $laptop) {
+  .choose-series {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      width: 981px;
+      height: 537px;
+
+      background-image: url('../img/slider-wires.png');
+      background-size: 981px 537px;
+      background-repeat: no-repeat;
+      background-position: top center;
+
+      top: 0;
+      left: 49%;
+
+      transform: translateX(-49%);
+    }
+  }
+}

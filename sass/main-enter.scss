@@ -127,3 +127,53 @@
     }
   }
 }
+
+@media only screen and (min-width: $laptop) {
+  .main-enter {
+    width: 956px;
+
+    &::after {
+      background-image: url('../img/tower-bg.svg');
+      background-size: 519px 320px;
+
+      width: 519px;
+      height: 320px;
+
+      left: 42%;
+
+      transform: translateX(-42%);
+    }
+
+    &__tower {
+      position: absolute;
+
+      bottom: 0;
+
+      &--left {
+        background-image: url('../img/tower-left.svg');
+        background-size: 359px 493px;
+        background-repeat: no-repeat;
+
+        width: 359px;
+        height: 493px;
+
+        left: 2%;
+
+        transform: translateX(-2%);
+      }
+
+      &--right {
+        background-image: url('../img/tower-right.svg');
+        background-size: 281px 467px;
+        background-repeat: no-repeat;
+
+        width: 281px;
+        height: 467px;
+
+        right: 0;
+
+        z-index: 10;
+      }
+    }
+  }
+}

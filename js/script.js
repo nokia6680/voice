@@ -34,6 +34,13 @@ $(document).ready(function(){
     fade: true,
     arrows: false,
     asNavFor: '.title-slider',
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: "unslick";
+      }
+    ]
   });
 });
 
@@ -49,5 +56,12 @@ $(document).ready(function() {
     swipe: false,
     fade: true,
     arrows: false,
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: "unslick";
+      }
+    ]
   });
 });

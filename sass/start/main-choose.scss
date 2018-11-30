@@ -42,17 +42,27 @@
 @media only screen and (min-width: $tablets) {
   .main-choose {
     &__title {
-      width: 220px;
-      margin: 0;
+      width: 320px;
 
       font: {
-        family: $bold-font;
-        size: 0.75em;
+        size: 1em;
       }
 
-      color: $text-white;
-      line-height: normal;
-      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .main-choose {
+    margin-top: -30px;
+    &__title {
+      width: 520px;
+
+      font: {
+       size: 1.375em;
+      }
 
       margin-top: 10px;
       margin-bottom: 10px;
