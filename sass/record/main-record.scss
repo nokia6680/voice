@@ -90,3 +90,51 @@
     }
   }
 }
+
+@media only screen and (min-width: $laptop) {
+  .main-record {
+    margin-top: -55px;
+
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      bottom: -3px;
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      background-image: url('../img/record-back.svg');
+      background-repeat: no-repeat;
+      background-size: 960px 503px;
+      background-position: top center;
+
+      width: 960px;
+      height: 503px;
+
+      z-index: -3;
+    }
+
+    &__title {
+      width: 480px;
+
+      font: {
+        size: 1em;
+      }
+
+      margin-bottom: 0px;
+    }
+
+    &__subtitle {
+      width: 680px;
+
+      font: {
+        size: 1em;
+      }
+
+      margin-bottom: 10px;
+    }
+  }
+}

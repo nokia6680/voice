@@ -700,3 +700,166 @@
     }
   }
 }
+
+@media only screen and (min-width: $laptop) {
+  .controls-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    /*Кнопки под десктоп*/
+    &__btn {
+      width: 120px;
+
+      /*Блики*/
+      &--play {
+        /*Добавляю блик*/
+        &::after {
+          top: 13px;
+          right: 15px;
+          left: auto;
+        }
+      }
+
+      &--rec {
+        /*Добавляю блик*/
+        &::after {
+          top: 13px;
+          right: 15px;
+          left: auto;
+        }
+      }
+
+      &--pause {
+        /*Добавляю блик*/
+        &::after {
+          top: 13px;
+          right: 15px;
+          left: auto;
+        }
+      }
+
+      &--stop {
+        /*Добавляю блик*/
+        &::after {
+          top: 13px;
+          right: 15px;
+          left: auto;
+        }
+      }
+
+      &--help {
+        width: 40px;
+
+        margin-top: -5px;
+        padding: 0;
+      }
+
+      &--send {
+        width: 180px;
+      }
+
+      &--listen {
+        width: 180px;
+      }
+
+      &--repeat {
+        width: 180px;
+      }
+
+      /*Стилизация центров кнопок ( иконки )*/
+      .controls-item__pic {
+        position: absolute;
+        left: 10px;
+
+        width: 20px;
+        height: 20px;
+
+        border-radius: 50%;
+
+        transform: translateY(-50%) rotate(0deg);
+
+        &--play {
+          background-image: url('../img/play.svg');
+          background-size: 18px 18px;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+
+        &--rec {
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          border: 1.3px solid $bg-border;
+        }
+
+        &--pause {
+          background-image: url('../img/pause.svg');
+          background-size: 18px 18px;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+
+        &--stop {
+          width: 16px;
+          height: 16px;
+          border-radius: 0;
+          border: 1.3px solid $bg-border;
+        }
+
+        &--help {
+          background-image: url('../img/faq.svg');
+          background-size: 18px 18px;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+
+        &--send {
+          background-image: url('../img/email.svg');
+          background-size: 18px 18px;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+
+        &--listen {
+          background-image: url('../img/headphones.svg');
+          background-size: 18px 18px;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+
+        &--repeat {
+          background-image: url('../img/refresh.svg');
+          background-size: 18px 18px;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+      }
+    }
+    /*Тексты кнопок для десктопа*/
+    &__text {
+      padding-left: 20px;
+
+      font: {
+        size: 0.875em;
+      }
+    }
+
+    &__title--help {
+      margin-top: 1px;
+    }
+
+    &--process {
+      margin-right: 14px;
+    }
+
+    &--final:first-of-type {
+      margin-right: 14px;
+    }
+
+    &--final:nth-of-type(2) {
+      margin-right: 14px;
+    }
+  }
+}

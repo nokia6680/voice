@@ -116,3 +116,24 @@
     }
   }
 }
+
+@media only screen and (min-width: $laptop) {
+  .record-controls {
+    width: 800px;
+
+    margin-top: 37px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    padding-left: 48px;
+
+    border-bottom: none;
+
+    &::before {
+      top: -42px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      z-index: -2;
+    }
+  }
+}

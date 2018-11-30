@@ -18,7 +18,7 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     &__wrapper {
-      width: 163px;
+      width: 162px;
       height: 148px;
       overflow-y: hidden;
 
@@ -55,6 +55,11 @@
 
       border-top: 2px solid $bg-border;
       border-bottom: 2px solid $bg-border;
+
+      &--big {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
     }
   }
 }

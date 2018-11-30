@@ -89,21 +89,23 @@
 			</section>
 			<!--Main content of recording page-->
 			<section class="main__record main-record">
-				<h1 class="main-record__title">Посмотри видео несколько раз и прочитай вслух реплики своего героя.</h1>
+				<h1 class="main-record__title">Посмотри&nbsp;видео несколько&nbsp;раз и прочитай&nbsp;вслух&nbsp;реплики своего героя.</h1>
 				<h2 class="main-record__subtitle">Когда будешь готов, жми "Запись" и говори в микрофон</h2>
 				<!--Videoplayer itself-->
 				<div class="main-record__player record-player">
 					<!--Player-heading-->
 					<div class="record-player__head player-head">
-						<h2 class="player-head__title"></h2>
+						<div class="player-head__title">
+							<div class="player-head__thing player-head__thing--left"><i class="fas fa-plus"></i></div>
+							<img class="player-head__logo" src="img/logo.svg" alt="Player-logo" />
+							<div class="player-head__thing player-head__thing--right"><i class="fas fa-plus"></i></div>
+						</div>
 					</div>
 					<!--Player middle part with video frame-->
 					<div class="record-player__middle player-middle">
 						<!--Left column with speakers-->
 						<div class="player-middle__column player-middle__column--left">
-							<div class="player-middle__speaker player-middle__speaker--left">
-
-							</div>
+							<img class="player-middle__speaker player-middle__speaker--left" src="img/speaker.svg" alt="player-speaker" />
 						</div>
 						<!--Video frame-->
 						<div class="player-middle__content">
@@ -111,9 +113,7 @@
 						</div>
 						<!--Right column with speakers-->
 						<div class="player-middle__column player-middle__column--right">
-							<div class="player-middle__speaker player-middle__speaker--right">
-
-							</div>
+							<img class="player-middle__speaker player-middle__speaker--right" src="img/speaker.svg" alt="player-speaker" />
 						</div>
 					</div>
 					<!--Player bottom part with recording status-->
@@ -129,7 +129,7 @@
           <div class="record-controls__thing record-controls__thing--first"><i class="fas fa-plus"></i></div>
           <div class="record-controls__thing record-controls__thing--second"><i class="fas fa-plus"></i></div>
 					<!--Subblock for process control buttons-->
-					<ul class="record-controls__list controls-list controls-list--process">
+					<ul class="record-controls__list controls-list controls-list--process" style="display: none;">
 						<li class="controls-list__item controls-item controls-item--process">
 							<button class="controls-item__btn controls-item__btn--play" type="button">
 								<span class="controls-item__pic controls-item__pic--play"></span>
@@ -167,7 +167,7 @@
 						</li>
 					</ul>
 					<!--Subblock for final control buttons-->
-					<ul class="record-controls__list controls-list controls-list--final" style="display: none;">
+					<ul class="record-controls__list controls-list controls-list--final">
 						<li class="controls-list__item controls-item controls-item--final">
 							<button class="controls-item__btn controls-item__btn--send" type="button">
 								<span class="controls-item__pic controls-item__pic--send"></span>

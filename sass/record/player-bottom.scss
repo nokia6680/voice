@@ -24,3 +24,15 @@
     height: 104px;
   }
 }
+
+@media only screen and (min-width: $laptop) {
+  .player-bottom {
+    height: 59px;
+    min-height: 59px;
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    transition: 0.8s ease-in;
+  }
+}
