@@ -1,37 +1,23 @@
 @font-face {
-  font-family: 'Gotham Extra Light';
-  src: url("../fonts/GothamExtraLight.otf") format("opentype");
-  font-weight: 100;
-  font-style: normal;
+	font-family: 'NEXT_Bold';
+	src: url('../fonts/NEXT ART_Bold.eot');
+	src: local('☺'), url('../fonts/NEXT ART_Bold.woff') format('woff'), url('../fonts/NEXT ART_Bold.ttf') format('truetype'), url('../fonts/NEXT ART_Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Next Art Semibold';
-    src: local('NEXT ART SemiBold'), local('NEXTART-SemiBold'), url('../fonts/Nextartsemibold.woff2') format('woff2'), url('../fonts/Nextartsemibold.woff') format('woff'), url('../fonts/Nextartsemibold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+	font-family: 'NEXT_SemiBold';
+	src: url('../fonts/NEXT ART_SemiBold.eot');
+	src: local('☺'), url('../fonts/NEXT ART_SemiBold.woff') format('woff'), url('../fonts/NEXT ART_SemiBold.ttf') format('truetype'), url('../fonts/NEXT ART_SemiBold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
+
 @font-face {
-    font-family: 'Next Art Thin';
-    src: local('NEXT ART Thin'), local('NEXTART-Thin'), url('../fonts/Nextartthin.woff2') format('woff2'), url('../fonts/Nextartthin.woff') format('woff'), url('../fonts/Nextartthin.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Next Art Light';
-    src: local('NEXT ART Light'), local('NEXTART-Light'), url('../fonts/Nextartlight.woff2') format('woff2'), url('../fonts/Nextartlight.woff') format('woff'), url('../fonts/Nextartlight.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Next Art Regular';
-    src: local('NEXT ART Regular'), local('NEXTART-Regular'), url('../fonts/Nextartregular.woff2') format('woff2'), url('../fonts/Nextartregular.woff') format('woff'), url('../fonts/Nextartregular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Next Art Bold';
-    src: local('NEXT ART Bold'), local('NEXTART-Bold'), url('../fonts/Nextartbold.woff2') format('woff2'), url('../fonts/Nextartbold.woff') format('woff'), url('../fonts/Nextartbold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
+	font-family: 'GothamExtraLight';
+	src: url('../fonts/GothamExtraLight.eot');
+	src: local('☺'), url('../fonts/GothamExtraLight.woff') format('woff'), url('../fonts/GothamExtraLight.ttf') format('truetype'), url('../fonts/GothamExtraLight.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }

@@ -47,11 +47,20 @@
     text-align: center;
 
     margin: 0;
+    margin-top: 10px;
   }
 
   &__img {
     width: 89px;
     height: auto;
+  }
+}
+
+@media only screen and (min-width: $mobile) {
+  .main-submit {
+    &__logo {
+      margin-top: 2px;
+    }
   }
 }
 

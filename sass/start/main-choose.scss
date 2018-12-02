@@ -56,7 +56,27 @@
 
 @media only screen and (min-width: $laptop) {
   .main-choose {
+    position: relative;
     margin-top: -30px;
+
+    &::before {
+      width: 974px;
+      height: 467px;
+
+      background-image: url('../img/big-bottom.svg');
+      background-size: 974px 467px;
+      background-repeat: no-repeat;
+
+      z-index: 0;
+
+      position: absolute;
+      content: '';
+
+      left: auto;
+      right: auto;
+      bottom: -567px;
+    }
+
     &__title {
       width: 520px;
 
