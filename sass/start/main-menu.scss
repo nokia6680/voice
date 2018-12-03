@@ -182,3 +182,16 @@
     }
   }
 }
+
+@media only screen and (min-width: $hd) {
+  .main-menu {
+    /*Логотип голоса*/
+    &__logo {
+      margin-left: 34px;
+    }
+
+    &__vote {
+      margin-right: 34px;
+    }
+  }
+}

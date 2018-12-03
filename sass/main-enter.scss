@@ -88,9 +88,6 @@
     width: 100%;
     height: auto;
 
-    margin-bottom: 0;
-    margin-top: auto;
-
     position: absolute;
 
     background-image: none;
@@ -116,7 +113,7 @@
       width: 688px;
       height: 360px;
 
-      bottom: 0;
+      bottom: -7px;
       left: 50%;
 
       transform: translateX(-50%);

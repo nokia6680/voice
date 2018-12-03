@@ -64,7 +64,7 @@
       height: 467px;
 
       background-image: url('../img/big-bottom.svg');
-      background-size: 974px 467px;
+      background-size: 100%;
       background-repeat: no-repeat;
 
       z-index: 0;
@@ -86,6 +86,21 @@
 
       margin-top: 10px;
       margin-bottom: 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: $hd) {
+  .main-choose {
+    position: relative;
+    margin-top: 0;
+
+    &__title {
+      width: 520px;
+
+      font: {
+       size: 1.375em;
+      }
     }
   }
 }

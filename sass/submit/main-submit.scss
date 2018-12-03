@@ -166,7 +166,7 @@
       height: 467px;
 
       background-image: url('../img/big-bottom.svg');
-      background-size: 974px 467px;
+      background-size: 100%;
       background-repeat: no-repeat;
 
       z-index: 0;
@@ -195,6 +195,44 @@
 
       font: {
         size: 1em;
+      }
+
+      margin-bottom: 10px;
+    }
+
+    &__logo {
+      display: none;
+      margin-top: 10px;
+    }
+
+    &__img {
+      width: 115px;
+    }
+  }
+}
+
+@media only screen and (min-width: $hd) {
+  .main-submit {
+    position: relative;
+
+    margin-top: 0;
+
+    &__title {
+      width: 280px;
+
+      font: {
+        size: 1.25em;
+      }
+
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    &__subtitle {
+      width: 480px;
+
+      font: {
+        size: 1.25em;
       }
 
       margin-bottom: 10px;

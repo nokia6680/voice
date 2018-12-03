@@ -54,8 +54,8 @@
 
 @media screen and (min-width: $laptop) {
   .header-nav {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 34px;
+    padding-right: 34px;
 
     &__logo {
       width: 140px;
@@ -70,9 +70,20 @@
   }
 }
 
-@media only screen and (min-width: $hd) {
+@media only screen and (min-width: $fhd) {
   .header-nav {
     padding-left: 90px;
     padding-right: 90px;
+
+    &__logo {
+      width: 351px;
+
+      padding-top: 25px;
+      padding-bottom: 38px;
+    }
+
+    &__img {
+      width: 351px;
+    }
   }
 }

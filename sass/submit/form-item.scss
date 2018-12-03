@@ -39,7 +39,7 @@
   &__label {
     font: {
       family: $bold-font;
-      size: 0.625em;
+      size: 10px;
     }
 
     color: $text-black;
@@ -53,7 +53,7 @@
 
     font: {
       family: $bold-font;
-      size: 0.875em;
+      size: 14px;
     }
 
     color: #1e88e5;
@@ -70,7 +70,7 @@
     visibility: hidden;
     font: {
       family: $bold-font;
-      size: 0.5em;
+      size: 8px;
     }
 
     color: #ff1744;
@@ -109,20 +109,20 @@
   .form-item {
     &__label {
       font: {
-        size: 0.725em;
+        size: 11px;
       }
     }
 
     &__input {
       font: {
-        size: 1em;
+        size: 16px;
       }
     }
 
     &__error {
       visibility: hidden;
       font: {
-        size: 0.5em;
+        size: 8px;
       }
 
       margin-bottom: 2px;
