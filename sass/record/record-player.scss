@@ -5,7 +5,7 @@
   align-items: center;
 
   width: 294px;
-  height: 221px;
+  height: 196px;
 
   border: 2px solid $bg-border;
   border-radius: 10px;
@@ -16,14 +16,14 @@
 @media only screen and (min-width: $mobile-hd) {
   .record-player {
     width: 382px;
-    height: 286px;
+    height: 260px;
   }
 }
 
 @media only screen and (min-width: $tablets) {
   .record-player {
     width: 588px;
-    height: 437px;
+    height: 418px;
   }
 }
 

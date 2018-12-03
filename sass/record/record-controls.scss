@@ -18,6 +18,42 @@
   padding-bottom: 6px;
 
   position: relative;
+  /*Заголовок, когда запись готова, меняется видимость*/
+  &__title {
+    visibility: hidden;
+
+    position: absolute;
+    top: -45px;
+    left: -2px;
+
+    font: {
+      size: 1.125em;
+      family: $bold-font;
+    }
+
+    color: $text-black;
+    line-height: 1;
+
+    margin: 0;
+    padding-top: 11px;
+    padding-bottom: 12px;
+
+    display: block;
+    width: 294px;
+
+    border: 2px solid $bg-border;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+
+    text-align: center;
+
+    background-color: #ff6d00;
+
+    &--visible {
+      visibility: visible;
+    }
+  }
 
   &::before {
     position: absolute;
@@ -85,6 +121,10 @@
     &::before {
       left: 3px;
     }
+
+    &__title {
+      width: 320px;
+    }
   }
 }
 
@@ -97,6 +137,13 @@
     padding-top: 20px;
 
     position: relative;
+
+    &__title {
+      width: 320px;
+
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
     &::before {
       position: absolute;

@@ -89,8 +89,12 @@
 			</section>
 			<!--Main content of recording page-->
 			<section class="main__record main-record">
-				<h1 class="main-record__title">Посмотри&nbsp;видео несколько&nbsp;раз и прочитай&nbsp;вслух&nbsp;реплики своего героя.</h1>
-				<h2 class="main-record__subtitle">Когда будешь готов, жми "Запись" и говори в микрофон</h2>
+				<!--Start process - header-->
+				<h1 class="main-record__title main-record__title--process" style="display: none;">Посмотри&nbsp;видео несколько&nbsp;раз и прочитай&nbsp;вслух&nbsp;реплики своего героя.</h1>
+				<h2 class="main-record__subtitle main-record__subtitle--process" style="display: none;">Когда будешь готов, жми "Запись" и говори в микрофон</h2>
+				<!--When ready - header-->
+				<h1 class="main-record__title main-record__title--final">Послушай, что у тебя получилось. Если&nbsp;все&nbsp;ок, отправляй.</h1>
+				<h2 class="main-record__subtitle main-record__subtitle--final">Если нет, попробуй записать свою озвучку ещё раз</h2>
 				<!--Videoplayer itself-->
 				<div class="main-record__player record-player">
 					<!--Player-heading-->
@@ -129,7 +133,7 @@
           <div class="record-controls__thing record-controls__thing--first"><i class="fas fa-plus"></i></div>
           <div class="record-controls__thing record-controls__thing--second"><i class="fas fa-plus"></i></div>
 					<!--Subblock for process control buttons-->
-					<ul class="record-controls__list controls-list controls-list--process"  style="display: none;">
+					<ul class="record-controls__list controls-list controls-list--process">
 						<li class="controls-list__item controls-item controls-item--process">
 							<button class="controls-item__btn controls-item__btn--play" type="button">
 								<span class="controls-item__pic controls-item__pic--play"></span>
@@ -167,7 +171,8 @@
 						</li>
 					</ul>
 					<!--Subblock for final control buttons-->
-					<ul class="record-controls__list controls-list controls-list--final">
+					<h3 class="record-controls__title">Озвучка готова</h3>
+					<ul class="record-controls__list controls-list controls-list--final"  style="display: none;">
 						<li class="controls-list__item controls-item controls-item--final">
 							<button class="controls-item__btn controls-item__btn--send" type="button">
 								<span class="controls-item__pic controls-item__pic--send"></span>

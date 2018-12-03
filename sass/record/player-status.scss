@@ -4,6 +4,8 @@
   justify-content: space-between;
   align-items: center;
 
+  margin-right: 18px;
+
   &__title {
     font: {
       family: $bold-font;
@@ -59,17 +61,23 @@
   .player-status {
     &__title {
       font: {
-        size: 1em;
+        size: 0.875em;
       }
 
-      padding-left: 40px;
+      padding-left: 30px;
 
       &::after {
-        width: 24px;
-        height: 24px;
+        width: 18px;
+        height: 18px;
 
-        border-radius: 12px;
+        border-radius: 9px;
       }
     }
+  }
+}
+
+@media only screen and (min-width: $tablets) {
+  .player-status {
+    margin-right: 27px;
   }
 }

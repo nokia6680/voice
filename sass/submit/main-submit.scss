@@ -211,6 +211,78 @@
   }
 }
 
+@media only screen and (min-width: $large-laptop) {
+  .main-submit {
+    margin-top: -42px;
+
+    &__title {
+      width: 280px;
+
+      font: {
+        size: 1em;
+      }
+
+      margin-top: 35px;
+      margin-bottom: 0;
+    }
+
+    &__subtitle {
+      width: 320px;
+
+      font: {
+        size: 1em;
+      }
+
+      margin-bottom: 20px;
+    }
+
+    &__logo {
+      display: none;
+      margin-top: 10px;
+    }
+
+    &__img {
+      width: 115px;
+    }
+  }
+}
+
+@media only screen and (min-width: $widebooks) {
+  .main-submit {
+    margin-top: -50px;
+
+    &__title {
+      width: 280px;
+
+      font: {
+        size: 1em;
+      }
+
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+
+    &__subtitle {
+      width: 320px;
+
+      font: {
+        size: 1em;
+      }
+
+      margin-bottom: 10px;
+    }
+
+    &__logo {
+      display: none;
+      margin-top: 10px;
+    }
+
+    &__img {
+      width: 115px;
+    }
+  }
+}
+
 @media only screen and (min-width: $hd) {
   .main-submit {
     position: relative;

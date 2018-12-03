@@ -449,3 +449,33 @@
     }
   }
 }
+
+@media only screen and (min-width: $large-laptop) {
+  .main-checkout {
+    margin-top: 76px;
+
+    &::before {
+      width: 974px;
+      height: 467px;
+
+      background-image: url('../img/big-bottom.svg');
+      background-size: 974px 467px;
+      background-repeat: no-repeat;
+
+      z-index: 0;
+
+      position: absolute;
+      content: '';
+
+      left: auto;
+      right: auto;
+      bottom: -465px;
+    }
+  }
+}
+
+@media only screen and (min-width: $widebooks) {
+  .main-checkout {
+    margin-top: 50px;
+  }
+}
