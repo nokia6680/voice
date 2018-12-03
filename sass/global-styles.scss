@@ -33,6 +33,10 @@ body {
   background-repeat: no-repeat;
   color: $text-white;
 
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
   @media only screen and (min-width: $tablets) {
     background: linear-gradient(to bottom, #8321a6, #6f1c9c);
   }

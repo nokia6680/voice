@@ -41,6 +41,29 @@
   }
 }
 
+@media only screen and (min-width: $mobile) {
+  .main-record {
+    &__title {
+      width: 290px;
+
+      font: {
+        size: 0.688em;
+      }
+
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    &__subtitle {
+      width: 280px;
+
+      font: {
+        size: 0.688em;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: $mobile-hd) {
   .main-record {
     &__title {
