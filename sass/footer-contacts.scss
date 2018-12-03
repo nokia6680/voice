@@ -18,7 +18,7 @@
   }
 }
 
-@media screen and (min-width: $laptop) {
+@media only screen and (min-width: $laptop) {
   .footer-contacts {
     flex-direction: row;
     justify-content: space-between;
@@ -41,6 +41,34 @@
     &__img {
       width: 84px;
       height: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: $hd) {
+  .footer-contacts {
+    &__logo {
+      width: 156px;
+
+      margin-right: 35px;
+    }
+
+    &__img {
+      width: 156px;
+    }
+  }
+}
+
+@media only screen and (min-width: $fhd) {
+  .footer-contacts {
+    &__logo {
+      width: 211px;
+
+      margin-right: 50px;
+    }
+
+    &__img {
+      width: 211px;
     }
   }
 }

@@ -42,3 +42,39 @@
     }
   }
 }
+
+
+@media only screen and (min-width: $hd) {
+  .social-list {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 13px;
+    padding-right: 13px;
+
+    &--active {
+      bottom: 74px;
+
+      left: auto;
+      right: 80px;
+
+      transform: none;
+    }
+  }
+}
+
+@media only screen and (min-width: $fhd) {
+  .social-list {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &--active {
+      bottom: 103px;
+      right: 90px;
+    }
+  }
+}

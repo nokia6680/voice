@@ -187,11 +187,144 @@
   .main-menu {
     /*Логотип голоса*/
     &__logo {
-      margin-left: 34px;
+      margin-left: 80px;
+
+      width: 177px;
     }
 
+    &__img {
+      width: 177px;
+    }
+    /*Кнопка голосования*/
+    /*Фон*/
     &__vote {
-      margin-right: 34px;
+      width: 203px;
+      height: 203px;
+
+      background-size: 203px 203px;
+
+      margin-right: 80px;
+      margin-top: 47px;
+
+      &::before {
+        width: 84px;
+        height: 200px;
+
+        border-left: 5px solid $bg-border;
+        border-right: 5px solid $bg-border;
+
+        top: -40px;
+      }
+    }
+    /*Сама кнопка*/
+    &__btn {
+      width: 132px;
+      height: 132px;
+
+      &::before {
+        width: 84px;
+        height: 80px;
+        background-size: 84px 80px;
+      }
+
+      &:active {
+        &::before {
+          background-size: 84px 80px;
+        }
+      }
+    }
+    /*Вспомогательная кнопка для блика*/
+    &__tech {
+      display: block;
+
+      width: 120px;
+      height: 120px;
+
+      border-radius: 60px;
+
+      &::after {
+        width: 108px;
+        height: 108px;
+        border-radius: 54px;
+
+        border-top: 8px solid #fb8856;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $fhd) {
+  .main-menu {
+    /*Логотип голоса*/
+    &__logo {
+      margin-left: 90px;
+
+      width: 194px;
+    }
+
+    &__img {
+      width: 194px;
+    }
+    /*Кнопка голосования*/
+    /*Фон*/
+    &__vote {
+      width: 203px;
+      height: 203px;
+
+      background-size: 203px 203px;
+
+      margin-right: 90px;
+      margin-top: 58px;
+
+      &::before {
+        width: 84px;
+        height: 200px;
+
+        border-left: 5px solid $bg-border;
+        border-right: 5px solid $bg-border;
+
+        top: -40px;
+      }
+    }
+    /*Сама кнопка*/
+    &__btn {
+      width: 132px;
+      height: 132px;
+
+      &::before {
+        width: 84px;
+        height: 80px;
+        background-size: 84px 80px;
+      }
+
+      &:active {
+        &::before {
+          background-size: 84px 80px;
+        }
+      }
+    }
+    /*Вспомогательная кнопка для блика*/
+    &__tech {
+      display: block;
+
+      width: 120px;
+      height: 120px;
+
+      border-radius: 60px;
+
+      &::after {
+        width: 108px;
+        height: 108px;
+        border-radius: 54px;
+
+        border-top: 8px solid #fb8856;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+      }
     }
   }
 }

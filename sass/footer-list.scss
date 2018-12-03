@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media screen and (min-width: $laptop) {
+@media only screen and (min-width: $laptop) {
   .footer-list {
     display: flex;
     flex-direction: row;
@@ -14,5 +14,11 @@
     list-style: none;
 
     margin-right: 33px;
+  }
+}
+
+@media only screen and (min-width: $hd) {
+  .footer-list {
+    margin-right: 0;
   }
 }

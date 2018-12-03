@@ -20,3 +20,33 @@
     line-height: 1;
   }
 }
+
+@media only screen and (min-width: $hd) {
+  .private-item {
+    &:not(:last-of-type) {
+      margin-right: 25px;
+    }
+
+    &__link {
+      font: {
+        family: $alternate-font;
+        size: 0.813em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $fhd) {
+  .private-item {
+    &:not(:last-of-type) {
+      margin-right: 40px;
+    }
+
+    &__link {
+      font: {
+        family: $alternate-font;
+        size: 1.125em;
+      }
+    }
+  }
+}

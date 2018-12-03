@@ -135,3 +135,33 @@
     }
   }
 }
+
+@media only screen and (min-width: $hd) {
+  .main-intro {
+    background-size: 883px 226px;
+
+    width: 883px;
+    height: 226px;
+
+    margin-top: -20px;
+
+    &__title {
+      margin-top: 40px;
+      margin-bottom: 10px;
+
+      font: {
+        size: 1.75em;
+      }
+    }
+
+    &__description {
+      font: {
+        size: 1em;
+      }
+
+      width: 730px;
+
+      margin-bottom: 20px;
+    }
+  }
+}

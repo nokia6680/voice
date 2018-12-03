@@ -79,3 +79,73 @@
     transform: translate(-50%, -50%);
   }
 }
+
+@media only screen and (min-width: $hd) {
+  .social-item {
+    width: 44px;
+    height: 44px;
+
+    &:not(:last-of-type) {
+      margin-right: 17px;
+    }
+
+    .fa-youtube::before {
+      font-size: 1.5em;
+    }
+
+    .fa-facebook-f::before {
+      font-size: 1.5em;
+    }
+
+    .fa-vk::before {
+      font-size: 1.5em;
+    }
+
+    .fa-twitter::before {
+      font-size: 1.5em;
+    }
+
+    .fa-instagram::before {
+      font-size: 1.5em;
+    }
+
+    .fa-odnoklassniki::before {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media only screen and (min-width: $fhd) {
+  .social-item {
+    width: 60px;
+    height: 60px;
+
+    &:not(:last-of-type) {
+      margin-right: 20px;
+    }
+
+    .fa-youtube::before {
+      font-size: 2.5em;
+    }
+
+    .fa-facebook-f::before {
+      font-size: 2.5em;
+    }
+
+    .fa-vk::before {
+      font-size: 2.5em;
+    }
+
+    .fa-twitter::before {
+      font-size: 2.5em;
+    }
+
+    .fa-instagram::before {
+      font-size: 2.5em;
+    }
+
+    .fa-odnoklassniki::before {
+      font-size: 2.5em;
+    }
+  }
+}

@@ -94,3 +94,38 @@
     }
   }
 }
+
+@media only screen and (min-width: $hd) {
+  .footer {
+    padding-top: 18px;
+
+    &__wrapper {
+      width: 100%;
+      margin-bottom: 4px;
+
+      justify-content: space-between;
+    }
+
+    &__description {
+      font: {
+        size: 0.625em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $fhd) {
+  .footer {
+    padding-top: 25px;
+
+    &__wrapper {
+      width: 100%;
+    }
+
+    &__description {
+      font: {
+        size: 0.813em;
+      }
+    }
+  }
+}

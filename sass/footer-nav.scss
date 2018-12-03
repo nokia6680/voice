@@ -6,7 +6,7 @@
   }
 }
 
-@media screen and (min-width: $laptop) {
+@media only screen and (min-width: $laptop) {
   .footer-nav {
     display: flex;
     flex-direction: row;
