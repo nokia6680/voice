@@ -250,3 +250,35 @@
     }
   }
 }
+
+@media only screen and (min-width: $hd) {
+  .main-record {
+    margin-top: -100px;
+
+    &__title {
+      width: 400px;
+
+      font: {
+        size: 1.125em;
+      }
+
+      margin-top: 0px;
+    }
+
+    &::before {
+      bottom: -2px;
+    }
+
+    &::after {
+      bottom: -466px;
+    }
+
+    &__subtitle {
+      width: 680px;
+
+      font: {
+        size: 1.125em;
+      }
+    }
+  }
+}

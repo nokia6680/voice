@@ -204,7 +204,7 @@
       background-size: 203px 203px;
 
       margin-right: 80px;
-      margin-top: 47px;
+      margin-top: 30px;
 
       &::before {
         width: 84px;
@@ -253,6 +253,10 @@
         border-bottom: 8px solid transparent;
       }
     }
+
+    &--index {
+      margin-bottom: -100px;
+    }
   }
 }
 
@@ -286,7 +290,7 @@
         border-left: 5px solid $bg-border;
         border-right: 5px solid $bg-border;
 
-        top: -40px;
+        top: -70px;
       }
     }
     /*Сама кнопка*/

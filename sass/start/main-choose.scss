@@ -117,7 +117,7 @@
 @media only screen and (min-width: $hd) {
   .main-choose {
     position: relative;
-    margin-top: 0;
+    margin-top: -100px;
 
     &__title {
       width: 520px;
@@ -125,6 +125,23 @@
       font: {
        size: 1.375em;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: $fhd) {
+  .main-choose {
+    position: relative;
+    margin-top: 0px;
+
+    &__title {
+      width: 520px;
+
+      font: {
+       size: 1.375em;
+      }
+
+      margin-bottom: 30px;
     }
   }
 }
