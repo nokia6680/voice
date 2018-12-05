@@ -37,6 +37,10 @@
 
       z-index: 10;
 
+      &--inactive {
+        background-color: #78909c;
+      }
+
       &::after {
         position: absolute;
         content: '';
