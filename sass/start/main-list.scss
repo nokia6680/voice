@@ -53,7 +53,7 @@
         height: 16px;
         background-color: #8bf54e;
         top: 51%;
-        right: 30%;
+        right: 35%;
         transform: translateY(-51%);
         z-index: -12;
       }
@@ -97,6 +97,37 @@
         right: 63%;
         transform: translateY(-45%);
         z-index: -12;
+      }
+    }
+
+    &--third {
+      &::before {
+        right: 40%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $fhd) {
+  .main-list {
+
+    &--first {
+      &::before {
+        position: absolute;
+        content: '';
+        width: 4000%;
+        height: 16px;
+        background-color: #8bf54e;
+        top: 45%;
+        right: 63%;
+        transform: translateY(-45%);
+        z-index: -12;
+      }
+    }
+
+    &--second {
+      &::before {
+        right: 46%;
       }
     }
 

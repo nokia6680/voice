@@ -40,6 +40,11 @@ body {
   @media only screen and (min-width: $tablets) {
     background: linear-gradient(to bottom, #8321a6, #6f1c9c);
   }
+
+  @media only screen and (min-width: $laptop) {
+    background: url('../img/bg-planets.png'), linear-gradient(to bottom, #8321a6, #6f1c9c);
+    background-size: cover;
+  }
 }
 
 img {
