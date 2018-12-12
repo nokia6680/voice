@@ -1,5 +1,5 @@
 .enter-button {
-  background-image: url('../img/cube-bg.svg');
+  background-image: url('../img/enter-btn-wood.svg');
   background-size: 261px 260px;
   background-repeat: no-repeat;
   background-position: top center;
@@ -20,7 +20,7 @@
     position: absolute;
     content: '';
 
-    background-image: url('../img/btn-round.svg');
+    background-image: url('../img/enter-btn-round.svg');
     background-size: 231px 231px;
     background-repeat: no-repeat;
 
@@ -89,15 +89,69 @@
   }
 }
 
+@media only screen and (min-width: $iphone) {
+  .enter-button {
+    background-size: 362px 357px;
+
+    width: 362px;
+    height: 355px;
+    margin-top: -1px;
+
+    &::before {
+      background-size: 331px 331px;
+
+      width: 331px;
+      height: 331px;
+    }
+
+    &__link {
+      width: 240px;
+      height: 240px;
+      border: 3px solid $bg-border;
+    }
+
+    &__tech {
+      top: 120px;
+
+      &::after {
+        width: 220px;
+        height: 220px;
+        border-radius: 110px;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: $mobile-hd) {
   .enter-button {
-    background-image: url('../img/cube-bg.svg');
-    background-size: 316px 320px;
+    background-size: 331px 326px;
 
-    width: 320px;
-    height: 316px;
+    width: 326px;
+    height: 320px;
+    margin-top: -1px;
 
-    margin-top: -5px;
+    &::before {
+      background-size: 277px 277px;
+
+      width: 277px;
+      height: 277px;
+    }
+
+    &__link {
+      width: 190px;
+      height: 190px;
+      border: 3px solid $bg-border;
+    }
+
+    &__tech {
+      top: 90px;
+
+      &::after {
+        width: 160px;
+        height: 160px;
+        border-radius: 80px;
+      }
+    }
   }
 }
 

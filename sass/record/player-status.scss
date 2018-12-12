@@ -57,7 +57,7 @@
   }
 }
 
-@media only screen and (min-width: $mobile-hd) {
+@media only screen and (min-width: $iphone) {
   .player-status {
     &__title {
       font: {
@@ -72,6 +72,18 @@
 
         border-radius: 9px;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile-hd) {
+  .player-status {
+    &__title {
+      font: {
+        size: 1.125em;
+      }
+
+      padding-left: 25px;
     }
   }
 }

@@ -21,6 +21,22 @@
   }
 }
 
+@media only screen and (min-width: $mobile-hd) {
+  .header-opener {
+    width: 43px;
+    padding: 0;
+
+    padding-top: 4px;
+
+    &__btn {
+      width: 43px;
+      height: 32px;
+
+      background-size: 43px 32px;
+    }
+  }
+}
+
 @media only screen and (min-width: $laptop) {
   .header-opener {
     visibility: hidden;

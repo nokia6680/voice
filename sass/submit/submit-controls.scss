@@ -182,9 +182,9 @@
   }
 }
 
-@media only screen and (min-width: $mobile-hd) {
+@media only screen and (min-width: $iphone) {
   .submit-controls {
-    margin-top: 149px;
+    margin-top: 210px;
 
     width: 240px;
 
@@ -193,6 +193,43 @@
       font: {
         size: 1.375em;
       }
+    }
+
+    &::before {
+      width: 414px;
+      height: 311px;
+      top: -232px;
+
+      background-size: 414px 311px;
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile-hd) {
+  .submit-controls {
+    margin-top: 207px;
+
+    width: 254px;
+
+    &__btn {
+      width: 220px;
+      height: 55px;
+      border-radius: 26px;
+    }
+
+    &__text {
+      margin-top: 8px;
+      font: {
+        size: 1.75em;
+      }
+    }
+
+    &::before {
+      width: 437px;
+      height: 316px;
+      top: -228px;
+
+      background-size: 437px 316px;
     }
   }
 }
@@ -218,6 +255,11 @@
     z-index: auto;
 
     position: relative;
+
+    &__btn {
+      width: 168px;
+      height: 42px;
+    }
 
     &__text {
       margin-top: 8px;

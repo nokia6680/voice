@@ -72,14 +72,56 @@
   }
 }
 
-@media only screen and (min-width: $mobile-hd) {
+@media only screen and (min-width: $iphone) {
   .submit-send {
-    width: 345px;
-    height: 317px;
+    width: 380px;
+    height: 330px;
 
     padding-left: 13px;
     padding-right: 13px;
     padding-top: 20px;
+  }
+}
+
+@media only screen and (min-width: $mobile-hd) {
+  .submit-send {
+    width: 368px;
+    height: 337px;
+
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 22px;
+
+    &__thing {
+      width: 24px;
+      height: 24px;
+
+      border-radius: 12px;
+
+      .fa-plus::before {
+        font-size: 14px;
+      }
+
+      &--first {
+        top: 4px;
+        left: 4px;
+      }
+
+      &--second {
+        top: 4px;
+        right: 4px;
+      }
+
+      &--third {
+        bottom: 4px;
+        left: 4px;
+      }
+
+      &--fourth {
+        bottom: 4px;
+        right: 4px;
+      }
+    }
   }
 }
 

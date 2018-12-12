@@ -1,6 +1,8 @@
 .title-slider {
   width: 262px;
-  height: 61px;
+  height: 57px;
+
+  padding: 6px 6px;
 
   display: flex;
   flex-direction: row;
@@ -9,23 +11,11 @@
 
   position: relative;
 
-  margin-top: -10px;
+  margin-top: 14px;
   z-index: -1;
 
-  &::after {
-    position: absolute;
-    content: '';
-
-    width: 262px;
-    height: 61px;
-
-    top: 0;
-    left: 0;
-
-    background-image: url('../img/frame-small.png');
-    background-size: 262px 61px;
-    background-repeat: no-repeat;
-  }
+  border: 2px solid $bg-border;
+  background-color: #ffca28;
 
   &::before {
     position: absolute;
@@ -34,7 +24,7 @@
     width: 252px;
     height: 17px;
 
-    bottom: -14px;
+    bottom: -16px;
     left: 50%;
 
     transform: translateX(-50%);
@@ -45,6 +35,40 @@
   }
 }
 
-@media only screen and (min-width: $tablets) {
+@media only screen and (min-width: $iphone) {
+  .title-slider {
+    width: 350px;
+    height: 81px;
 
+    margin-top: 13px;
+
+    border: 3px solid $bg-border;
+
+    &::before {
+      width: 340px;
+      height: 23px;
+
+      bottom: -22px;
+      background-size: 340px 23px;
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile-hd) {
+  .title-slider {
+    width: 361px;
+    height: 80px;
+
+    margin-top: 12px;
+
+    border: 3px solid $bg-border;
+
+    &::before {
+      width: 340px;
+      height: 23px;
+
+      bottom: -22px;
+      background-size: 340px 23px;
+    }
+  }
 }

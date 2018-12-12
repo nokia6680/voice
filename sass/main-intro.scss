@@ -6,7 +6,7 @@
 
   width: 100%;
 
-  background-image: url('../img/main-intro-bg.svg');
+  background-image: url('../img/index-title-bg.svg');
   background-size: 309px 224px;
   background-repeat: no-repeat;
 
@@ -65,6 +65,87 @@
     &--checkout {
       margin-top: 35px;
       margin-bottom: 5px;
+    }
+  }
+}
+
+@media only screen and (min-width: $iphone) {
+  .main-intro {
+    background-size: 366px 265px;
+
+    width: 366px;
+    height: 265px;
+
+    &--checkout {
+      background-size: 366px 171px;
+
+      width: 366px;
+      height: 171px;
+
+      margin-bottom: 75px;
+    }
+
+    &__title {
+      font: {
+        size: 1.375em;
+      }
+    }
+
+    &__description {
+      font: {
+        size: 0.875em;
+      }
+
+      width: 320px;
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile-hd) {
+  .main-intro {
+    background-size: 406px 295px;
+
+    width: 406px;
+    height: 295px;
+
+    &__title {
+      font: {
+        size: 1.875em;
+      }
+
+      margin-top: 40px;
+      margin-bottom: 5px;
+
+      &--checkout {
+        margin-top: 0px;
+      }
+    }
+
+    &__description {
+      font: {
+        size: 1.125em;
+      }
+
+      margin-bottom: 10px;
+
+      &--checkout {
+        margin-top: 30px;
+        margin-bottom: 0;
+        width: 380px;
+      }
+    }
+
+    &--checkout {
+      margin-bottom: 6px;
+
+      background-size: 399px 186px;
+
+      width: 399px;
+      height: 186px;
+
+      .main-intro__description--lower {
+        width: 380px;
+      }
     }
   }
 }

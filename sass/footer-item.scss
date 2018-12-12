@@ -8,11 +8,6 @@
     border-right: none;
   }
 
-  &:hover {
-    color: $hover-color;
-    border-color: $hover-color;
-  }
-
   &__link {
     display: block;
     width: 100%;
@@ -27,11 +22,6 @@
     line-height: 1;
 
     text-decoration: none;
-
-    &:hover {
-      color: $hover-color;
-      border-color: $hover-color;
-    }
   }
 }
 

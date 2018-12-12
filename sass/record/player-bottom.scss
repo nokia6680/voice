@@ -13,7 +13,7 @@
   background-color: $bg-player;
 }
 
-@media only screen and (min-width: $mobile-hd) {
+@media only screen and (min-width: $iphone) {
   .player-bottom {
     height: 42px;
   }

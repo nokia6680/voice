@@ -64,7 +64,7 @@
   }
 }
 
-@media only screen and (min-width: $mobile-hd) {
+@media only screen and (min-width: $iphone) {
   .main-submit {
     &__title {
       width: 280px;
@@ -73,7 +73,7 @@
         size: 1em;
       }
 
-      margin-top: 20px;
+      margin-top: 40px;
     }
 
     &__subtitle {
@@ -82,6 +82,41 @@
       font: {
         size: 1em;
       }
+
+      margin-bottom: 50px;
+    }
+
+    &__logo {
+      margin-top: 10px;
+    }
+
+    &__img {
+      width: 115px;
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile-hd) {
+  .main-submit {
+    &__title {
+      width: 320px;
+
+      font: {
+        size: 1.125em;
+      }
+
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    &__subtitle {
+      width: 380px;
+
+      font: {
+        size: 1.125em;
+      }
+
+      margin-bottom: 10px;
     }
 
     &__logo {

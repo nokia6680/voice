@@ -1,11 +1,12 @@
 .choose-item {
-  width: 260px !important;
+  width: 262px !important;
   height: 290px;
 
   background-color: #64b5f6;
+  margin-top: 20px;
+  margin-left: 22px;
 
-  margin-top: 22px;
-  margin-left: 24px;
+  border: 2px solid $bg-black;
 
   &__link {
     width: 100%;
@@ -16,28 +17,38 @@
 
   &__preview {
     width: 290px;
-    height: 310px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: $iphone) {
+  .choose-item {
+    width: 340px !important;
+    height: 377px;
+
+    margin-left: 23px;
+
+    border: 3px solid $bg-black;
+
+    &__preview {
+      width: 340px;
+      height: auto;
+    }
   }
 }
 
 @media only screen and (min-width: $mobile-hd) {
   .choose-item {
-    width: 338px !important;
-    height: 378px;
+    width: 350px !important;
+    height: 387px;
 
-    background-color: #64b5f6;
+    margin-left: 23px;
 
-    margin-top: 32px;
-    margin-left: 33px;
+    border: 3px solid $bg-black;
 
     &__preview {
-      width: 338px;
-      height: 390px;
+      width: 350px;
+      height: auto;
     }
   }
-}
-
-
-@media only screen and (min-width: $tablets) {
-
 }

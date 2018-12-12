@@ -11,6 +11,13 @@
     padding: 0 14px;
   }
 
+  @media (min-width: $iphone) {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 14px;
+  }
+
   @media (min-width: 480px) {
     width: auto;
     max-width: 100%;
@@ -63,6 +70,15 @@
   line-height: 1;
 
   background-color: transparent;
+
+  @media only screen and (min-width: $mobile-hd) {
+    border: 2px solid #ffffff;
+
+    font: {
+      family: $bold-font;
+      size: 1.25em;
+    }
+  }
 
   @media only screen and (min-width: $hd) {
     border: 3px solid #ffffff;

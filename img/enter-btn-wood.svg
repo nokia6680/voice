@@ -1,0 +1,56 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 263.88 258.16">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #6d4c41;
+      }
+
+      .cls-3 {
+        stroke: #212121;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.76px;
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path" transform="translate(-0.12 -37.3)">
+      <rect class="cls-1" width="264.58" height="296.34"/>
+    </clipPath>
+  </defs>
+  <title>Vector Smart 213123123123123</title>
+  <rect class="cls-2" x="0.88" width="262.58" height="258.16"/>
+  <line class="cls-3" x1="26.16" y1="47.86" x2="55.39" y2="47.86"/>
+  <g class="cls-4">
+    <line class="cls-3" x1="249.73" y1="168.04" x2="262.26" y2="168.04"/>
+    <line class="cls-3" x1="247.42" y1="195.79" x2="262.26" y2="195.79"/>
+    <line class="cls-3" x1="1.06" y1="178.9" x2="23.15" y2="178.9"/>
+    <line class="cls-3" x1="246.65" y1="5.67" x2="263" y2="5.67"/>
+  </g>
+  <line class="cls-3" x1="66.98" y1="7.9" x2="88.22" y2="7.9"/>
+  <g class="cls-4">
+    <line class="cls-3" x1="228.88" y1="14.99" x2="262.49" y2="14.99"/>
+    <line class="cls-3" x1="245.68" y1="47.67" x2="262.49" y2="47.67"/>
+  </g>
+  <line class="cls-3" x1="192.54" y1="14.99" x2="205.81" y2="14.99"/>
+  <g class="cls-4">
+    <line class="cls-3" x1="1.84" y1="152.33" x2="15.16" y2="152.33"/>
+  </g>
+  <line class="cls-3" x1="216.31" y1="103.32" x2="251.95" y2="103.32"/>
+  <g class="cls-4">
+    <line class="cls-3" x1="254.84" y1="133.91" x2="262.26" y2="133.91"/>
+    <line class="cls-3" x1="1.84" y1="144.4" x2="12.11" y2="144.4"/>
+    <line class="cls-3" x1="220.43" y1="187.4" x2="262.6" y2="187.4"/>
+  </g>
+  <line class="cls-3" x1="171.32" y1="237.18" x2="193.26" y2="237.18"/>
+  <line class="cls-3" x1="66.81" y1="226.63" x2="84.14" y2="226.63"/>
+  <g class="cls-4">
+    <line class="cls-3" x1="0.88" y1="252.57" x2="39.86" y2="252.57"/>
+  </g>
+</svg>

@@ -4,7 +4,7 @@
   justify-content: flex-end;
   align-items: center;
 
-  background-image: url('../img/robot-bg.svg');
+  background-image: url('../img/robot-bg.png');
   background-size: 246px 416px;
   background-position: top center;
   background-repeat: no-repeat;
@@ -84,9 +84,9 @@
       border-radius: 32px;
 
       border-top: 6px solid #f85790;
-      border-left: 6px solid #f50057;
-      border-right: 6px solid #f50057;
-      border-bottom: 6px solid #f50057;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid transparent;
 
       top: 50%;
       left: 50%;
@@ -99,86 +99,41 @@
 @media only screen and (min-width: $mobile) {
   .main-checkout {
     background-size: 258px 436px;
-
-    width: 100%;
     height: 436px;
+  }
+}
 
-    z-index: 0;
-
-    margin-bottom: -24px;
+@media only screen and (min-width: $iphone) {
+  .main-checkout {
+    background-size: 366px 616px;
+    height: 616px;
 
     &__controls {
-      margin-bottom: 30px;
+      margin-bottom: 50px;
 
-      background-image: url('../img/checkout-btn.svg');
-      background-size: 126px 129px;
-      background-position: top center;
-      background-repeat: no-repeat;
+      background-size: 166px 166px;
 
-      width: 126px;
-      height: 129px;
-
-      position: relative;
+      width: 166px;
+      height: 166px;
     }
 
     &__link {
-      background-color: #f50057;
+      width: 104px;
+      height: 104px;
 
-      display: block;
-      width: 84px;
-      height: 84px;
+      border: 3px solid $bg-border;
 
-      border: 2px solid $bg-border;
-      border-radius: 50%;
-
-      position: relative;
-
-      cursor: pointer;
-      outline: none;
-
-      position: absolute;
-
-      top: 30px;
-      left: 19px;
-
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
-      &:hover {
-        box-shadow:0px 0px 22px 2px rgba(0,0,0,0.5)inset;
-        -webkit-box-shadow:0px 0px 22px 2px rgba(0,0,0,0.5)inset;
-        -moz-box-shadow:0px 0px 22px 2px rgba(0,0,0,0.5)inset;
-
-        .main-checkout__tech {
-          display: none;
-        }
-      }
+      top: 40px;
+      left: 30px;
     }
 
     &__tech {
-      position: relative;
-
-      top: 35px;
-
-      display: block;
-      transform: rotate(45deg);
+      top: 47px;
 
       &::after {
-        position: absolute;
-        content: '';
-
-        width: 64px;
-        height: 64px;
-        border-radius: 32px;
-
-        border-top: 6px solid #f85790;
-        border-left: 6px solid #f50057;
-        border-right: 6px solid #f50057;
-        border-bottom: 6px solid #f50057;
-
-        top: 50%;
-        left: 50%;
-
-        transform: translate(-50%, -50%);
+        width: 84px;
+        height: 84px;
+        border-radius: 42px;
       }
     }
   }
@@ -187,86 +142,34 @@
 @media only screen and (min-width: $mobile-hd) {
   .main-checkout {
     background-size: 320px 540px;
-
-    width: 100%;
     height: 540px;
 
-    z-index: 0;
-
-    margin-bottom: -24px;
-
     &__controls {
-      margin-bottom: 30px;
+      margin-bottom: 50px;
 
-      background-image: url('../img/checkout-btn.svg');
-      background-size: 126px 129px;
-      background-position: top center;
-      background-repeat: no-repeat;
+      background-size: 166px 166px;
 
-      width: 126px;
-      height: 129px;
-
-      position: relative;
+      width: 166px;
+      height: 166px;
     }
 
     &__link {
-      background-color: #f50057;
+      width: 104px;
+      height: 104px;
 
-      display: block;
-      width: 84px;
-      height: 84px;
+      border: 3px solid $bg-border;
 
-      border: 2px solid $bg-border;
-      border-radius: 50%;
-
-      position: relative;
-
-      cursor: pointer;
-      outline: none;
-
-      position: absolute;
-
-      top: 30px;
-      left: 19px;
-
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
-      &:hover {
-        box-shadow:0px 0px 22px 2px rgba(0,0,0,0.5)inset;
-        -webkit-box-shadow:0px 0px 22px 2px rgba(0,0,0,0.5)inset;
-        -moz-box-shadow:0px 0px 22px 2px rgba(0,0,0,0.5)inset;
-
-        .main-checkout__tech {
-          display: none;
-        }
-      }
+      top: 40px;
+      left: 30px;
     }
 
     &__tech {
-      position: relative;
-
-      top: 35px;
-
-      display: block;
-      transform: rotate(45deg);
+      top: 47px;
 
       &::after {
-        position: absolute;
-        content: '';
-
-        width: 64px;
-        height: 64px;
-        border-radius: 32px;
-
-        border-top: 6px solid #f85790;
-        border-left: 6px solid #f50057;
-        border-right: 6px solid #f50057;
-        border-bottom: 6px solid #f50057;
-
-        top: 50%;
-        left: 50%;
-
-        transform: translate(-50%, -50%);
+        width: 84px;
+        height: 84px;
+        border-radius: 42px;
       }
     }
   }
