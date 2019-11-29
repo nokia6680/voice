@@ -1,116 +1,11 @@
 .main-enter {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-
-  border: 2px solid $bg-border;
-
-  width: 265px;
-
-  position: relative;
-
-  &__title {
-    width: 100%;
-
-    font: {
-      family: $bold-font;
-      size: 1.25em;
-    }
-
-    color: $text-black;
-    line-height: 1;
-
-    background-color: $bg-orange;
-    text-align: center;
-
-    margin: 0;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    border-bottom: 2px solid $bg-border;
-  }
-
-  &::after {
-    position: absolute;
-    content: '';
-
-    width: 67px;
-    height: 140px;
-
-    background-image: url('../img/left-pipe.svg');
-    background-size: 67px 140px;
-    background-repeat: no-repeat;
-    background-position: top center;
-
-    bottom: -88px;
-    left: -24px;
-  }
-
-  &::before {
-    position: absolute;
-    content: '';
-
-    width: 67px;
-    height: 140px;
-
-    background-image: url('../img/right-pipe.svg');
-    background-size: 67px 140px;
-    background-repeat: no-repeat;
-    background-position: top center;
-
-    bottom: -88px;
-    right: -24px;
-
-    z-index: 3;
-  }
-}
-
-@media only screen and (min-width: $iphone) {
-  .main-enter {
-    width: 366px;
-    margin-top: 70px;
-
-    &__title {
-      font: {
-        size: 1.5em;
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: $mobile-hd) {
-  .main-enter {
-    width: 330px;
-    margin-top: 0px;
-
-    &::after {
-      width: 90px;
-      height: 170px;
-
-      background-size: 90px 170px;
-
-      bottom: -105px;
-      left: -25px;
-    }
-
-    &::before {
-      width: 90px;
-      height: 170px;
-
-      background-size: 90px 170px;
-
-      bottom: -105px;
-      right: -25px;
-
-      z-index: 3;
-    }
-  }
+  display: none;
 }
 
 @media only screen and (min-width: $tablets) {
   .main-enter {
+    @include flex-setting(column, flex-start, center);
+
     border: none;
     width: 100%;
     height: auto;
@@ -123,10 +18,6 @@
     left: 50%;
 
     transform: translateX(-50%);
-
-    &__title {
-      display: none;
-    }
 
     &::after {
       position: absolute;
@@ -154,18 +45,20 @@
 
 @media only screen and (min-width: $laptop) {
   .main-enter {
-    width: 956px;
+    width: 780px;
 
     &::after {
       background-image: url('../img/tower-bg.svg');
-      background-size: 519px 320px;
+      background-size: cover;
 
-      width: 519px;
-      height: 320px;
+      width: 420px;
+      height: 259px;
 
       left: 42%;
 
       transform: translateX(-42%);
+
+      pointer-events: none;
     }
 
     &__tower {
@@ -175,11 +68,11 @@
 
       &--left {
         background-image: url('../img/tower-left.svg');
-        background-size: 359px 493px;
+        background-size: cover;
         background-repeat: no-repeat;
 
-        width: 359px;
-        height: 493px;
+        width: 280px;
+        height: 384px;
 
         left: 2%;
 
@@ -188,11 +81,11 @@
 
       &--right {
         background-image: url('../img/tower-right.svg');
-        background-size: 281px 467px;
+        background-size: cover;
         background-repeat: no-repeat;
 
-        width: 281px;
-        height: 467px;
+        width: 230px;
+        height: 384px;
 
         right: 0;
 
@@ -222,8 +115,9 @@
       height: 467px;
 
       background-image: url('../img/big-bottom.svg');
-      background-size: 100%;
+      background-size: cover;
       background-repeat: no-repeat;
+      background-position: top center;
 
       z-index: 0;
 

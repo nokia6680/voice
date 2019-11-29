@@ -3,42 +3,33 @@
   padding: 0;
   list-style: none;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  @include flex-setting(column, flex-start, center);
 
   width: 100%;
 
   background-color: $bg-menu;
-
   position: absolute;
 
-  left: 0;
-  top: -335px;
+  left: -150%;
+  top: 35px;
 
-  z-index: -1;
+  transition: 0.2s ease-in-out;
 
-  &--active {
-    z-index: -1;
+  &.active {
+    z-index: 101;
     top: 35px;
+    left: 0;
 
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
   }
 }
 
 @media only screen and (min-width: $tablets) {
   .nav-list {
-    left: 0;
-    top: -335px;
+    top: 47px;
 
-    z-index: -1;
-
-    &--active {
-      z-index: -2;
-      top: 45px;
-
-      transition: 0.5s ease-in-out;
+    &.active {
+      top: 47px;
     }
   }
 }

@@ -1,13 +1,10 @@
 .title-slider {
   width: 262px;
-  height: 57px;
+  height: 47px;
 
   padding: 6px 6px;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  @include flex-setting(row, flex-start, center);
 
   position: relative;
 
@@ -40,7 +37,7 @@
     width: 350px;
     height: 81px;
 
-    margin-top: 13px;
+    margin-top: 16px;
 
     border: 3px solid $bg-border;
 

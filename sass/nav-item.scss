@@ -1,8 +1,10 @@
 .nav-item {
+  @include flex-setting(row, flex-start, center);
   width: 100%;
-  padding-left: 14px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+
+  padding-left: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 
   border-bottom: 2px solid $bg-border;
 
@@ -10,22 +12,16 @@
     text-decoration: none;
     text-align: left;
 
-    font: {
-      family: $bold-font;
-      size: 1.125em;
-    }
+    @include font-setting($primary-font, 1.125rem, 1, 700, $text-black);
+  }
 
-    color: $text-black;
-    line-height: normal;
-
-    cursor: pointer;
-    outline: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  &--event {
+    border-top: 2px solid $bg-border;
   }
 
   &--vote {
     position: relative;
-    padding-right: 50px;
+    padding-right: 3.125rem;
 
     &::after {
       position: absolute;
@@ -48,12 +44,10 @@
 
 @media only screen and (min-width: $tablets) {
   .nav-item {
-    padding-left: 40px;
+    padding-left: 2.5rem;
 
     &__link {
-      font: {
-        size: 1.25em;
-      }
+      font-size: 1.25rem;
     }
 
     &--vote {

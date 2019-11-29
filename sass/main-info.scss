@@ -1,0 +1,217 @@
+.main-info {
+  width: 100%;
+
+  @include flex-setting(column, flex-start, center);
+
+  &--start,
+  &--record,
+  &--submit {
+    display: none;
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 246px;
+
+    @include flex-setting(column, flex-start, center);
+  }
+
+  &__prize {
+    max-height: 230px;
+    margin-bottom: 0.25rem;
+
+
+    &--checkout {
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  &__prize-item {
+    max-height: 230px;
+    min-height: 230px;
+  }
+
+  &__btn {
+    @include flex-setting(column, center, center);
+    @include font-setting($primary-font, 1.125rem, 1, 700, $text-black);
+
+    text-decoration: none;
+
+    width: 244px;
+    height: 44px;
+
+    border: 2px solid #000;
+    border-radius: 30px;
+    background-color: #64dd17;
+
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .main-info {
+    &__wrapper {
+      max-width: 246px;
+    }
+
+    &__prize {
+      max-height: 240px;
+      margin-bottom: 0.5rem;
+
+      &--checkout {
+        margin-bottom: 1.25rem;
+      }
+    }
+
+    &__prize-item {
+      max-height: 240px;
+      min-height: 240px;
+    }
+
+    &__btn {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .main-info {
+    &__wrapper {
+      max-width: 330px;
+    }
+
+    &__prize {
+      max-height: 280px;
+      margin-bottom: 1.25rem;
+    }
+
+    &__prize-item {
+      max-height: 280px;
+      min-height: 280px;
+    }
+
+    &__btn {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-info {
+    position: absolute;
+
+    width: auto;
+
+    left: 20px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    &--checkout {
+      top: 20%;
+      left: 50%;
+
+      transform: translate(-50%, -20%);
+    }
+
+    &__wrapper {
+      max-width: 200px;
+    }
+
+    &__prize {
+      max-height: 180px;
+      margin-bottom: 1.25rem;
+    }
+
+    &__prize-item {
+      max-height: 180px;
+      min-height: 180px;
+    }
+
+    &__btn {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .main-info {
+    position: absolute;
+
+    width: auto;
+
+    left: 20px;
+    top: 80%;
+
+    transform: translateY(-80%);
+
+    &--checkout {
+      top: 40%;
+
+      transform: translateY(-40%);
+    }
+
+    &--start,
+    &--record,
+    &--submit {
+      display: flex;
+    }
+
+    &__wrapper {
+      max-width: 200px;
+    }
+
+    &__prize {
+      max-height: 160px;
+      margin-bottom: 1.25rem;
+    }
+
+    &__prize-item {
+      max-height: 160px;
+      min-height: 160px;
+    }
+
+    &__btn {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: $widebooks) {
+  .main-info {
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    &__prize {
+      max-height: 220px;
+      margin-bottom: 0;
+    }
+
+    &__prize-item {
+      max-height: 220px;
+      min-height: 220px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .main-info {
+    left: 154px;
+    top: 70%;
+    transform: translateY(-70%);
+
+    &__prize {
+      min-width: 360px;
+      max-height: 420px;
+      margin-bottom: 0;
+    }
+
+    &__prize-item {
+      max-height: 420px;
+      min-height: 420px;
+    }
+  }
+}

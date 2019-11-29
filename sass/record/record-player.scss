@@ -1,11 +1,8 @@
 .record-player {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  @include flex-setting(column, flex-start, center);
 
   width: 294px;
-  height: 196px;
+  height: 185px;
 
   border: 2px solid $bg-border;
   border-radius: 10px;
@@ -16,14 +13,13 @@
 @media only screen and (min-width: $iphone) {
   .record-player {
     width: 382px;
-    height: 260px;
+    height: 245px;
   }
 }
 
-@media only screen and (min-width: $mobile-hd) {
+@media only screen and (min-width: 414px) and (min-device-height: 719px) {
   .record-player {
-    width: 408px;
-    height: 274px;
+    height: 260px;
   }
 }
 
@@ -36,10 +32,21 @@
 
 @media only screen and (min-width: $laptop) {
   .record-player {
-    width: 794px;
-    height: 423px;
+    width: 640px;
+    height: 350px;
 
-    transition: 0.8s ease-in;
+    transition: 0.2s ease-in;
+
+    border-radius: 20px;
+
+    z-index: 10;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .record-player {
+    width: 794px;
+    height: 422px;
 
     border-radius: 30px;
   }

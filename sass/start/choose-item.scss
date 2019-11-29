@@ -1,6 +1,6 @@
 .choose-item {
   width: 262px !important;
-  height: 290px;
+  height: 262px;
 
   background-color: #64b5f6;
   margin-top: 20px;
@@ -17,22 +17,35 @@
 
   &__preview {
     width: 290px;
-    height: auto;
+    height: 258px;
+    object-fit: cover;
   }
 }
 
 @media only screen and (min-width: $iphone) {
   .choose-item {
-    width: 340px !important;
-    height: 377px;
+    width: 300px !important;
+    height: 300px;
 
     margin-left: 23px;
 
     border: 3px solid $bg-black;
 
     &__preview {
-      width: 340px;
-      height: auto;
+      width: 300px;
+      height: 294px;
+    }
+  }
+}
+
+@media only screen and (min-width: $iphone) and (min-device-height: 719px) {
+  .choose-item {
+    width: 320px;
+    height: 320px;
+
+    &__preview {
+      width: 320px;
+      height: 314px;
     }
   }
 }

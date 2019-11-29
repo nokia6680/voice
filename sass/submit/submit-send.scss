@@ -1,6 +1,6 @@
 .submit-send {
   width: 266px;
-  height: 244px;
+  height: 230px;
 
   background-color: $bg-player;
   border: 2px solid $bg-border;
@@ -12,10 +12,7 @@
   padding-right: 10px;
   padding-top: 16px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  @include flex-setting(column, flex-start, center);
 
   &__thing {
     position: absolute;
@@ -74,54 +71,12 @@
 
 @media only screen and (min-width: $iphone) {
   .submit-send {
-    width: 380px;
-    height: 330px;
+    width: 340px;
+    height: 290px;
 
     padding-left: 13px;
     padding-right: 13px;
-    padding-top: 20px;
-  }
-}
-
-@media only screen and (min-width: $mobile-hd) {
-  .submit-send {
-    width: 368px;
-    height: 337px;
-
-    padding-left: 13px;
-    padding-right: 13px;
-    padding-top: 22px;
-
-    &__thing {
-      width: 24px;
-      height: 24px;
-
-      border-radius: 12px;
-
-      .fa-plus::before {
-        font-size: 14px;
-      }
-
-      &--first {
-        top: 4px;
-        left: 4px;
-      }
-
-      &--second {
-        top: 4px;
-        right: 4px;
-      }
-
-      &--third {
-        bottom: 4px;
-        left: 4px;
-      }
-
-      &--fourth {
-        bottom: 4px;
-        right: 4px;
-      }
-    }
+    padding-top: 10px;
   }
 }
 
@@ -141,7 +96,7 @@
       content: '';
 
       background-image: url('../img/hands.svg');
-      background-size: 922px 348px;
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: center center;
 
@@ -159,7 +114,7 @@
       content: '';
 
       background-image: url('../img/cassete-bottom.svg');
-      background-size: 348px 46px;
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: center center;
 
@@ -181,7 +136,7 @@
 
       &--left {
         background-image: url('../img/hand-left.svg');
-        background-size: 160px 83px;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: top center;
 
@@ -195,7 +150,7 @@
 
       &--right {
         background-image: url('../img/hand-right.svg');
-        background-size: 160px 83px;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: top center;
 
@@ -235,6 +190,112 @@
         transform: translateY(-53%);
 
         z-index: -3;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .submit-send {
+    width: 500px;
+    height: 336px;
+
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-top: 13px;
+    /*Сами руки*/
+    &::before {
+      width: 737px;
+      height: 278px;
+
+      bottom: -18px;
+      left: -120px;
+    }
+    /*Основание кассеты*/
+    &::after {
+      width: 278px;
+      height: 36px;
+
+      bottom: -2px;
+    }
+    /*Клешни*/
+    &__hand {
+      width: 128px;
+      height: 66px;
+
+      &--left {
+        left: -78px;
+      }
+
+      &--right {
+        right: -78px;
+      }
+    }
+
+    &__backhand {
+      width: 46px;
+      height: 66px;
+
+      &--left {
+        left: -40px;
+      }
+
+      &--right {
+        right: -40px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .submit-send {
+    width: 624px;
+    height: 419px;
+
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-top: 16px;
+
+    position: relative;
+    /*Сами руки*/
+    &::before {
+      width: 922px;
+      height: 348px;
+
+      bottom: -25px;
+      left: -150px;
+    }
+    /*Основание кассеты*/
+    &::after {
+      width: 348px;
+      height: 46px;
+
+      bottom: -2px;
+    }
+    /*Клешни*/
+    &__hand {
+      width: 160px;
+      height: 83px;
+
+      &--left {
+        left: -90px;
+      }
+
+      &--right {
+        right: -90px;
+      }
+    }
+
+    &__backhand {
+      width: 57px;
+      height: 83px;
+
+      &--left {
+        left: -40px;
+      }
+
+      &--right {
+        right: -40px;
       }
     }
   }

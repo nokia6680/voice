@@ -7,13 +7,7 @@
   margin-right: 18px;
 
   &__title {
-    font: {
-      family: $bold-font;
-      size: 0.625em;
-    }
-
-    color: $text-black;
-    line-height: 1;
+    @include font-setting($primary-font, 0.625rem, 1, 700, $text-black);
 
     display: block;
     padding-left: 20px;

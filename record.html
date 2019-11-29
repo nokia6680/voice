@@ -3,276 +3,279 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Голос 2018 | Запись</title>
+	<title>Твой голос 2019 | Nickelodeon</title>
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
+
 <body>
-	<div class="wrapper">
-		<!--HEader, the same for all pages-->
-		<header class="header">
-			<nav class="header__nav header-nav">
-				<div class="header-nav__logo">
-					<a class="header-nav__link" href="index.html">
-						<img class="header-nav__img" src="img/logo.svg" alt="Nickelodeon"/>
-					</a>
-				</div>
-				<!--Меню выдвигающееся-->
-				<ul class="header-nav__list nav-list nav-list--mobile">
-					<li class="nav-list__item nav-item">
-						<a class="nav-item__link nav-item__link--event" href="#" target="_self">Конкурс</a>
+	<!--HEader, the same for all pages-->
+	<header class="header">
+		<nav class="header__nav header-nav">
+			<div class="header-nav__logo">
+				<a class="header-nav__link" href="index.html">
+					<img class="header-nav__img" src="img/logo.svg" alt="Nickelodeon" />
+				</a>
+			</div>
+			<!--Меню выдвигающееся-->
+			<ul class="header-nav__list nav-list">
+				<li class="nav-list__item nav-item nav-item--event">
+					<a class="nav-item__link nav-item__link--event" href="start.html" target="_self">Конкурс</a>
+				</li>
+				<li class="nav-list__item nav-item">
+					<a class="nav-item__link nav-item__link--prizes" href="#" target="_self">Призы</a>
+				</li>
+				<li class="nav-list__item nav-item">
+					<a class="nav-item__link nav-item__link--faq" href="#" target="_self">Правила</a>
+				</li>
+				<li class="nav-list__item nav-item nav-item--vote">
+					<a class="nav-item__link nav-item__link--vote" href="#" target="_self">Голосовать за&nbsp;Nickelodeon</a>
+				</li>
+				<li class="nav-list__item nav-item nav-item--policy">
+					<a class="nav-item__link nav-item__link--city" href="#" target="_blank">Политика конфиденциальности</a>
+				</li>
+			</ul>
+			<!--Кнопка открытия меню-->
+			<div class="header-nav__toggle" id="toggle">
+				<span class="header-nav__toggle-span header-nav__toggle-span--1"></span>
+				<span class="header-nav__toggle-span header-nav__toggle-span--1"></span>
+				<span class="header-nav__toggle-span header-nav__toggle-span--1"></span>
+			</div>
+		</nav>
+	</header>
+	<!--Start page main content block-->
+	<main class="main">
+		<!--Menu with highlighted back-->
+		<section class="main__menu main-menu main-menu--desktop">
+			<!--Логотип-->
+			<div class="main-menu__logo">
+				<img class="main-menu__img" src="img/voice-logo.svg" alt="Нам нужен твой голос!" />
+			</div>
+			<!--Навигация для десктопа-->
+			<nav class="main-menu__nav main-nav">
+				<ul class="main-nav__list main-list main-list main-list--second">
+					<li class="main-list__item main-item main-item--checked">
+						<a class="main-item__link" href="start.html" target="_self">
+							<span class="main-item__text">Выбрать шоу</span>
+						</a>
 					</li>
-					<li class="nav-list__item nav-item">
-						<a class="nav-item__link nav-item__link--prizes" href="#" target="_self">Призы</a>
+					<li class="main-list__item main-item main-item--checked">
+						<a class="main-item__link" href="#" target="_self">
+							<span class="main-item__text">Озвучить</span>
+						</a>
 					</li>
-					<li class="nav-list__item nav-item">
-						<a class="nav-item__link nav-item__link--faq" href="#" target="_self">Правила</a>
-					</li>
-					<li class="nav-list__item nav-item nav-item--vote">
-						<a class="nav-item__link nav-item__link--vote" href="event.html" target="_self">Голосовать за&nbsp;Nickelodeon</a>
-					</li>
-					<li class="nav-list__item nav-item nav-item--policy">
-						<a class="nav-item__link nav-item__link--city" href="#" target="_blank">Политика конфиденциальности</a>
+					<li class="main-list__item main-item">
+						<a class="main-item__link" href="submit.html" target="_self">
+							<span class="main-item__text">Отправить</span>
+						</a>
 					</li>
 				</ul>
-				<!--Кнопка открытия меню-->
-				<div class="header-nav__opener header-opener">
-					<button class="header-opener__btn" type="button"></button>
-				</div>
 			</nav>
-		</header>
-		<!--Start page main content block-->
-    <main class="main">
-			<!--Menu with highlighted back-->
-			<section class="main__menu main-menu main-menu--desktop">
-				<!--Логотип-->
-				<div class="main-menu__logo">
-					<img class="main-menu__img" src="img/voice-logo.svg" alt="Нам нужен твой голос!"/>
+			<!--Кнопка голосования-->
+			<div class="main-menu__vote">
+				<button class="main-menu__btn" type="button">
+					<span class="main-menu__tech"></span>
+				</button>
+			</div>
+		</section>
+		<section class="main__info main-info main-info--record">
+			<div class="main-info__wrapper">
+				<div class="main-info__prize">
+					<img class="main-info__prize-item" src="img/page-3.png" alt="Приз 3" />
 				</div>
-				<!--Навигация для десктопа-->
-				<nav class="main-menu__nav main-nav">
-					<ul class="main-nav__list main-list main-list main-list--second">
-						<li class="main-list__item main-item main-item--checked">
-							<a class="main-item__link" href="start.html" target="_self">
-								<span class="main-item__text">Выбрать шоу</span>
-							</a>
-						</li>
-						<li class="main-list__item main-item main-item--checked">
-							<a class="main-item__link" href="#" target="_self">
-								<span class="main-item__text">Озвучить</span>
-							</a>
-						</li>
-						<li class="main-list__item main-item">
-							<a class="main-item__link" href="submit.html" target="_self">
-								<span class="main-item__text">Отправить</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
-				<!--Кнопка голосования-->
-				<div class="main-menu__vote">
-					<button class="main-menu__btn" type="button">
-						<span class="main-menu__tech"></span>
-					</button>
-				</div>
-			</section>
-			<!--Main content of recording page-->
-			<section class="main__record main-record">
-				<!--Start process - header-->
-				<h1 class="main-record__title main-record__title--process" style="display: none;">Посмотри&nbsp;видео несколько&nbsp;раз и прочитай&nbsp;вслух&nbsp;реплики своего героя.</h1>
-				<h2 class="main-record__subtitle main-record__subtitle--process" style="display: none;">Когда будешь готов, жми "Запись" и говори в микрофон</h2>
-				<!--When ready - header-->
-				<h1 class="main-record__title main-record__title--final">Послушай, что у тебя получилось. Если&nbsp;все&nbsp;ок, отправляй.</h1>
-				<h2 class="main-record__subtitle main-record__subtitle--final">Если нет, попробуй записать свою озвучку ещё раз</h2>
-				<!--Videoplayer itself-->
-				<div class="main-record__player record-player">
-					<!--Player-heading-->
-					<div class="record-player__head player-head">
-						<div class="player-head__title">
-							<div class="player-head__thing player-head__thing--left"><i class="fas fa-plus"></i></div>
-							<img class="player-head__logo" src="img/logo.svg" alt="Player-logo" />
-							<div class="player-head__thing player-head__thing--right"><i class="fas fa-plus"></i></div>
-						</div>
-					</div>
-					<!--Player middle part with video frame-->
-					<div class="record-player__middle player-middle">
-						<!--Left column with speakers-->
-						<div class="player-middle__column player-middle__column--left">
-							<img class="player-middle__speaker player-middle__speaker--left" src="img/speaker.svg" alt="player-speaker" />
-						</div>
-						<!--Video frame-->
-						<div class="player-middle__content">
-							<iframe class="player-middle__video" src="https://www.youtube.com/watch?v=kB7GeJpv3iw"></iframe>
-						</div>
-						<!--Right column with speakers-->
-						<div class="player-middle__column player-middle__column--right">
-							<img class="player-middle__speaker player-middle__speaker--right" src="img/speaker.svg" alt="player-speaker" />
-						</div>
-					</div>
-					<!--Player bottom part with recording status-->
-					<div class="record-player__bottom player-bottom">
-						<div class="player-bottom__status player-status">
-							<span class="player-status__title">Идёт запись</span>
-						</div>
+			</div>
+		</section>
+		<!--Main content of recording page-->
+		<section class="main__record main-record">
+			<!--Start process - header-->
+			<h1 class="main-record__title main-record__title--process" style="display: none;">Посмотри&nbsp;видео несколько&nbsp;раз и прочитай&nbsp;вслух&nbsp;реплики своего героя.</h1>
+			<h2 class="main-record__subtitle main-record__subtitle--process" style="display: none;">Когда будешь готов, жми "Запись" и говори в микрофон</h2>
+			<!--When ready - header-->
+			<h1 class="main-record__title main-record__title--final">Послушай, что у тебя получилось. Если&nbsp;все&nbsp;ок, отправляй.</h1>
+			<h2 class="main-record__subtitle main-record__subtitle--final">Если нет, попробуй записать свою озвучку ещё раз</h2>
+			<!--Videoplayer itself-->
+			<div class="main-record__player record-player">
+				<!--Player-heading-->
+				<div class="record-player__head player-head">
+					<div class="player-head__title">
+						<div class="player-head__thing player-head__thing--left"><i class="fas fa-plus"></i></div>
+						<img class="player-head__logo" src="img/logo.svg" alt="Player-logo" />
+						<div class="player-head__thing player-head__thing--right"><i class="fas fa-plus"></i></div>
 					</div>
 				</div>
-				<!--Videoplayer controls-->
-				<div class="main-record__controls record-controls">
-					<!--Болтики-->
-          <div class="record-controls__thing record-controls__thing--first"><i class="fas fa-plus"></i></div>
-          <div class="record-controls__thing record-controls__thing--second"><i class="fas fa-plus"></i></div>
-					<!--Subblock for process control buttons-->
-					<ul class="record-controls__list controls-list controls-list--process" style="display: none;">
-						<li class="controls-list__item controls-item controls-item--process">
-							<button class="controls-item__btn controls-item__btn--play" type="button">
-								<span class="controls-item__pic controls-item__pic--play"></span>
-								<span class="controls-item__text controls-item__text--play">Плэй</span>
-							</button>
-							<span class="controls-item__title">Плэй</span>
-						</li>
-						<li class="controls-list__item controls-item controls-item--process">
-							<button class="controls-item__btn controls-item__btn--rec" type="button">
-								<span class="controls-item__pic controls-item__pic--rec"></span>
-								<span class="controls-item__text controls-item__text--rec">Запись</span>
-							</button>
-							<span class="controls-item__title">Запись</span>
-						</li>
-						<li class="controls-list__item controls-item controls-item--process">
-							<button class="controls-item__btn controls-item__btn--pause" type="button">
-								<span class="controls-item__pic controls-item__pic--pause"></span>
-								<span class="controls-item__text controls-item__text--pause">Пауза</span>
-							</button>
-							<span class="controls-item__title">Пауза</span>
-						</li>
-						<li class="controls-list__item controls-item controls-item--process">
-							<button class="controls-item__btn controls-item__btn--stop" type="button">
-								<span class="controls-item__pic controls-item__pic--stop"></span>
-								<span class="controls-item__text controls-item__text--stop">Стоп</span>
-							</button>
-							<span class="controls-item__title">Стоп</span>
-						</li>
-						<li class="controls-list__item controls-item controls-item--process">
-							<button class="controls-item__btn controls-item__btn--help" type="button">
-								<span class="controls-item__pic controls-item__pic--help"></span>
-								<span class="controls-item__text controls-item__text--help">Помощь</span>
-							</button>
-							<span class="controls-item__title controls-item__title--help">Помощь</span>
-						</li>
-					</ul>
-					<!--Subblock for final control buttons-->
-					<h3 class="record-controls__title">Озвучка готова</h3>
-					<ul class="record-controls__list controls-list controls-list--final">
-						<li class="controls-list__item controls-item controls-item--final">
-							<button class="controls-item__btn controls-item__btn--send" type="button">
-								<span class="controls-item__pic controls-item__pic--send"></span>
-								<span class="controls-item__text controls-item__text--send">Отправить</span>
-							</button>
-							<span class="controls-item__title">Отправить</span>
-						</li>
-						<li class="controls-list__item controls-item controls-item--final">
-							<button class="controls-item__btn controls-item__btn--listen" type="button">
-								<span class="controls-item__pic controls-item__pic--listen"></span>
-								<span class="controls-item__text controls-item__text--listen">Прослушать</span>
-							</button>
-							<span class="controls-item__title">Прослушать</span>
-						</li>
-						<li class="controls-list__item controls-item controls-item--final">
-							<button class="controls-item__btn controls-item__btn--repeat" type="button">
-								<span class="controls-item__pic controls-item__pic--repeat"></span>
-								<span class="controls-item__text controls-item__text--repeat">Перезаписать</span>
-							</button>
-							<span class="controls-item__title">Перезаписать</span>
-						</li>
-						<li class="controls-list__item controls-item controls-item--final controls-item--help">
-							<button class="controls-item__btn controls-item__btn--help" type="button">
-								<span class="controls-item__pic controls-item__pic--help"></span>
-								<span class="controls-item__text controls-item__text--help">Помощь</span>
-							</button>
-							<span class="controls-item__title controls-item__title--help">Помощь</span>
-						</li>
-					</ul>
+				<!--Player middle part with video frame-->
+				<div class="record-player__middle player-middle">
+					<!--Left column with speakers-->
+					<div class="player-middle__column player-middle__column--left">
+						<img class="player-middle__speaker player-middle__speaker--left" src="img/speaker.svg" alt="player-speaker" />
+					</div>
+					<!--Video frame-->
+					<div class="player-middle__content">
+						<iframe class="player-middle__video" src="https://www.youtube.com/watch?v=kB7GeJpv3iw"></iframe>
+					</div>
+					<!--Right column with speakers-->
+					<div class="player-middle__column player-middle__column--right">
+						<img class="player-middle__speaker player-middle__speaker--right" src="img/speaker.svg" alt="player-speaker" />
+					</div>
 				</div>
-			</section>
-    </main>
-    <!--Footer-->
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <!--Buttons block-->
-        <nav class="footer__nav footer-nav">
-          <ul class="footer-nav__list footer-list">
-            <li class="footer-list__item footer-item">
-              <a class="footer-item__link footer-item__link--event" href="/event" target="_self">Конкурс</a>
-            </li>
-            <li class="footer-list__item footer-item">
-              <a class="footer-item__link footer-item__link--prizes" href="/prizes" target="_self">Призы</a>
-            </li>
-            <li class="footer-list__item footer-item">
-              <a class="footer-item__link footer-item__link--faq" href="/faq" target="_self">Правила</a>
-            </li>
-          </ul>
-          <button class="footer-nav__vote" type="button">Голосовать</button>
-        </nav>
-        <!--Private policies section-->
-        <div class="footer__private footer-private">
-          <ul class="footer-private__list private-list">
-            <li class="private-list__item private-item">
-              <a class="private-item__link private-item__link--confident" href="#" target="_blank">Политика конфиденциальности</a>
-            </li>
-            <li class="private-list__item private-item">
-              <a class="private-item__link private-item__link--rules" href="#" target="_blank">Правила проведения конкурса</a>
-            </li>
-          </ul>
-        </div>
-        <!--Contact & Social info-->
-        <div class="footer__contacts footer-contacts">
-          <div class="footer-contacts__logo">
-            <a class="footer-contacts__link" href="#" target="_blank">
-              <img class="footer-contacts__img" src="img/footer-logo.svg" alt="Nickelodeon"/>
-            </a>
-          </div>
-          <!--Social media opener-->
-          <button class="footer-contacts__btn" type="button">
-            <span class="footer-contacts__text">Наши контакты</span>
-          </button>
-          <!--Social networks list-->
-          <ul class="footer-contacts__list social-list">
-            <li class="social-list__item social-item social-item--yt">
-              <a class="social-item__link" href="https://www.youtube.com/channel/UCw3vK8lNe5SZzL--rMgq-CQ" target="_blank"><i class="fab fa-youtube"></i></a>
-            </li>
-            <li class="social-list__item social-item social-item--in">
-              <a class="social-item__link" href="https://www.instagram.com/nickelodeon_ru/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li class="social-list__item social-item social-item--vk">
-              <a class="social-item__link" href="https://vk.com/nickelodeonru" target="_blank"><i class="fab fa-vk"></i></a>
-            </li>
-            <li class="social-list__item social-item social-item--fb">
-              <a class="social-item__link" href="https://www.facebook.com/NickelodeonRussia" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li class="social-list__item social-item social-item--ok">
-              <a class="social-item__link" href="https://ok.ru/group/53695281103021" target="_blank"><i class="fab fa-odnoklassniki"></i></a>
-            </li>
-            <li class="social-list__item social-item social-item--tw">
-              <a class="social-item__link" href="https://twitter.com/NickTVru" target="_blank"><i class="fab fa-twitter"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__copyright">
-        <p class="footer__description">&copy; 2018 Viacom. Все права защищены.</p>
-      </div>
-    </footer>
-  </div>
+				<!--Player bottom part with recording status-->
+				<div class="record-player__bottom player-bottom">
+					<div class="player-bottom__status player-status">
+						<span class="player-status__title">Идёт запись</span>
+					</div>
+				</div>
+			</div>
+			<!--Videoplayer controls-->
+			<div class="main-record__controls record-controls">
+				<!--Болтики-->
+				<div class="record-controls__thing record-controls__thing--first"><i class="fas fa-plus"></i></div>
+				<div class="record-controls__thing record-controls__thing--second"><i class="fas fa-plus"></i></div>
+				<!--Subblock for process control buttons-->
+				<ul class="record-controls__list controls-list controls-list--process" style="display: none;">
+					<li class="controls-list__item controls-item controls-item--process">
+						<button class="controls-item__btn controls-item__btn--play" type="button">
+							<span class="controls-item__pic controls-item__pic--play"></span>
+							<span class="controls-item__text controls-item__text--play">Плэй</span>
+						</button>
+						<span class="controls-item__title">Плэй</span>
+					</li>
+					<li class="controls-list__item controls-item controls-item--process">
+						<button class="controls-item__btn controls-item__btn--rec" type="button">
+							<span class="controls-item__pic controls-item__pic--rec"></span>
+							<span class="controls-item__text controls-item__text--rec">Запись</span>
+						</button>
+						<span class="controls-item__title">Запись</span>
+					</li>
+					<li class="controls-list__item controls-item controls-item--process">
+						<button class="controls-item__btn controls-item__btn--pause" type="button">
+							<span class="controls-item__pic controls-item__pic--pause"></span>
+							<span class="controls-item__text controls-item__text--pause">Пауза</span>
+						</button>
+						<span class="controls-item__title">Пауза</span>
+					</li>
+					<li class="controls-list__item controls-item controls-item--process">
+						<button class="controls-item__btn controls-item__btn--stop" type="button">
+							<span class="controls-item__pic controls-item__pic--stop"></span>
+							<span class="controls-item__text controls-item__text--stop">Стоп</span>
+						</button>
+						<span class="controls-item__title">Стоп</span>
+					</li>
+					<li class="controls-list__item controls-item controls-item--process">
+						<button class="controls-item__btn controls-item__btn--help" type="button">
+							<span class="controls-item__pic controls-item__pic--help"></span>
+							<span class="controls-item__text controls-item__text--help">Помощь</span>
+						</button>
+						<span class="controls-item__title controls-item__title--help">Помощь</span>
+					</li>
+				</ul>
+				<!--Subblock for final control buttons-->
+				<h3 class="record-controls__title">Озвучка готова</h3>
+				<ul class="record-controls__list controls-list controls-list--final">
+					<li class="controls-list__item controls-item controls-item--final">
+						<button class="controls-item__btn controls-item__btn--send" type="button">
+							<span class="controls-item__pic controls-item__pic--send"></span>
+							<span class="controls-item__text controls-item__text--send">Отправить</span>
+						</button>
+						<span class="controls-item__title">Отправить</span>
+					</li>
+					<li class="controls-list__item controls-item controls-item--final">
+						<button class="controls-item__btn controls-item__btn--listen" type="button">
+							<span class="controls-item__pic controls-item__pic--listen"></span>
+							<span class="controls-item__text controls-item__text--listen">Прослушать</span>
+						</button>
+						<span class="controls-item__title">Прослушать</span>
+					</li>
+					<li class="controls-list__item controls-item controls-item--final">
+						<button class="controls-item__btn controls-item__btn--repeat" type="button">
+							<span class="controls-item__pic controls-item__pic--repeat"></span>
+							<span class="controls-item__text controls-item__text--repeat">Перезаписать</span>
+						</button>
+						<span class="controls-item__title">Перезаписать</span>
+					</li>
+					<li class="controls-list__item controls-item controls-item--final controls-item--help">
+						<button class="controls-item__btn controls-item__btn--help" type="button">
+							<span class="controls-item__pic controls-item__pic--help"></span>
+							<span class="controls-item__text controls-item__text--help">Помощь</span>
+						</button>
+						<span class="controls-item__title controls-item__title--help">Помощь</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<!--Footer-->
+	<footer class="footer">
+		<div class="footer__wrapper">
+			<!--Buttons block-->
+			<nav class="footer__nav footer-nav">
+				<ul class="footer-nav__list">
+					<li class="footer-nav__item">
+						<a class="footer-nav__item-link footer-nav__item-link--event" href="/event" target="_self">Конкурс</a>
+					</li>
+					<li class="footer-nav__item">
+						<a class="footer-nav__item-link footer-nav__item-link--prizes" href="/prizes" target="_self">Призы</a>
+					</li>
+					<li class="footer-nav__item">
+						<a class="footer-nav__item-link footer-nav__item-link--faq" href="/faq" target="_self">Правила</a>
+					</li>
+				</ul>
+				<!--Vote btn-->
+				<button class="footer-nav__vote" type="button">Голосовать</button>
+			</nav>
+			<!--Private policies section-->
+			<ul class="footer__private footer-private">
+				<li class="footer-private__item">
+					<a class="footer-private__link footer-private__link--confident" href="#" target="_blank">Политика конфиденциальности</a>
+				</li>
+				<li class="footer-private__list-item">
+					<a class="footer-private__link footer-private__link--rules" href="#" target="_blank">Правила проведения конкурса</a>
+				</li>
+			</ul>
+			<!--Contact & Social info-->
+			<div class="footer__contacts footer-contacts">
+				<div class="footer-contacts__logo">
+					<a class="footer-contacts__link" href="#" target="_blank">
+						<img class="footer-contacts__img" src="img/footer-logo.svg" alt="Nickelodeon" />
+					</a>
+				</div>
+				<!--Social media opener-->
+				<button class="footer-contacts__btn" type="button">
+					<span class="footer-contacts__text">Наши контакты</span>
+				</button>
+				<!--Social networks list-->
+				<ul class="footer-contacts__social social-list">
+					<li class="social-list__item social-item social-item--yt">
+						<a class="social-item__link" href="https://www.youtube.com/channel/UCw3vK8lNe5SZzL--rMgq-CQ" target="_blank"><i class="fab fa-youtube"></i></a>
+					</li>
+					<li class="social-list__item social-item social-item--in">
+						<a class="social-item__link" href="https://www.instagram.com/nickelodeon_ru/" target="_blank"><i class="fab fa-instagram"></i></a>
+					</li>
+					<li class="social-list__item social-item social-item--vk">
+						<a class="social-item__link" href="https://vk.com/nickelodeonru" target="_blank"><i class="fab fa-vk"></i></a>
+					</li>
+					<li class="social-list__item social-item social-item--fb">
+						<a class="social-item__link" href="https://www.facebook.com/NickelodeonRussia" target="_blank"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="social-list__item social-item social-item--ok">
+						<a class="social-item__link" href="https://ok.ru/group/53695281103021" target="_blank"><i class="fab fa-odnoklassniki"></i></a>
+					</li>
+					<li class="social-list__item social-item social-item--tw">
+						<a class="social-item__link" href="https://twitter.com/NickTVru" target="_blank"><i class="fab fa-twitter"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__copyright">
+			<span class="footer__description">&copy; 2018 Viacom. Все права защищены.</span>
+		</div>
+	</footer>
 	<!--Попап помощь-->
 	<div class="popup-help" style="display: none;">
 		<div class="popup-help__wrapper">
@@ -316,10 +319,11 @@
 					<span class="popup-prize__tech"></span>
 				</button>
 			</header>
-			<p class="popup-prize__description">Главный&nbsp;приз&nbsp;-&nbsp;поездка в&nbsp;Москву&nbsp;в&nbsp;офис&nbsp;Nickelodeon и&nbsp;визит&nbsp;на&nbsp;студию&nbsp;дубляжа для&nbsp;записи&nbsp;небольшой роли&nbsp;в&nbsp;одном&nbsp;из&nbsp;наших шоу&nbsp;или&nbsp;промо</p>
+			<p class="popup-prize__description">Главный&nbsp;приз&nbsp;-&nbsp;поездка в&nbsp;Москву&nbsp;в&nbsp;офис&nbsp;Nickelodeon и&nbsp;визит&nbsp;на&nbsp;студию&nbsp;дубляжа для&nbsp;записи&nbsp;небольшой роли&nbsp;в&nbsp;одном&nbsp;из&nbsp;наших
+				шоу&nbsp;или&nbsp;промо</p>
 		</div>
 	</div>
-  <script src="js/script.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>

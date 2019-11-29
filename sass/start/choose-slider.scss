@@ -1,17 +1,21 @@
 .choose-slider {
   width: 305px;
-  height: 335px;
+  height: 305px;
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  @include flex-setting(row, center, center);
 }
 
 @media only screen and (min-width: $iphone) {
   .choose-slider {
-    width: 386px;
-    height: 420px;
+    width: 346px;
+    height: 346px;
+  }
+}
+
+@media only screen and (min-width: $iphone) and (min-device-height: 719px) {
+  .choose-slider {
+    width: 366px;
+    height: 366px;
   }
 }
 

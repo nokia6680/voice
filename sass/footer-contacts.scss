@@ -1,8 +1,5 @@
 .footer-contacts {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  @include flex-setting(column, center, center);
 
   &__logo {
     display: none;
@@ -10,11 +7,6 @@
 
   &__btn {
     @include btn;
-
-    &:hover {
-      color: $hover-color;
-      border-color: $hover-color;
-    }
   }
 }
 
@@ -24,7 +16,7 @@
     justify-content: space-between;
 
     &__logo {
-      display: block;
+      display: inline-flex;
 
       width: 84px;
       height: auto;

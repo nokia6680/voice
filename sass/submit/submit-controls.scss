@@ -1,12 +1,9 @@
 .submit-controls {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-items: center;
+  @include flex-setting(column, center, center);
 
   position: relative;
 
-  margin-top: 145px;
+  margin-top: 120px;
 
   width: 194px;
 
@@ -26,7 +23,7 @@
   &__btn {
     background-color: $bg-submit;
 
-    display: block;
+    @include flex-setting(column, center, center);
     width: 168px;
     height: 42px;
 
@@ -91,14 +88,7 @@
 
   &__text {
     display: block;
-    margin-top: 7px;
-    font: {
-      family: $bold-font;
-      size: 1.375em;
-    }
-
-    color: $text-black;
-    line-height: 1;
+    @include font-setting($primary-font, 1.375rem, 1, 700, $text-black);
   }
 
   &::before {
@@ -106,7 +96,7 @@
     height: 240px;
 
     background-image: url('../img/audio.svg');
-    background-size: 320px 240px;
+    background-size: contain;
     background-repeat: no-repeat;
 
     z-index: -1;
@@ -115,7 +105,7 @@
     content: '';
 
     left: 50%;
-    top: -164px;
+    top: -140px;
 
     transform: translateX(-50%);
   }
@@ -167,14 +157,18 @@
 
 @media only screen and (min-width: $mobile) {
   .submit-controls {
-    margin-top: 149px;
-
+    margin-top: 120px;
     width: 200px;
 
     transition: 0.2s ease-in;
 
+    padding-top: 0.625rem;
+
+    &::before {
+      top: -135px;
+    }
+
     &__text {
-      margin-top: 8px;
       font: {
         size: 1.375em;
       }
@@ -184,52 +178,38 @@
 
 @media only screen and (min-width: $iphone) {
   .submit-controls {
-    margin-top: 210px;
-
+    margin-top: 155px;
     width: 240px;
 
     &__text {
-      margin-top: 8px;
       font: {
         size: 1.375em;
       }
     }
 
     &::before {
-      width: 414px;
+      width: 360px;
       height: 311px;
-      top: -232px;
-
-      background-size: 414px 311px;
+      top: -175px;
     }
   }
 }
 
-@media only screen and (min-width: $mobile-hd) {
+@media only screen and (min-width: 414px) and (min-device-height: 719px) {
   .submit-controls {
-    margin-top: 207px;
-
-    width: 254px;
-
-    &__btn {
-      width: 220px;
-      height: 55px;
-      border-radius: 26px;
-    }
+    margin-top: 178px;
+    width: 240px;
 
     &__text {
-      margin-top: 8px;
       font: {
-        size: 1.75em;
+        size: 1.375em;
       }
     }
 
     &::before {
-      width: 437px;
-      height: 316px;
-      top: -228px;
-
-      background-size: 437px 316px;
+      width: 360px;
+      height: 311px;
+      top: -200px;
     }
   }
 }
@@ -270,6 +250,50 @@
 
     &::before {
       display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .submit-controls {
+    margin-top: 0;
+
+    width: 155px;
+
+    padding-top: 17px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-bottom: 9px;
+
+    &__btn {
+      width: 131px;
+      height: 33px;
+    }
+
+    &__text {
+      margin: 0;
+      font: {
+        size: 1.125em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .submit-controls {
+    margin-top: 42px;
+
+    width: 194px;
+
+    &__btn {
+      width: 168px;
+      height: 42px;
+    }
+
+    &__text {
+      font: {
+        size: 1.375em;
+      }
     }
   }
 }

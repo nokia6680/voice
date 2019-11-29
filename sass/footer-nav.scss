@@ -1,5 +1,9 @@
 .footer-nav {
-  display: flex;
+  @include flex-setting(row, center, center);
+
+  &__list {
+    display: none;
+  }
 
   &__vote {
     @include btn;
@@ -8,10 +12,21 @@
 
 @media only screen and (min-width: $laptop) {
   .footer-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+
+    &__list {
+      @include flex-setting(row, center, center);
+
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    &__item {
+      &-link {
+        @include btn;
+        text-decoration: none;
+      }
+    }
 
     &__vote {
       display: none;

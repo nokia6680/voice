@@ -115,19 +115,21 @@
 
     padding-left: 22px;
     padding-right: 22px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 
-    margin-top: 185px;
+    margin-top: 148px;
 
     &::before {
-      width: 400px;
-      height: 185px;
+      width: 380px;
+      height: 176px;
 
-      background-size: 400px 185px;
+      background-size: cover;
 
-      left: -10px;
-      top: -187px;
+      left: -2px;
+      top: -152px;
+
+      z-index: -1;
     }
 
     &__title {
@@ -136,17 +138,27 @@
   }
 }
 
-@media only screen and (min-width: $mobile-hd) {
+@media only screen and (min-width: 414px) and (min-device-height: 719px) {
   .record-controls {
-    width: 408px;
+    width: 380px;
 
     padding-left: 22px;
     padding-right: 22px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    margin-top: 170px;
 
     &::before {
-      left: 3px;
+      width: 380px;
+      height: 176px;
+
+      background-size: cover;
+
+      left: -2px;
+      top: -176px;
+
+      z-index: -1;
     }
 
     &__title {
@@ -192,6 +204,40 @@
 }
 
 @media only screen and (min-width: $laptop) {
+  .record-controls {
+    width: 640px;
+
+    margin-top: -5px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    padding-left: 24px;
+
+    border-bottom: none;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .record-controls {
+    width: 640px;
+
+    margin-top: 37px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    padding-left: 24px;
+
+    border-bottom: none;
+
+    &::before {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
   .record-controls {
     width: 800px;
 

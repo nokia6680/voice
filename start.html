@@ -3,16 +3,13 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Голос 2018 | Выбор шоу</title>
+	<title>Твой голос 2019 | Nickelodeon</title>
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -20,306 +17,312 @@
 </head>
 
 <body>
-	<div class="wrapper">
-		<!--HEader, the same for all pages-->
-		<header class="header">
-			<nav class="header__nav header-nav">
-				<div class="header-nav__logo">
-					<a class="header-nav__link" href="index.html">
-						<img class="header-nav__img" src="img/logo.svg" alt="Nickelodeon"/>
-					</a>
-				</div>
-				<!--Меню выдвигающееся-->
-				<ul class="header-nav__list nav-list nav-list--mobile">
-					<li class="nav-list__item nav-item">
-						<a class="nav-item__link nav-item__link--event" href="#" target="_self">Конкурс</a>
+	<!--HEader, the same for all pages-->
+	<header class="header">
+		<nav class="header__nav header-nav">
+			<div class="header-nav__logo">
+				<a class="header-nav__link" href="index.html">
+					<img class="header-nav__img" src="img/logo.svg" alt="Nickelodeon" />
+				</a>
+			</div>
+			<!--Меню выдвигающееся-->
+			<ul class="header-nav__list nav-list">
+				<li class="nav-list__item nav-item nav-item--event">
+					<a class="nav-item__link nav-item__link--event" href="start.html" target="_self">Конкурс</a>
+				</li>
+				<li class="nav-list__item nav-item">
+					<a class="nav-item__link nav-item__link--prizes" href="#" target="_self">Призы</a>
+				</li>
+				<li class="nav-list__item nav-item">
+					<a class="nav-item__link nav-item__link--faq" href="#" target="_self">Правила</a>
+				</li>
+				<li class="nav-list__item nav-item nav-item--vote">
+					<a class="nav-item__link nav-item__link--vote" href="#" target="_self">Голосовать за&nbsp;Nickelodeon</a>
+				</li>
+				<li class="nav-list__item nav-item nav-item--policy">
+					<a class="nav-item__link nav-item__link--city" href="#" target="_blank">Политика конфиденциальности</a>
+				</li>
+			</ul>
+			<!--Кнопка открытия меню-->
+			<div class="header-nav__toggle" id="toggle">
+				<span class="header-nav__toggle-span header-nav__toggle-span--1"></span>
+				<span class="header-nav__toggle-span header-nav__toggle-span--1"></span>
+				<span class="header-nav__toggle-span header-nav__toggle-span--1"></span>
+			</div>
+		</nav>
+	</header>
+	<!--Start page main content block-->
+	<main class="main">
+		<!--Menu with highlighted back-->
+		<section class="main__menu main-menu main-menu--desktop">
+			<!--Логотип-->
+			<div class="main-menu__logo">
+				<img class="main-menu__img" src="img/voice-logo.svg" alt="Нам нужен твой голос!" />
+			</div>
+			<!--Навигация для десктопа-->
+			<nav class="main-menu__nav main-nav">
+				<ul class="main-nav__list main-list main-list--first">
+					<li class="main-list__item main-item main-item--checked">
+						<a class="main-item__link" href="#" target="_self">
+							<span class="main-item__text">Выбрать шоу</span>
+						</a>
 					</li>
-					<li class="nav-list__item nav-item">
-						<a class="nav-item__link nav-item__link--prizes" href="#" target="_self">Призы</a>
+					<li class="main-list__item main-item">
+						<a class="main-item__link" href="record.html" target="_self">
+							<span class="main-item__text">Озвучить</span>
+						</a>
 					</li>
-					<li class="nav-list__item nav-item">
-						<a class="nav-item__link nav-item__link--faq" href="#" target="_self">Правила</a>
-					</li>
-					<li class="nav-list__item nav-item nav-item--vote">
-						<a class="nav-item__link nav-item__link--vote" href="event.html" target="_self">Голосовать за&nbsp;Nickelodeon</a>
-					</li>
-					<li class="nav-list__item nav-item nav-item--policy">
-						<a class="nav-item__link nav-item__link--city" href="#" target="_blank">Политика конфиденциальности</a>
+					<li class="main-list__item main-item">
+						<a class="main-item__link" href="submit.html" target="_self">
+							<span class="main-item__text">Отправить</span>
+						</a>
 					</li>
 				</ul>
-				<!--Кнопка открытия меню-->
-				<div class="header-nav__opener header-opener">
-					<button class="header-opener__btn" type="button"></button>
-				</div>
 			</nav>
-		</header>
-		<!--Start page main content block-->
-		<main class="main">
-			<!--Menu with highlighted back-->
-			<section class="main__menu main-menu main-menu--desktop">
-				<!--Логотип-->
-				<div class="main-menu__logo">
-					<img class="main-menu__img" src="img/voice-logo.svg" alt="Нам нужен твой голос!"/>
+			<!--Кнопка голосования-->
+			<div class="main-menu__vote">
+				<button class="main-menu__btn" type="button">
+					<span class="main-menu__tech"></span>
+				</button>
+			</div>
+		</section>
+		<section class="main__info main-info main-info--start">
+			<div class="main-info__wrapper">
+				<div class="main-info__prize">
+					<img class="main-info__prize-item" src="img/page-2.png" alt="Приз 2" />
 				</div>
-				<!--Навигация для десктопа-->
-				<nav class="main-menu__nav main-nav">
-					<ul class="main-nav__list main-list main-list--first">
-						<li class="main-list__item main-item main-item--checked">
-							<a class="main-item__link" href="#" target="_self">
-								<span class="main-item__text">Выбрать шоу</span>
-							</a>
-						</li>
-						<li class="main-list__item main-item">
-							<a class="main-item__link" href="record.html" target="_self">
-								<span class="main-item__text">Озвучить</span>
-							</a>
-						</li>
-						<li class="main-list__item main-item">
-							<a class="main-item__link" href="submit.html" target="_self">
-								<span class="main-item__text">Отправить</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
-				<!--Кнопка голосования-->
-				<div class="main-menu__vote">
-					<button class="main-menu__btn" type="button">
-						<span class="main-menu__tech"></span>
-					</button>
-				</div>
-			</section>
-			<!--Main content-->
-			<section class="main__choose main-choose">
-				<h1 class="main-choose__title">Выбери шоу, которое&nbsp;хочешь&nbsp;озвучить</h1>
-				<!--Слайдер эпизодов под мобильную версию-->
-				<div class="main-choose__carousel choose-carousel">
-					<!--Первый слайдер-->
-					<!--Cubes-->
-					<div class="choose-carousel__block choose-carousel__block--first"></div>
-					<div class="choose-carousel__block choose-carousel__block--second"></div>
-					<div class="choose-carousel__block choose-carousel__block--third"></div>
-					<div class="choose-carousel__block choose-carousel__block--fourth"></div>
-					<!---->
-					<div class="choose-carousel__slider choose-slider">
-						<div class="choose-slider__item choose-item choose-slider__item--first" id="first-show">
-							<a class="choose-item__link" href="#" target="_self">
-								<img class="choose-item__preview" src="img/ciara.png" alt="show-1" />
-							</a>
-						</div>
-						<div class="choose-slider__item choose-item choose-slider__item--second" id="first-show">
-							<a class="choose-item__link" href="#" target="_self">
-								<img class="choose-item__preview" src="img/man.png" alt="show-2" />
-							</a>
-						</div>
-						<div class="choose-slider__item choose-item choose-slider__item--third" id="first-show">
-							<a class="choose-item__link" href="#" target="_self">
-								<img class="choose-item__preview" src="img/knigts.png" alt="show-3" />
-							</a>
-						</div>
-						<div class="choose-slider__item choose-item choose-slider__item--fourth" id="first-show">
-							<a class="choose-item__link" href="#" target="_self">
-								<img class="choose-item__preview" src="img/ninja.png" alt="show-4" />
-							</a>
-						</div>
-						<div class="choose-slider__item choose-item choose-slider__item--fifth" id="first-show">
-							<a class="choose-item__link" href="#" target="_self">
-								<img class="choose-item__preview" src="img/bob.png" alt="show-5" />
-							</a>
-						</div>
-					</div>
-					<!--Второй слайдер-->
-					<div class="choose-carousel__slider title-slider">
-						<div class="title-slider__item title-item title-slider__item--first" id="first-title">
-							<a class="title-item__link" href="#" target="_self">
-								<h3 class="title-item__title title-item__title--first">Команда рыцарей</h3>
-							</a>
-						</div>
-						<div class="title-slider__item title-item title-slider__item--second" id="second-title">
-							<a class="title-item__link" href="#" target="_self">
-								<h3 class="title-item__title title-item__title--second">Мой шумный дом</h3>
-							</a>
-						</div>
-						<div class="title-slider__item title-item title-slider__item--third" id="third-title">
-							<a class="title-item__link" href="#" target="_self">
-								<h3 class="title-item__title title-item__title--third">Грозная семейка</h3>
-							</a>
-						</div>
-						<div class="title-slider__item title-item title-slider__item--fourth" id="fourth-title">
-							<a class="title-item__link" href="#" target="_self">
-								<h3 class="title-item__title title-item__title--fourth">Эволюция черепашек-ниндзя</h3>
-							</a>
-						</div>
-						<div class="title-slider__item title-item title-slider__item--fifth" id="fifth-title">
-							<a class="title-item__link" href="#" target="_self">
-								<h3 class="title-item__title title-item__title--fifth">Губка&nbsp;Боб квадратные&nbsp;штаны</h3>
-							</a>
-						</div>
-					</div>
-					<div class="slider-buttons">
-						<div class="slider-buttons__agree">
-							<a class="slider-buttons__link" href="record.html" target="_self">
-								<span class="slider-buttons__text"></span>
-							</a>
-							<h3 class="slider-buttons__title">Подтвердить</h3>
-						</div>
-						<div class="slider-buttons__controls">
-							<div class="slider-buttons__wrapper">
-								<div class="prev-1">
-									<span class="prev-1__text"></span>
-								</div>
-								<div class="next-1">
-									<span class="next-1__text"></span>
-								</div>
-							</div>
-							<h3 class="slider-buttons__title">Выбор шоу</h3>
-						</div>
-					</div>
-				</div>
-				<!--Список эпизодов для десктопа-->
-				<div class="main-choose__series choose-series">
-					<ul class="choose-series__list series-list">
-						<li class="choose-list__item series-item series-item--first">
-							<!--Cubes-->
-							<div class="series-item__block series-item__block--first"></div>
-							<div class="series-item__block series-item__block--second"></div>
-							<div class="series-item__block series-item__block--third"></div>
-							<div class="series-item__block series-item__block--fourth"></div>
-							<!--Inner content-->
-							<a class="series-item__link series-link" href="record.html" target="_self" id="series-1">
-								<div class="series-link__wrapper">
-									<img class="series-link__img" src="img/series-1.png" alt="series-1" />
-								</div>
-								<h3 class="series-link__title">Команда рыцарей</h3>
-							</a>
-						</li>
-						<li class="choose-list__item series-item series-item--second">
-							<!--Cubes-->
-							<div class="series-item__block series-item__block--first"></div>
-							<div class="series-item__block series-item__block--second"></div>
-							<div class="series-item__block series-item__block--third"></div>
-							<div class="series-item__block series-item__block--fourth"></div>
-							<!--Inner content-->
-							<a class="series-item__link series-link" href="record.html" target="_self" id="series-2">
-								<div class="series-link__wrapper">
-									<img class="series-link__img" src="img/series-2.png" alt="series-2" />
-								</div>
-								<h3 class="series-link__title">Мой шумный дом</h3>
-							</a>
-						</li>
-						<li class="choose-list__item series-item series-item--third">
-							<!--Cubes-->
-							<div class="series-item__block series-item__block--first"></div>
-							<div class="series-item__block series-item__block--second"></div>
-							<div class="series-item__block series-item__block--third"></div>
-							<div class="series-item__block series-item__block--fourth"></div>
-							<!--Inner content-->
-							<a class="series-item__link series-link" href="record.html" target="_self" id="series-3">
-								<div class="series-link__wrapper">
-									<img class="series-link__img" src="img/series-3.png" alt="series-3" />
-								</div>
-								<h3 class="series-link__title">Грозная семейка</h3>
-							</a>
-						</li>
-						<li class="choose-list__item series-item series-item--fourth">
-							<!--Cubes-->
-							<div class="series-item__block series-item__block--first"></div>
-							<div class="series-item__block series-item__block--second"></div>
-							<div class="series-item__block series-item__block--third"></div>
-							<div class="series-item__block series-item__block--fourth"></div>
-							<!--Inner content-->
-							<a class="series-item__link series-link" href="record.html" target="_self" id="series-4">
-								<div class="series-link__wrapper">
-									<img class="series-link__img" src="img/series-4.png" alt="series-4" />
-								</div>
-								<h3 class="series-link__title series-link__title--big">Эволюция<br />черепашек-ниндзя</h3>
-							</a>
-						</li>
-						<li class="choose-list__item series-item series-item--fifth">
-							<!--Cubes-->
-							<div class="series-item__block series-item__block--first"></div>
-							<div class="series-item__block series-item__block--second"></div>
-							<div class="series-item__block series-item__block--third"></div>
-							<div class="series-item__block series-item__block--fourth"></div>
-							<!--Inner content-->
-							<a class="series-item__link series-link" href="record.html" target="_self" id="series-5">
-								<div class="series-link__wrapper">
-									<img class="series-link__img" src="img/series-5.png" alt="series-5" />
-								</div>
-								<h3 class="series-link__title series-link__title--big">Губка&nbsp;Боб квадратные&nbsp;штаны</h3>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</main>
-    <!--Footer-->
-		<footer class="footer">
-			<div class="footer__wrapper">
-				<!--Buttons block-->
-				<nav class="footer__nav footer-nav">
-					<ul class="footer-nav__list footer-list">
-						<li class="footer-list__item footer-item">
-							<a class="footer-item__link footer-item__link--event" href="/event" target="_self">Конкурс</a>
-						</li>
-						<li class="footer-list__item footer-item">
-							<a class="footer-item__link footer-item__link--prizes" href="/prizes" target="_self">Призы</a>
-						</li>
-						<li class="footer-list__item footer-item">
-							<a class="footer-item__link footer-item__link--faq" href="/faq" target="_self">Правила</a>
-						</li>
-					</ul>
-					<button class="footer-nav__vote" type="button">Голосовать</button>
-				</nav>
-				<!--Private policies section-->
-				<div class="footer__private footer-private">
-					<ul class="footer-private__list private-list">
-						<li class="private-list__item private-item">
-							<a class="private-item__link private-item__link--confident" href="#" target="_blank">Политика конфиденциальности</a>
-						</li>
-						<li class="private-list__item private-item">
-							<a class="private-item__link private-item__link--rules" href="#" target="_blank">Правила проведения конкурса</a>
-						</li>
-					</ul>
-				</div>
-				<!--Contact & Social info-->
-				<div class="footer__contacts footer-contacts">
-					<div class="footer-contacts__logo">
-						<a class="footer-contacts__link" href="#" target="_blank">
-							<img class="footer-contacts__img" src="img/footer-logo.svg" alt="Nickelodeon"/>
+			</div>
+		</section>
+		<!--Main content-->
+		<section class="main__choose main-choose">
+			<h1 class="main-choose__title">Выбери шоу, которое&nbsp;хочешь&nbsp;озвучить</h1>
+			<!--Слайдер эпизодов под мобильную версию-->
+			<div class="main-choose__carousel choose-carousel">
+				<!--Первый слайдер-->
+				<!--Cubes-->
+				<div class="choose-carousel__block choose-carousel__block--first"></div>
+				<div class="choose-carousel__block choose-carousel__block--second"></div>
+				<div class="choose-carousel__block choose-carousel__block--third"></div>
+				<div class="choose-carousel__block choose-carousel__block--fourth"></div>
+				<!---->
+				<div class="choose-carousel__slider choose-slider">
+					<div class="choose-slider__item choose-item choose-slider__item--first" id="first-show">
+						<a class="choose-item__link" href="#" target="_self">
+							<img class="choose-item__preview" src="img/ciara.png" alt="show-1" />
 						</a>
 					</div>
-					<!--Social media opener-->
-					<button class="footer-contacts__btn" type="button">
-						<span class="footer-contacts__text">Наши контакты</span>
-					</button>
-					<!--Social networks list-->
-					<ul class="footer-contacts__list social-list">
-						<li class="social-list__item social-item social-item--yt">
-							<a class="social-item__link" href="https://www.youtube.com/channel/UCw3vK8lNe5SZzL--rMgq-CQ" target="_blank"><i class="fab fa-youtube"></i></a>
-						</li>
-						<li class="social-list__item social-item social-item--in">
-							<a class="social-item__link" href="https://www.instagram.com/nickelodeon_ru/" target="_blank"><i class="fab fa-instagram"></i></a>
-						</li>
-						<li class="social-list__item social-item social-item--vk">
-							<a class="social-item__link" href="https://vk.com/nickelodeonru" target="_blank"><i class="fab fa-vk"></i></a>
-						</li>
-						<li class="social-list__item social-item social-item--fb">
-							<a class="social-item__link" href="https://www.facebook.com/NickelodeonRussia" target="_blank"><i class="fab fa-facebook-f"></i></a>
-						</li>
-						<li class="social-list__item social-item social-item--ok">
-							<a class="social-item__link" href="https://ok.ru/group/53695281103021" target="_blank"><i class="fab fa-odnoklassniki"></i></a>
-						</li>
-						<li class="social-list__item social-item social-item--tw">
-							<a class="social-item__link" href="https://twitter.com/NickTVru" target="_blank"><i class="fab fa-twitter"></i></a>
-						</li>
-					</ul>
+					<div class="choose-slider__item choose-item choose-slider__item--second" id="first-show">
+						<a class="choose-item__link" href="#" target="_self">
+							<img class="choose-item__preview" src="img/man.png" alt="show-2" />
+						</a>
+					</div>
+					<div class="choose-slider__item choose-item choose-slider__item--third" id="first-show">
+						<a class="choose-item__link" href="#" target="_self">
+							<img class="choose-item__preview" src="img/knigts.png" alt="show-3" />
+						</a>
+					</div>
+					<div class="choose-slider__item choose-item choose-slider__item--fourth" id="first-show">
+						<a class="choose-item__link" href="#" target="_self">
+							<img class="choose-item__preview" src="img/ninja.png" alt="show-4" />
+						</a>
+					</div>
+					<div class="choose-slider__item choose-item choose-slider__item--fifth" id="first-show">
+						<a class="choose-item__link" href="#" target="_self">
+							<img class="choose-item__preview" src="img/bob.png" alt="show-5" />
+						</a>
+					</div>
+				</div>
+				<!--Второй слайдер-->
+				<div class="choose-carousel__slider title-slider">
+					<div class="title-slider__item title-item title-slider__item--first" id="first-title">
+						<a class="title-item__link" href="#" target="_self">
+							<h3 class="title-item__title title-item__title--first">Команда рыцарей</h3>
+						</a>
+					</div>
+					<div class="title-slider__item title-item title-slider__item--second" id="second-title">
+						<a class="title-item__link" href="#" target="_self">
+							<h3 class="title-item__title title-item__title--second">Мой шумный дом</h3>
+						</a>
+					</div>
+					<div class="title-slider__item title-item title-slider__item--third" id="third-title">
+						<a class="title-item__link" href="#" target="_self">
+							<h3 class="title-item__title title-item__title--third">Грозная семейка</h3>
+						</a>
+					</div>
+					<div class="title-slider__item title-item title-slider__item--fourth" id="fourth-title">
+						<a class="title-item__link" href="#" target="_self">
+							<h3 class="title-item__title title-item__title--fourth">Эволюция черепашек-ниндзя</h3>
+						</a>
+					</div>
+					<div class="title-slider__item title-item title-slider__item--fifth" id="fifth-title">
+						<a class="title-item__link" href="#" target="_self">
+							<h3 class="title-item__title title-item__title--fifth">Губка&nbsp;Боб квадратные&nbsp;штаны</h3>
+						</a>
+					</div>
+				</div>
+				<div class="slider-buttons">
+					<div class="slider-buttons__agree">
+						<a class="slider-buttons__link" href="record.html" target="_self">
+							<span class="slider-buttons__text"></span>
+						</a>
+						<h3 class="slider-buttons__title">Подтвердить</h3>
+					</div>
+					<div class="slider-buttons__controls">
+						<div class="slider-buttons__wrapper">
+							<div class="prev-1">
+								<span class="prev-1__text"></span>
+							</div>
+							<div class="next-1">
+								<span class="next-1__text"></span>
+							</div>
+						</div>
+						<h3 class="slider-buttons__title">Выбор шоу</h3>
+					</div>
 				</div>
 			</div>
-			<div class="footer__copyright">
-				<p class="footer__description">&copy; 2018 Viacom. Все права защищены.</p>
+			<!--Список эпизодов для десктопа-->
+			<div class="main-choose__series choose-series">
+				<ul class="choose-series__list series-list">
+					<li class="choose-list__item series-item series-item--first">
+						<!--Cubes-->
+						<div class="series-item__block series-item__block--first"></div>
+						<div class="series-item__block series-item__block--second"></div>
+						<div class="series-item__block series-item__block--third"></div>
+						<div class="series-item__block series-item__block--fourth"></div>
+						<!--Inner content-->
+						<a class="series-item__link series-link" href="record.html" target="_self" id="series-1">
+							<div class="series-link__wrapper">
+								<img class="series-link__img" src="img/series-1.png" alt="series-1" />
+							</div>
+							<h3 class="series-link__title">Команда рыцарей</h3>
+						</a>
+					</li>
+					<li class="choose-list__item series-item series-item--second">
+						<!--Cubes-->
+						<div class="series-item__block series-item__block--first"></div>
+						<div class="series-item__block series-item__block--second"></div>
+						<div class="series-item__block series-item__block--third"></div>
+						<div class="series-item__block series-item__block--fourth"></div>
+						<!--Inner content-->
+						<a class="series-item__link series-link" href="record.html" target="_self" id="series-2">
+							<div class="series-link__wrapper">
+								<img class="series-link__img" src="img/series-2.png" alt="series-2" />
+							</div>
+							<h3 class="series-link__title">Мой шумный дом</h3>
+						</a>
+					</li>
+					<li class="choose-list__item series-item series-item--third">
+						<!--Cubes-->
+						<div class="series-item__block series-item__block--first"></div>
+						<div class="series-item__block series-item__block--second"></div>
+						<div class="series-item__block series-item__block--third"></div>
+						<div class="series-item__block series-item__block--fourth"></div>
+						<!--Inner content-->
+						<a class="series-item__link series-link" href="record.html" target="_self" id="series-3">
+							<div class="series-link__wrapper">
+								<img class="series-link__img" src="img/series-3.png" alt="series-3" />
+							</div>
+							<h3 class="series-link__title">Грозная семейка</h3>
+						</a>
+					</li>
+					<li class="choose-list__item series-item series-item--fourth">
+						<!--Cubes-->
+						<div class="series-item__block series-item__block--first"></div>
+						<div class="series-item__block series-item__block--second"></div>
+						<div class="series-item__block series-item__block--third"></div>
+						<div class="series-item__block series-item__block--fourth"></div>
+						<!--Inner content-->
+						<a class="series-item__link series-link" href="record.html" target="_self" id="series-4">
+							<div class="series-link__wrapper">
+								<img class="series-link__img" src="img/series-4.png" alt="series-4" />
+							</div>
+							<h3 class="series-link__title series-link__title--big">Эволюция<br />черепашек-ниндзя</h3>
+						</a>
+					</li>
+					<li class="choose-list__item series-item series-item--fifth">
+						<!--Cubes-->
+						<div class="series-item__block series-item__block--first"></div>
+						<div class="series-item__block series-item__block--second"></div>
+						<div class="series-item__block series-item__block--third"></div>
+						<div class="series-item__block series-item__block--fourth"></div>
+						<!--Inner content-->
+						<a class="series-item__link series-link" href="record.html" target="_self" id="series-5">
+							<div class="series-link__wrapper">
+								<img class="series-link__img" src="img/series-5.png" alt="series-5" />
+							</div>
+							<h3 class="series-link__title series-link__title--big">Губка&nbsp;Боб квадратные&nbsp;штаны</h3>
+						</a>
+					</li>
+				</ul>
 			</div>
-		</footer>
-	</div>
+		</section>
+	</main>
+	<!--Footer-->
+	<footer class="footer">
+		<div class="footer__wrapper">
+			<!--Buttons block-->
+			<nav class="footer__nav footer-nav">
+				<ul class="footer-nav__list">
+					<li class="footer-nav__item">
+						<a class="footer-nav__item-link footer-nav__item-link--event" href="/event" target="_self">Конкурс</a>
+					</li>
+					<li class="footer-nav__item">
+						<a class="footer-nav__item-link footer-nav__item-link--prizes" href="/prizes" target="_self">Призы</a>
+					</li>
+					<li class="footer-nav__item">
+						<a class="footer-nav__item-link footer-nav__item-link--faq" href="/faq" target="_self">Правила</a>
+					</li>
+				</ul>
+				<!--Vote btn-->
+				<button class="footer-nav__vote" type="button">Голосовать</button>
+			</nav>
+			<!--Private policies section-->
+			<ul class="footer__private footer-private">
+				<li class="footer-private__item">
+					<a class="footer-private__link footer-private__link--confident" href="#" target="_blank">Политика конфиденциальности</a>
+				</li>
+				<li class="footer-private__list-item">
+					<a class="footer-private__link footer-private__link--rules" href="#" target="_blank">Правила проведения конкурса</a>
+				</li>
+			</ul>
+			<!--Contact & Social info-->
+			<div class="footer__contacts footer-contacts">
+				<div class="footer-contacts__logo">
+					<a class="footer-contacts__link" href="#" target="_blank">
+						<img class="footer-contacts__img" src="img/footer-logo.svg" alt="Nickelodeon" />
+					</a>
+				</div>
+				<!--Social media opener-->
+				<button class="footer-contacts__btn" type="button">
+					<span class="footer-contacts__text">Наши контакты</span>
+				</button>
+				<!--Social networks list-->
+				<ul class="footer-contacts__social social-list">
+					<li class="social-list__item social-item social-item--yt">
+						<a class="social-item__link" href="https://www.youtube.com/channel/UCw3vK8lNe5SZzL--rMgq-CQ" target="_blank"><i class="fab fa-youtube"></i></a>
+					</li>
+					<li class="social-list__item social-item social-item--in">
+						<a class="social-item__link" href="https://www.instagram.com/nickelodeon_ru/" target="_blank"><i class="fab fa-instagram"></i></a>
+					</li>
+					<li class="social-list__item social-item social-item--vk">
+						<a class="social-item__link" href="https://vk.com/nickelodeonru" target="_blank"><i class="fab fa-vk"></i></a>
+					</li>
+					<li class="social-list__item social-item social-item--fb">
+						<a class="social-item__link" href="https://www.facebook.com/NickelodeonRussia" target="_blank"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="social-list__item social-item social-item--ok">
+						<a class="social-item__link" href="https://ok.ru/group/53695281103021" target="_blank"><i class="fab fa-odnoklassniki"></i></a>
+					</li>
+					<li class="social-list__item social-item social-item--tw">
+						<a class="social-item__link" href="https://twitter.com/NickTVru" target="_blank"><i class="fab fa-twitter"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__copyright">
+			<span class="footer__description">&copy; 2018 Viacom. Все права защищены.</span>
+		</div>
+	</footer>
 	<!--Попап помощь-->
 	<div class="popup-help" style="display: none;">
 		<div class="popup-help__wrapper">
@@ -363,9 +366,13 @@
 					<span class="popup-prize__tech"></span>
 				</button>
 			</header>
-			<p class="popup-prize__description">Главный&nbsp;приз&nbsp;-&nbsp;поездка в&nbsp;Москву&nbsp;в&nbsp;офис&nbsp;Nickelodeon и&nbsp;визит&nbsp;на&nbsp;студию&nbsp;дубляжа для&nbsp;записи&nbsp;небольшой роли&nbsp;в&nbsp;одном&nbsp;из&nbsp;наших шоу&nbsp;или&nbsp;промо</p>
+			<p class="popup-prize__description">Главный&nbsp;приз&nbsp;-&nbsp;поездка в&nbsp;Москву&nbsp;в&nbsp;офис&nbsp;Nickelodeon и&nbsp;визит&nbsp;на&nbsp;студию&nbsp;дубляжа для&nbsp;записи&nbsp;небольшой роли&nbsp;в&nbsp;одном&nbsp;из&nbsp;наших
+				шоу&nbsp;или&nbsp;промо</p>
 		</div>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
+
 </html>

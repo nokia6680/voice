@@ -1,10 +1,6 @@
 @media only screen and (min-width: $laptop) {
   .series-link {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-
+    @include flex-setting(column, flex-start, stretch);
     text-decoration: none;
 
     width: 100%;
@@ -18,43 +14,56 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     &__wrapper {
-      width: 162px;
+      @include flex-setting(column, center, center);
+      width: 132px;
       height: 148px;
       overflow-y: hidden;
 
       border-bottom: 2px solid $bg-border;
-
-      margin-bottom: 3px;
     }
 
     &__img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
     }
 
     &__title {
       margin: 0;
 
-      font: {
-        size: 0.75em;
-        family: $bold-font;
-      }
-
-      color: $text-green;
-      line-height: 1;
+      @include font-setting($primary-font, 0.625rem, 1, 700, $text-green);
+      @include flex-setting(column, center, center);
 
       background-color: $bg-slider-small;
 
-      display: block;
-      width: 100%;
+      padding-top: 0.625rem;
+      padding-bottom: 0.625rem;
 
-      padding-top: 11px;
-      padding-bottom: 11px;
-
-      text-align: center;
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
 
       border-top: 2px solid $bg-border;
       border-bottom: 2px solid $bg-border;
+
+      text-align: center;
+
+      &--big {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .series-link {
+    &__wrapper {
+      width: 162px;
+      height: 150px;
+    }
+
+    &__title {
+      font-size: 0.75rem;
 
       &--big {
         padding-top: 5px;

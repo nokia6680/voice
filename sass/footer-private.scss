@@ -4,9 +4,47 @@
 
 @media screen and (min-width: $laptop) {
   .footer-private {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex-setting(row, center, center);
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    width: auto;
+
+    &__item {
+      @include flex-setting(column, center, center);
+
+      width: auto;
+      margin-right: 0.87rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      @include font-setting($primary-font, 0.5rem, 1, 600, $text-white);
+      @include flex-setting(column, center, center);
+
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      text-decoration: none;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $text-green;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .footer-private {
+    &__link {
+      font-size: 0.75rem;
+    }
   }
 }

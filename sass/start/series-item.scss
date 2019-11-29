@@ -1,7 +1,7 @@
 @media only screen and (min-width: $laptop) {
   .series-item {
-    width: 190px;
-    height: 224px;
+    width: 160px;
+    height: 190px;
 
     background-color: #ffca28;
 
@@ -64,7 +64,7 @@
 
     &--first,
     &--second {
-      margin-right: 163px;
+      margin-right: 133px;
     }
 
     &--third {
@@ -72,13 +72,29 @@
     }
 
     &--fourth {
-      margin-left: 176px;
+      margin-left: 0;
       margin-top: -14px;
     }
 
     &--fifth {
-      margin-left: 164px;
+      margin-left: 133px;
       margin-top: -14px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .series-item {
+    width: 190px;
+    height: 220px;
+
+    &--first,
+    &--second {
+      margin-right: 163px;
+    }
+
+    &--fifth {
+      margin-left: 163px;
     }
   }
 }

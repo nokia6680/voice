@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
 }
 
 *,
@@ -24,27 +26,35 @@ body {
   margin: 0 auto;
   padding: 0;
   min-height: 100vh;
+  overflow: hidden;
 
   position: relative;
-
   text-transform: uppercase;
 
-  background: radial-gradient(circle at bottom, #5c1894, #a43fb8);
+  background-image: url('../img/bg-planets-2019.png');
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
+
   color: $text-white;
 
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 
-  @media only screen and (min-width: $tablets) {
-    background: linear-gradient(to bottom, #8321a6, #6f1c9c);
-  }
-
   @media only screen and (min-width: $laptop) {
-    background: url('../img/bg-planets.png'), linear-gradient(to bottom, #8321a6, #6f1c9c);
-    background-size: cover;
+    overflow: hidden;
   }
+}
+
+.section {
+  min-height: 100vh;
+}
+
+a,
+button {
+  cursor: pointer;
+  outline: none;
 }
 
 img {

@@ -6,10 +6,7 @@
   .submit-center {
     width: 100%;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-setting(row, space-between, center);
 
     position: relative;
 
@@ -22,7 +19,7 @@
       content: '';
 
       background-image: url('../img/cassete-front.svg');
-      background-size: 622px 194px;
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: center center;
 
@@ -35,7 +32,7 @@
     /*Катушки*/
     &__wheel {
       background-image: url('../img/cassete-round.svg');
-      background-size: 215px 215px;
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: top center;
 
@@ -53,7 +50,7 @@
         content: '';
 
         background-image: url('../img/cassete-round-small.svg');
-        background-size: 81px 81px;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
 
@@ -85,7 +82,7 @@
         content: '';
 
         background-image: url('../img/glass.svg');
-        background-size: 204px 146px;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
 
@@ -107,6 +104,75 @@
       }
       100% {
         transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .submit-center {
+    margin-top: -29px;
+
+    z-index: 0;
+    /*Крышка кассеты*/
+    &::after {
+      width: 501px;
+      height: 155px;
+
+      bottom: -3px;
+      left: -37px;
+    }
+    /*Катушки*/
+    &__wheel {
+      width: 172px;
+      height: 172px;
+      /*Центр катушки*/
+      &::after {
+        width: 65px;
+        height: 65px;
+      }
+    }
+    /*Стекло кассеты*/
+    &__glass {
+      &::before {
+
+        width: 163px;
+        height: 117px;
+
+        top: -55px;
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1920px) {
+  .submit-center {
+    /*Крышка кассеты*/
+    &::after {
+      width: 622px;
+      height: 194px;
+
+      bottom: -3px;
+      left: -44px;
+    }
+    /*Катушки*/
+    &__wheel {
+      width: 215px;
+      height: 215px;
+      /*Центр катушки*/
+      &::after {
+        width: 81px;
+        height: 81px;
+      }
+    }
+    /*Стекло кассеты*/
+    &__glass {
+      &::before {
+        width: 204px;
+        height: 146px;
+
+        top: -70px;
       }
     }
   }

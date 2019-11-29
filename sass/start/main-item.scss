@@ -16,7 +16,7 @@
     &__link {
       text-decoration: none;
 
-      display: block;
+      @include flex-setting(column, center, center);
       width: 160px;
       height: 100%;
 
@@ -58,13 +58,7 @@
     }
 
     &__text {
-      font: {
-        size: 1.125em;
-        family: $bold-font;
-      }
-
-      color: $text-black;
-      line-height: 1;
+      @include font-setting($primary-font, 1.125rem, 1, 700, $text-black);
     }
 
     &--checked {

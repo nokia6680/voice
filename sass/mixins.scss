@@ -55,53 +55,39 @@
 }
 
 @mixin btn {
-  border: 2px solid #ffffff;
+  @include font-setting($primary-font, 0.875rem, 1, 700, $text-white);
+  @include flex-setting(column, center, center);
 
   text-align: center;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 
-  font: {
-    family: $bold-font;
-    size: 0.875em;
-  }
-
-  color: $text-white;
-  line-height: 1;
+  height: 22px;
 
   background-color: transparent;
+  border: 2px solid #ffffff;
 
-  @media only screen and (min-width: $mobile-hd) {
-    border: 2px solid #ffffff;
-
-    font: {
-      family: $bold-font;
-      size: 1.25em;
-    }
+  &:hover {
+    border-color: $hover-color;
+    color: $hover-color;
+    transition: 0.1s ease-in-out;
   }
 
   @media only screen and (min-width: $hd) {
     border: 3px solid #ffffff;
+    height: 38px;
 
-    padding-top: 3px;
-    padding-bottom: 2px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
-    font: {
-      family: $bold-font;
-      size: 1.625em;
-    }
+    font-size: 1.625rem;
   }
 
   @media only screen and (min-width: $fhd) {
     border: 3px solid #ffffff;
+    height: 44px;
 
-    padding-top: 7px;
-    padding-bottom: 8px;
-
-    font: {
-      family: $bold-font;
-      size: 2.188em;
-    }
+    font-size: 2.188rem;
   }
 }
 
@@ -176,4 +162,19 @@
   transition-duration: 0.2s;
   transition-timing-function: initial;
   transition-delay: initial;
+}
+
+@mixin font-setting($family, $size, $line-height, $font-width, $color) {
+  font-family: $family;
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $font-width;
+  color: $color;
+}
+
+@mixin flex-setting($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }

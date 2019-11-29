@@ -3,10 +3,7 @@
 
   bottom: -240px;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  @include flex-setting(row, center, center);
 
   background-color: $bg-footer;
 

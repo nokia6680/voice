@@ -1,16 +1,19 @@
 @media only screen and (min-width: $laptop) {
   .series-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    @include flex-setting(row, center, flex-start);
     flex-wrap: wrap;
 
-    width: 900px;
+    width: 800px;
 
     padding: 0;
     margin: 0;
 
     list-style: none;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .series-list {
+    width: 900px;
   }
 }

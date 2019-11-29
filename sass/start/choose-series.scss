@@ -4,29 +4,41 @@
 
 @media only screen and (min-width: $laptop) {
   .choose-series {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
+    @include flex-setting(column, flex-start, center);
     position: relative;
 
     &::before {
       position: absolute;
       content: '';
 
-      width: 981px;
-      height: 537px;
+      width: 810px;
+      height: 444px;
 
       background-image: url('../img/slider-wires.png');
-      background-size: 981px 537px;
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: top center;
 
       top: 0;
-      left: 49%;
+      left: 50%;
 
-      transform: translateX(-49%);
+      transform: translateX(-50%);
+
+      transition: 0.1s ease-in;
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .choose-series {
+    &::before {
+      width: 980px;
+      height: 537px;
+
+      left: 47%;
+      transform: translateX(-47%);
+
+      transition: 0.1s ease-in;
     }
   }
 }

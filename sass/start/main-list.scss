@@ -7,10 +7,9 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
+    @include flex-setting(row, center, center);
+
     z-index: 0;
     width: 100%;
     position: relative;
@@ -66,15 +65,8 @@
 
     &--first {
       &::before {
-        position: absolute;
-        content: '';
-        width: 4000%;
-        height: 16px;
-        background-color: #8bf54e;
-        top: 51%;
         right: 63%;
         transform: translateY(-50%);
-        z-index: -12;
       }
     }
   }
@@ -88,15 +80,9 @@
 
     &--first {
       &::before {
-        position: absolute;
-        content: '';
-        width: 4000%;
-        height: 16px;
-        background-color: #8bf54e;
         top: 45%;
         right: 63%;
         transform: translateY(-45%);
-        z-index: -12;
       }
     }
 
@@ -113,15 +99,8 @@
 
     &--first {
       &::before {
-        position: absolute;
-        content: '';
-        width: 4000%;
-        height: 16px;
-        background-color: #8bf54e;
-        top: 45%;
         right: 63%;
         transform: translateY(-45%);
-        z-index: -12;
       }
     }
 

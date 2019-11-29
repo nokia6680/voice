@@ -17,6 +17,18 @@ function Selected(a) {
   }
 }
 
+/*Menu*/
+const MenuButton = document.querySelector('.header-nav__toggle');
+const MobileMenu = document.querySelector('.nav-list');
+const MobileMenuOverlay = document.querySelector('header');
+/*Variables for callback popup*/
+
+document.querySelector('.header-nav__toggle').onclick = function(e){
+	MenuButton.classList.toggle('open');
+	MobileMenu.classList.toggle('active');
+	MobileMenuOverlay.classList.toggle('active');
+}
+
 $('.next-1').on('click', function() {
   $('.choose-slider').slick('slickNext');
 });
