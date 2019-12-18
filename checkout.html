@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
@@ -89,6 +90,12 @@
     <!--Desktop-->
     <section class="main__checkout main-checkout">
       <div class="main-checkout__controls">
+        <!--Titles block-->
+        <div class="main-checkout__outro">
+          <b class="main-checkout__outro-text">Твоя озвучка принята.</b>
+          <h3 class="main-checkout__outro-title">Спасибо!</h3>
+          <b class="main-checkout__outro-text">Больше игрушек с Губкой Бобом <a class="main-checkout__outro-link" href="https://www.toy.ru/catalog/personaz_sponge/?utm_source=golos-site&utm_medium=branding&utm_campaign=saks" target="_blank">здесь!</a></b>
+        </div>
         <h3 class="main-checkout__title">Попробовать ещё</h3>
         <a class="main-checkout__link" href="start.html" target="_self">
           <span class="main-checkout__tech"></span>
@@ -163,52 +170,64 @@
 		</div>
 	</footer>
   <!--Попап помощь-->
-  <div class="popup-help" style="display: none;">
-    <div class="popup-help__wrapper">
-      <header class="popup-help__header">
-        <h3 class="popup-help__title">Помощь</h3>
-        <button class="popup-help__close" type="button">
-          <span class="popup-help__tech"></span>
-        </button>
-      </header>
-      <ul class="popup-help__list">
-        <li class="popup-help__item">
-          <span class="popup-help__text">1. Выбери&nbsp;шоу,&nbsp;которое хочешь&nbsp;озвучивать</span>
-        </li>
-        <li class="popup-help__item">
-          <span class="popup-help__text">2. Просмотри ролик, нажав зелёную кнопку "Плэй"</span>
-        </li>
-        <li class="popup-help__item">
-          <span class="popup-help__text">3. Внимательно прочитай реплики своего героя</span>
-        </li>
-        <li class="popup-help__item">
-          <span class="popup-help__text">4. Когда будешь готов, жми красную кнопку "Запись" и говори в микрофон</span>
-        </li>
-        <li class="popup-help__item">
-          <span class="popup-help__text">5. Послушай, что получилось</span>
-        </li>
-        <li class="popup-help__item">
-          <span class="popup-help__text">6. Если хочешь что-то исправить, нажми "перезаписать"</span>
-        </li>
-        <li class="popup-help__item">
-          <span class="popup-help__text">7. Жми "отправить", если ты доволен тем, что получилось</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!--Попап призы-->
-  <div class="popup-prize" style="display: none;">
-    <div class="popup-prize__wrapper">
-      <header class="popup-prize__header">
-        <h3 class="popup-prize__title">Призы</h3>
-        <button class="popup-prize__close" type="button">
-          <span class="popup-prize__tech"></span>
-        </button>
-      </header>
-      <p class="popup-prize__description">Главный&nbsp;приз&nbsp;-&nbsp;поездка в&nbsp;Москву&nbsp;в&nbsp;офис&nbsp;Nickelodeon и&nbsp;визит&nbsp;на&nbsp;студию&nbsp;дубляжа для&nbsp;записи&nbsp;небольшой роли&nbsp;в&nbsp;одном&nbsp;из&nbsp;наших
-        шоу&nbsp;или&nbsp;промо</p>
-    </div>
-  </div>
+	<div class="popup-help">
+		<div class="popup-help__wrapper">
+			<header class="popup-help__header">
+				<h3 class="popup-help__title">Помощь</h3>
+				<button class="popup-help__close" type="button">
+					<span class="popup-help__tech"></span>
+				</button>
+			</header>
+			<ul class="popup-help__list">
+				<li class="popup-help__item">
+					<span class="popup-help__text">1. Выбери&nbsp;шоу,&nbsp;которое хочешь&nbsp;озвучивать</span>
+				</li>
+				<li class="popup-help__item">
+					<span class="popup-help__text">2. Просмотри ролик, нажав зелёную кнопку "Плэй"</span>
+				</li>
+				<li class="popup-help__item">
+					<span class="popup-help__text">3. Внимательно прочитай реплики своего героя</span>
+				</li>
+				<li class="popup-help__item">
+					<span class="popup-help__text">4. Когда будешь готов, жми красную кнопку "Запись" и говори в микрофон</span>
+				</li>
+				<li class="popup-help__item">
+					<span class="popup-help__text">5. Послушай, что получилось</span>
+				</li>
+				<li class="popup-help__item">
+					<span class="popup-help__text">6. Если хочешь что-то исправить, нажми "перезаписать"</span>
+				</li>
+				<li class="popup-help__item">
+					<span class="popup-help__text">7. Жми "отправить", если ты доволен тем, что получилось</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--Попап призы-->
+	<div class="popup-prize">
+		<div class="popup-prize__wrapper">
+			<button class="popup-prize__close" type="button"></button>
+			<header class="popup-prize__header">
+				<h3 class="popup-prize__title">Призы</h3>
+			</header>
+			<div class="popup-prize__slider" id="prize-slider">
+				<div class="popup-prize__item">
+					<b class="popup-prize__item-head">Главный приз</b>
+					<p class="popup-prize__item-description">Главный приз - поездка в Москву в офис Nickelodeon и визит на студию дубляжа для записи небольшой роли в одном из наших шоу или промо, а также надувная шапка с Губкой Бобом!</p>
+					<img class="popup-prize__item-pic popup-prize__item-pic--main" src="img/prize-main.png" />
+				</div>
+				<div class="popup-prize__item">
+					<b class="popup-prize__item-head">Ежедневный приз</b>
+					<p class="popup-prize__item-description">Игрушка анти-стресс с Губкой Бобом</p>
+					<img class="popup-prize__item-pic popup-prize__item-pic--daily" src="img/prize-daily.png" />
+				</div>
+			</div>
+			<div class="prize-prev"></div>
+			<div class="prize-next"></div>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

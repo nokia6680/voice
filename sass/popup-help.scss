@@ -12,6 +12,12 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
+
+  display: none;
+
+  &.active {
+    display: flex;
+  }
   /*Внутренняя часть*/
   &__wrapper {
     display: flex;
@@ -45,13 +51,7 @@
   &__title {
     margin: 0;
 
-    font: {
-      family: $bold-font;
-      size: 1.625em;
-    }
-
-    color: $text-black;
-    line-height: 1;
+    @include font-setting($primary-font, 1.625rem, 1, 700, $text-black);
     text-transform: uppercase;
   }
 
@@ -130,13 +130,7 @@
 
   /*Текст*/
   &__text {
-    font: {
-      family: $bold-font;
-      size: 0.813em;
-    }
-
-    color: $text-green;
-    line-height: 1;
+    @include font-setting($primary-font, 0.813rem, 1, 700, $text-green);
     text-transform: uppercase;
   }
 }

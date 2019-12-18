@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
@@ -32,7 +33,7 @@
 					<a class="nav-item__link nav-item__link--event" href="start.html" target="_self">Конкурс</a>
 				</li>
 				<li class="nav-list__item nav-item">
-					<a class="nav-item__link nav-item__link--prizes" href="#" target="_self">Призы</a>
+					<a class="nav-item__link nav-item__link--prizes prizeBtn" href="#" target="_self">Призы</a>
 				</li>
 				<li class="nav-list__item nav-item">
 					<a class="nav-item__link nav-item__link--faq" href="#" target="_self">Правила</a>
@@ -76,13 +77,13 @@
 		<!--Mobile prizes-->
 		<section class="main__info main-info">
 			<div class="main-info__wrapper">
-				<div class="main-info__prize">
+				<a class="main-info__prize" href="https://www.toy.ru/catalog/personaz_sponge/?utm_source=golos-site&utm_medium=branding&utm_campaign=saks" target="_blank">
 					<img class="main-info__prize-item main-info__prize-item--1" src="img/page-1.png" alt="Приз 1" />
 					<img class="main-info__prize-item main-info__prize-item--2" src="img/page-2.png" alt="Приз 2" style="display: none;" />
 					<img class="main-info__prize-item main-info__prize-item--3" src="img/page-3.png" alt="Приз 3" style="display: none;" />
 					<img class="main-info__prize-item main-info__prize-item--4" src="img/page-4.png" alt="Приз 4" style="display: none;" />
 					<img class="main-info__prize-item main-info__prize-item--5" src="img/page-5.png" alt="Приз 5" style="display: none;" />
-				</div>
+				</a>
 				<a class="main-info__btn" href="start.html" target="_self">Хочу участвовать</a>
 			</div>
 		</section>
@@ -108,10 +109,10 @@
 						<a class="footer-nav__item-link footer-nav__item-link--event" href="/event" target="_self">Конкурс</a>
 					</li>
 					<li class="footer-nav__item">
-						<a class="footer-nav__item-link footer-nav__item-link--prizes" href="/prizes" target="_self">Призы</a>
+						<a class="footer-nav__item-link footer-nav__item-link--prizes prizeBtn" href="#" target="_self">Призы</a>
 					</li>
 					<li class="footer-nav__item">
-						<a class="footer-nav__item-link footer-nav__item-link--faq" href="/faq" target="_self">Правила</a>
+						<a class="footer-nav__item-link footer-nav__item-link--faq" href="#" target="_self">Правила</a>
 					</li>
 				</ul>
 				<!--Vote btn-->
@@ -165,7 +166,7 @@
 		</div>
 	</footer>
 	<!--Попап помощь-->
-	<div class="popup-help" style="display: none;">
+	<div class="popup-help">
 		<div class="popup-help__wrapper">
 			<header class="popup-help__header">
 				<h3 class="popup-help__title">Помощь</h3>
@@ -199,18 +200,37 @@
 		</div>
 	</div>
 	<!--Попап призы-->
-	<div class="popup-prize" style="display: none;">
+	<div class="popup-prize">
 		<div class="popup-prize__wrapper">
+			<button class="popup-prize__close" type="button"></button>
 			<header class="popup-prize__header">
 				<h3 class="popup-prize__title">Призы</h3>
-				<button class="popup-prize__close" type="button">
-					<span class="popup-prize__tech"></span>
-				</button>
 			</header>
-			<p class="popup-prize__description">Главный&nbsp;приз&nbsp;-&nbsp;поездка в&nbsp;Москву&nbsp;в&nbsp;офис&nbsp;Nickelodeon и&nbsp;визит&nbsp;на&nbsp;студию&nbsp;дубляжа для&nbsp;записи&nbsp;небольшой роли&nbsp;в&nbsp;одном&nbsp;из&nbsp;наших
-				шоу&nbsp;или&nbsp;промо</p>
+			<div class="popup-prize__slider" id="prize-slider">
+				<div class="popup-prize__item">
+					<b class="popup-prize__item-head">Главный приз</b>
+					<p class="popup-prize__item-description">Главный приз - поездка в Москву в офис Nickelodeon и визит на студию дубляжа для записи небольшой роли в одном из наших шоу или промо, а также надувная шапка с Губкой Бобом!</p>
+					<img class="popup-prize__item-pic popup-prize__item-pic--main" src="img/prize-main.png" />
+				</div>
+				<div class="popup-prize__item">
+					<b class="popup-prize__item-head">Ежедневный приз</b>
+					<p class="popup-prize__item-description">Игрушка анти-стресс с Губкой Бобом</p>
+					<img class="popup-prize__item-pic popup-prize__item-pic--daily" src="img/prize-daily.png" />
+				</div>
+			</div>
+			<div class="prize-prev"></div>
+			<div class="prize-next"></div>
 		</div>
 	</div>
+	<!--Попап видео-->
+	<div class="popup-video">
+		<div class="popup-video__wrapper">
+			<button class="popup-video__close" type="button"></button>
+			<video class="popup-video__player" src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' controls="controls"></video>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 

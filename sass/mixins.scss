@@ -129,6 +129,16 @@
     width: 14px;
     height: 14px;
   }
+
+  @media only screen and (min-width: $laptop) {
+    top: -4px;
+    transform: none;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    top: -2px;
+    transform: none;
+  }
 }
 
 @mixin checkbox-checked {
@@ -154,6 +164,16 @@
     background-size: 10px 10px;
     width: 10px;
     height: 10px;
+  }
+
+  @media only screen and (min-width: $laptop) {
+    top: -2px;
+    transform: none;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    top: 0px;
+    transform: none;
   }
 }
 

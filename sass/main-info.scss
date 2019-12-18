@@ -20,7 +20,6 @@
     max-height: 230px;
     margin-bottom: 0.25rem;
 
-
     &--checkout {
       margin-bottom: 1.25rem;
     }
@@ -145,6 +144,8 @@
     left: 20px;
     top: 80%;
 
+    z-index: 101;
+
     transform: translateY(-80%);
 
     &--checkout {
@@ -157,6 +158,7 @@
     &--record,
     &--submit {
       display: flex;
+      height: auto;
     }
 
     &__wrapper {

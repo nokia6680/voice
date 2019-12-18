@@ -311,6 +311,17 @@
   /*Тексты кнопок для десктопа*/
   &__text {
     @include font-setting($primary-font, 0.563rem, 1, 700, $text-black);
+
+    &--repeat,
+    &--listen,
+    &--send,
+    &--pause,
+    &--play,
+    &--stop,
+    &--help,
+    &--rec {
+      display: none;
+    }
   }
   /*Подписи кнопок для мобильной версии*/
   &__title {

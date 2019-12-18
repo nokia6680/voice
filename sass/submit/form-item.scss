@@ -34,6 +34,16 @@
 
   &__label {
     @include font-setting($primary-font, 0.625rem, 1, 700, $text-black);
+    &--cb {
+      font-size: 0.55rem;
+    }
+    &-link {
+      color: $text-red;
+      text-decoration: none;
+
+      cursor: pointer;
+      outline: none;
+    }
   }
 
   &__input {
@@ -115,6 +125,10 @@
       font: {
         size: 0.875em;
       }
+
+      &--cb {
+        font-size: 0.625rem;
+      }
     }
 
     &--text {
@@ -183,6 +197,10 @@
       font: {
         size: 0.625em;
       }
+
+      &--cb {
+        font-size: 0.45rem;
+      }
     }
 
     &--text {
@@ -217,7 +235,7 @@
         size: 0.625em;
       }
     }
-    
+
     &__input {
       font: {
         size: 0.875em;

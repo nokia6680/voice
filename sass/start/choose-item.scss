@@ -8,17 +8,20 @@
 
   border: 2px solid $bg-black;
 
+  overflow: hidden;
+
   &__link {
     width: 100%;
     height: 100%;
 
-    display: block;
+    @include flex-setting(column, flex-start, center);
   }
 
   &__preview {
     width: 290px;
     height: 258px;
     object-fit: cover;
+    object-position: top;
   }
 }
 

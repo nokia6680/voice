@@ -88,9 +88,9 @@
 		</section>
 		<section class="main__info main-info main-info--start">
 			<div class="main-info__wrapper">
-				<div class="main-info__prize">
+				<a class="main-info__prize" href="https://www.toy.ru/catalog/personaz_sponge/?utm_source=golos-site&utm_medium=branding&utm_campaign=saks" target="_blank">
 					<img class="main-info__prize-item" src="img/page-2.png" alt="Приз 2" />
-				</div>
+				</a>
 			</div>
 		</section>
 		<!--Main content-->
@@ -108,7 +108,7 @@
 				<div class="choose-carousel__slider choose-slider">
 					<div class="choose-slider__item choose-item choose-slider__item--first" id="first-show">
 						<a class="choose-item__link" href="#" target="_self">
-							<img class="choose-item__preview" src="img/ciara.png" alt="show-1" />
+							<img class="choose-item__preview" src="img/hunter.png" alt="show-1" />
 						</a>
 					</div>
 					<div class="choose-slider__item choose-item choose-slider__item--second" id="first-show">
@@ -118,7 +118,7 @@
 					</div>
 					<div class="choose-slider__item choose-item choose-slider__item--third" id="first-show">
 						<a class="choose-item__link" href="#" target="_self">
-							<img class="choose-item__preview" src="img/knigts.png" alt="show-3" />
+							<img class="choose-item__preview" src="img/henry.png" alt="show-3" />
 						</a>
 					</div>
 					<div class="choose-slider__item choose-item choose-slider__item--fourth" id="first-show">
@@ -136,7 +136,7 @@
 				<div class="choose-carousel__slider title-slider">
 					<div class="title-slider__item title-item title-slider__item--first" id="first-title">
 						<a class="title-item__link" href="#" target="_self">
-							<h3 class="title-item__title title-item__title--first">Команда рыцарей</h3>
+							<h3 class="title-item__title title-item__title--first">Хантер Стрит</h3>
 						</a>
 					</div>
 					<div class="title-slider__item title-item title-slider__item--second" id="second-title">
@@ -146,7 +146,7 @@
 					</div>
 					<div class="title-slider__item title-item title-slider__item--third" id="third-title">
 						<a class="title-item__link" href="#" target="_self">
-							<h3 class="title-item__title title-item__title--third">Грозная семейка</h3>
+							<h3 class="title-item__title title-item__title--third">Опасный Генри</h3>
 						</a>
 					</div>
 					<div class="title-slider__item title-item title-slider__item--fourth" id="fourth-title">
@@ -194,7 +194,7 @@
 							<div class="series-link__wrapper">
 								<img class="series-link__img" src="img/series-1.png" alt="series-1" />
 							</div>
-							<h3 class="series-link__title">Команда рыцарей</h3>
+							<h3 class="series-link__title">Хантер Стрит</h3>
 						</a>
 					</li>
 					<li class="choose-list__item series-item series-item--second">
@@ -222,7 +222,7 @@
 							<div class="series-link__wrapper">
 								<img class="series-link__img" src="img/series-3.png" alt="series-3" />
 							</div>
-							<h3 class="series-link__title">Грозная семейка</h3>
+							<h3 class="series-link__title">Опасный Генри</h3>
 						</a>
 					</li>
 					<li class="choose-list__item series-item series-item--fourth">
@@ -324,7 +324,7 @@
 		</div>
 	</footer>
 	<!--Попап помощь-->
-	<div class="popup-help" style="display: none;">
+	<div class="popup-help">
 		<div class="popup-help__wrapper">
 			<header class="popup-help__header">
 				<h3 class="popup-help__title">Помощь</h3>
@@ -358,19 +358,29 @@
 		</div>
 	</div>
 	<!--Попап призы-->
-	<div class="popup-prize" style="display: none;">
+	<div class="popup-prize">
 		<div class="popup-prize__wrapper">
+			<button class="popup-prize__close" type="button"></button>
 			<header class="popup-prize__header">
 				<h3 class="popup-prize__title">Призы</h3>
-				<button class="popup-prize__close" type="button">
-					<span class="popup-prize__tech"></span>
-				</button>
 			</header>
-			<p class="popup-prize__description">Главный&nbsp;приз&nbsp;-&nbsp;поездка в&nbsp;Москву&nbsp;в&nbsp;офис&nbsp;Nickelodeon и&nbsp;визит&nbsp;на&nbsp;студию&nbsp;дубляжа для&nbsp;записи&nbsp;небольшой роли&nbsp;в&nbsp;одном&nbsp;из&nbsp;наших
-				шоу&nbsp;или&nbsp;промо</p>
+			<div class="popup-prize__slider" id="prize-slider">
+				<div class="popup-prize__item">
+					<b class="popup-prize__item-head">Главный приз</b>
+					<p class="popup-prize__item-description">Главный приз - поездка в Москву в офис Nickelodeon и визит на студию дубляжа для записи небольшой роли в одном из наших шоу или промо, а также надувная шапка с Губкой Бобом!</p>
+					<img class="popup-prize__item-pic popup-prize__item-pic--main" src="img/prize-main.png" />
+				</div>
+				<div class="popup-prize__item">
+					<b class="popup-prize__item-head">Ежедневный приз</b>
+					<p class="popup-prize__item-description">Игрушка анти-стресс с Губкой Бобом</p>
+					<img class="popup-prize__item-pic popup-prize__item-pic--daily" src="img/prize-daily.png" />
+				</div>
+			</div>
+			<div class="prize-prev"></div>
+			<div class="prize-next"></div>
 		</div>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 	<script src="js/script.js"></script>
 </body>

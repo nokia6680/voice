@@ -22,7 +22,7 @@
 
   z-index: -10;
 
-  &--active {
+  &.active {
     bottom: 40px;
 
     left: 50%;
@@ -32,8 +32,18 @@
 
 @media (min-width: $tablets) {
   .social-list {
-    &--active {
-      bottom: 50px;
+    &.active {
+      bottom: 53px;
+
+      z-index: 0;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .social-list {
+    &.active {
+      bottom: 53px;
 
       z-index: 0;
     }
@@ -51,8 +61,8 @@
     padding-left: 13px;
     padding-right: 13px;
 
-    &--active {
-      bottom: 74px;
+    &.active {
+      bottom: 75px;
 
       left: auto;
       right: 80px;
@@ -69,7 +79,7 @@
     padding-left: 15px;
     padding-right: 15px;
 
-    &--active {
+    &.active {
       bottom: 103px;
       right: 90px;
     }
